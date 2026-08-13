@@ -84,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -92,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +109,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jkiokj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jkisdfgokj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fgtr4e3wasdftr543ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53c2df674569ab7ef72bc6023307f264.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ava13c3ac53812cde1b88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-circle-password-icon-vectors-png-image_5053796.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iidu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iuytd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iuyoiuytretd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iuy12td.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13220979.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\09876.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.23.21 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.23.21 PM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-circle-password-icon-vectors-png-image_50537961.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
