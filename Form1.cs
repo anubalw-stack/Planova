@@ -29,7 +29,10 @@ namespace tech_titans
             // Password starts as placeholder
             txtpass.Text = " Password";
             txtpass.ForeColor = Color.DimGray;
+
+            // Do not hide placeholder
             txtpass.UseSystemPasswordChar = false;
+            txtpass.PasswordChar = '\0';
         }
 
         private void txtname_Enter(object sender, EventArgs e)
@@ -76,15 +79,18 @@ namespace tech_titans
                 txtpass.ForeColor = Color.Black;
             }
 
-            // Hide password
-            txtpass.UseSystemPasswordChar = true;
+            // Show password as asterisks
+            txtpass.UseSystemPasswordChar = false;
+            txtpass.PasswordChar = '*';
         }
 
         private void txtpass_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtpass.Text))
             {
-                txtpass.UseSystemPasswordChar = false;
+                // Remove password masking so placeholder can be seen
+                txtpass.PasswordChar = '\0';
+
                 txtpass.Text = " Password";
                 txtpass.ForeColor = Color.DimGray;
             }
@@ -103,30 +109,39 @@ namespace tech_titans
                 return;
             }
 
-            // Show or hide password
-            txtpass.UseSystemPasswordChar =
-                !txtpass.UseSystemPasswordChar;
+            // If password is hidden, show it
+            if (txtpass.PasswordChar == '*')
+            {
+                txtpass.PasswordChar = '\0';
+            }
+            else
+            {
+                // Hide password using asterisks
+                txtpass.PasswordChar = '*';
+            }
         }
 
         private void btnregister_Click(object sender, EventArgs e)
         {
-         
             // Check Full Name
-            if (txtname.Text == " Full Name" || string.IsNullOrWhiteSpace(txtname.Text))
+            if (txtname.Text == " Full Name" ||
+                string.IsNullOrWhiteSpace(txtname.Text))
             {
                 MessageBox.Show("Please enter your full name.");
                 return;
             }
 
             // Check Email
-            if (txtemail.Text == " E-mail" || string.IsNullOrWhiteSpace(txtemail.Text))
+            if (txtemail.Text == " E-mail" ||
+                string.IsNullOrWhiteSpace(txtemail.Text))
             {
                 MessageBox.Show("Please enter your email.");
                 return;
             }
 
             // Basic email check
-            if (!txtemail.Text.Contains("@") || !txtemail.Text.Contains("."))
+            if (!txtemail.Text.Contains("@") ||
+                !txtemail.Text.Contains("."))
             {
                 MessageBox.Show("Please enter a valid email address.");
                 return;
@@ -147,7 +162,8 @@ namespace tech_titans
             }
 
             // Check Password
-            if (txtpass.Text == " Password" || string.IsNullOrWhiteSpace(txtpass.Text))
+            if (txtpass.Text == " Password" ||
+                string.IsNullOrWhiteSpace(txtpass.Text))
             {
                 MessageBox.Show("Please enter a password.");
                 return;
@@ -156,17 +172,20 @@ namespace tech_titans
             // Password must contain at least 6 characters
             if (txtpass.Text.Length < 6)
             {
-                MessageBox.Show("Password must be at least 6 characters long.");
+                MessageBox.Show(
+                    "Password must be at least 6 characters long."
+                );
                 return;
             }
 
             // Everything is valid
             MessageBox.Show(
-                "Registration successful!\n\nWelcome, " + txtname.Text.Trim() + "!",
+                "Registration successful!\n\nWelcome, "
+                + txtname.Text.Trim() + "!",
                 "Planova",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
             );
         }
     }
-    }
+}
