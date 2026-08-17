@@ -101,25 +101,7 @@ namespace tech_titans
             dtpDOB.CustomFormat = "dd/MM/yyyy";
         }
 
-        private void btneye_Click(object sender, EventArgs e)
-        {
-            // Do nothing if placeholder is showing
-            if (txtpass.Text == " Password")
-            {
-                return;
-            }
-
-            // If password is hidden, show it
-            if (txtpass.PasswordChar == '*')
-            {
-                txtpass.PasswordChar = '\0';
-            }
-            else
-            {
-                // Hide password using asterisks
-                txtpass.PasswordChar = '*';
-            }
-        }
+     
 
         private void btnregister_Click(object sender, EventArgs e)
         {
@@ -187,5 +169,27 @@ namespace tech_titans
                 MessageBoxIcon.Information
             );
         }
+
+        private void btneye_Click_1(object sender, EventArgs e)
+        {
+            // Do nothing if placeholder is showing
+            if (txtpass.Text == " Password")
+            {
+                return;
+            }
+
+            // If password is hidden, show it
+            if (txtpass.PasswordChar == '*')
+            {
+                txtpass.PasswordChar = '\0';
+            }
+            else
+            {
+                // Hide password using asterisks
+                txtpass.PasswordChar = '*';
+            }
+        }
+
+
     }
 }
