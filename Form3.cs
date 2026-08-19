@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tech_titans
 {
-    public partial class Form3 : Form
+    public partial class EventDetails : Form
     {
-        public Form3()
+        public EventDetails()
         {
             InitializeComponent();
         }
