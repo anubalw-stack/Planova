@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +50,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -84,6 +91,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,7 +111,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,6 +126,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jkiokj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jkisdfgokj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fgtr4e3wasdftr543ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53c2df674569ab7ef72bc6023307f264.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ava13c3ac53812cde1b88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-circle-password-icon-vectors-png-image_5053796.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iidu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iuytd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iuyoiuytretd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iuy12td.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13220979.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\09876.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.23.21 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.23.21 PM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-circle-password-icon-vectors-png-image_50537961.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
