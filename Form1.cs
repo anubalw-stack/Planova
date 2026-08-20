@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tech_titans
@@ -19,20 +13,17 @@ namespace tech_titans
             // Date of Birth placeholder
             dtpDOB.Format = DateTimePickerFormat.Custom;
             dtpDOB.CustomFormat = "' Date Of Birth'";
-
             dtpDOB.ValueChanged += dtpDOB_ValueChanged;
 
-            // Make sure password events are connected
-            txtpass.Enter += txtpass_Enter;
-            txtpass.Leave += txtpass_Leave;
-
-            // Password starts as placeholder
+            // Password placeholder
             txtpass.Text = " Password";
             txtpass.ForeColor = Color.DimGray;
-
-            // Do not hide placeholder
-            txtpass.UseSystemPasswordChar = false;
             txtpass.PasswordChar = '\0';
+
+            // Confirm Password placeholder
+            txtpassconfirm.Text = " Confirm Password";
+            txtpassconfirm.ForeColor = Color.DimGray;
+            txtpassconfirm.PasswordChar = '\0';
         }
 
         private void txtname_Enter(object sender, EventArgs e)
@@ -46,7 +37,7 @@ namespace tech_titans
 
         private void txtname_Leave(object sender, EventArgs e)
         {
-            if (txtname.Text == "")
+            if (string.IsNullOrWhiteSpace(txtname.Text))
             {
                 txtname.Text = " Full Name";
                 txtname.ForeColor = Color.DimGray;
@@ -64,7 +55,7 @@ namespace tech_titans
 
         private void txtemail_Leave(object sender, EventArgs e)
         {
-            if (txtemail.Text == "")
+            if (string.IsNullOrWhiteSpace(txtemail.Text))
             {
                 txtemail.Text = " E-mail";
                 txtemail.ForeColor = Color.DimGray;
@@ -79,8 +70,6 @@ namespace tech_titans
                 txtpass.ForeColor = Color.Black;
             }
 
-            // Show password as asterisks
-            txtpass.UseSystemPasswordChar = false;
             txtpass.PasswordChar = '*';
         }
 
@@ -88,11 +77,30 @@ namespace tech_titans
         {
             if (string.IsNullOrWhiteSpace(txtpass.Text))
             {
-                // Remove password masking so placeholder can be seen
                 txtpass.PasswordChar = '\0';
-
                 txtpass.Text = " Password";
                 txtpass.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtpassconfirm_Enter(object sender, EventArgs e)
+        {
+            if (txtpassconfirm.Text == " Confirm Password")
+            {
+                txtpassconfirm.Text = "";
+                txtpassconfirm.ForeColor = Color.Black;
+            }
+
+            txtpassconfirm.PasswordChar = '*';
+        }
+
+        private void txtpassconfirm_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtpassconfirm.Text))
+            {
+                txtpassconfirm.PasswordChar = '\0';
+                txtpassconfirm.Text = " Confirm Password";
+                txtpassconfirm.ForeColor = Color.DimGray;
             }
         }
 
@@ -100,8 +108,6 @@ namespace tech_titans
         {
             dtpDOB.CustomFormat = "dd/MM/yyyy";
         }
-
-     
 
         private void btnregister_Click(object sender, EventArgs e)
         {
@@ -121,7 +127,7 @@ namespace tech_titans
                 return;
             }
 
-            // Basic email check
+            // Basic email validation
             if (!txtemail.Text.Contains("@") ||
                 !txtemail.Text.Contains("."))
             {
@@ -136,7 +142,6 @@ namespace tech_titans
                 return;
             }
 
-            // Date of birth cannot be today or in the future
             if (dtpDOB.Value.Date >= DateTime.Today)
             {
                 MessageBox.Show("Please select a valid date of birth.");
@@ -151,19 +156,32 @@ namespace tech_titans
                 return;
             }
 
-            // Password must contain at least 6 characters
+            // Password length
             if (txtpass.Text.Length < 6)
             {
-                MessageBox.Show(
-                    "Password must be at least 6 characters long."
-                );
+                MessageBox.Show("Password must be at least 6 characters long.");
                 return;
             }
 
-            // Everything is valid
+            // Check Confirm Password
+            if (txtpassconfirm.Text == " Confirm Password" ||
+                string.IsNullOrWhiteSpace(txtpassconfirm.Text))
+            {
+                MessageBox.Show("Please confirm your password.");
+                return;
+            }
+
+            // Check if passwords match
+            if (txtpass.Text != txtpassconfirm.Text)
+            {
+                MessageBox.Show("Passwords do not match.");
+                return;
+            }
+
+            // Registration successful
             MessageBox.Show(
-                "Registration successful!\n\nWelcome, "
-                + txtname.Text.Trim() + "!",
+                "Registration successful!\n\nWelcome, " +
+                txtname.Text.Trim() + "!",
                 "Planova",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
@@ -178,18 +196,36 @@ namespace tech_titans
                 return;
             }
 
-            // If password is hidden, show it
+            // Show / hide password
             if (txtpass.PasswordChar == '*')
             {
                 txtpass.PasswordChar = '\0';
             }
             else
             {
-                // Hide password using asterisks
                 txtpass.PasswordChar = '*';
             }
         }
 
+        private void btneye2_Click(object sender, EventArgs e)
+        {
+            // Do nothing if placeholder is showing
+            if (txtpassconfirm.Text == " Confirm Password")
+            {
+                return;
+            }
 
+            // Show / hide password
+            if (txtpassconfirm.PasswordChar == '*')
+            {
+                txtpassconfirm.PasswordChar = '\0';
+            }
+            else
+            {
+                txtpassconfirm.PasswordChar = '*';
+            }
+        }
+
+       
     }
 }

@@ -41,16 +41,12 @@
             this.btnregister = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtname = new System.Windows.Forms.TextBox();
-            this.ptname = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.ptmail = new System.Windows.Forms.PictureBox();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.ptage = new System.Windows.Forms.PictureBox();
             this.dtpDOB = new System.Windows.Forms.DateTimePicker();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btneye = new FontAwesome.Sharp.IconButton();
-            this.ptpass = new System.Windows.Forms.PictureBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconButton11 = new FontAwesome.Sharp.IconButton();
@@ -61,18 +57,25 @@
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btneye2 = new FontAwesome.Sharp.IconButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtpassconfirm = new System.Windows.Forms.TextBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
+            this.iconButton12 = new FontAwesome.Sharp.IconButton();
+            this.iconButton13 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptname)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptmail)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptage)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptpass)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -137,6 +140,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.lblogin);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label4);
@@ -149,7 +153,7 @@
             this.panel2.Location = new System.Drawing.Point(270, 89);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(461, 463);
+            this.panel2.Size = new System.Drawing.Size(461, 485);
             this.panel2.TabIndex = 1;
             // 
             // lblogin
@@ -157,7 +161,7 @@
             this.lblogin.AutoSize = true;
             this.lblogin.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblogin.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblogin.Location = new System.Drawing.Point(208, 429);
+            this.lblogin.Location = new System.Drawing.Point(206, 454);
             this.lblogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblogin.Name = "lblogin";
             this.lblogin.Size = new System.Drawing.Size(56, 22);
@@ -168,7 +172,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(153, 412);
+            this.label2.Location = new System.Drawing.Point(153, 437);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 17);
@@ -207,7 +211,7 @@
             this.btnregister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnregister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregister.ForeColor = System.Drawing.Color.White;
-            this.btnregister.Location = new System.Drawing.Point(115, 354);
+            this.btnregister.Location = new System.Drawing.Point(110, 385);
             this.btnregister.Margin = new System.Windows.Forms.Padding(2);
             this.btnregister.Name = "btnregister";
             this.btnregister.Size = new System.Drawing.Size(239, 40);
@@ -220,9 +224,9 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.iconButton1);
             this.panel5.Controls.Add(this.txtname);
-            this.panel5.Controls.Add(this.ptname);
-            this.panel5.Location = new System.Drawing.Point(24, 88);
+            this.panel5.Location = new System.Drawing.Point(24, 81);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(407, 47);
@@ -242,41 +246,17 @@
             this.txtname.Enter += new System.EventHandler(this.txtname_Enter);
             this.txtname.Leave += new System.EventHandler(this.txtname_Leave);
             // 
-            // ptname
-            // 
-            this.ptname.BackColor = System.Drawing.Color.Lavender;
-            this.ptname.Image = global::tech_titans.Properties.Resources._53c2df674569ab7ef72bc6023307f264;
-            this.ptname.Location = new System.Drawing.Point(2, 3);
-            this.ptname.Margin = new System.Windows.Forms.Padding(2);
-            this.ptname.Name = "ptname";
-            this.ptname.Size = new System.Drawing.Size(45, 40);
-            this.ptname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptname.TabIndex = 2;
-            this.ptname.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.ptmail);
+            this.panel6.Controls.Add(this.iconButton9);
             this.panel6.Controls.Add(this.txtemail);
-            this.panel6.Location = new System.Drawing.Point(24, 159);
+            this.panel6.Location = new System.Drawing.Point(24, 145);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(407, 45);
             this.panel6.TabIndex = 6;
-            // 
-            // ptmail
-            // 
-            this.ptmail.BackColor = System.Drawing.Color.White;
-            this.ptmail.Image = global::tech_titans.Properties.Resources.R;
-            this.ptmail.Location = new System.Drawing.Point(2, 2);
-            this.ptmail.Margin = new System.Windows.Forms.Padding(2);
-            this.ptmail.Name = "ptmail";
-            this.ptmail.Size = new System.Drawing.Size(45, 42);
-            this.ptmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptmail.TabIndex = 8;
-            this.ptmail.TabStop = false;
             // 
             // txtemail
             // 
@@ -296,25 +276,13 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.ptage);
+            this.panel7.Controls.Add(this.iconButton10);
             this.panel7.Controls.Add(this.dtpDOB);
-            this.panel7.Location = new System.Drawing.Point(24, 226);
+            this.panel7.Location = new System.Drawing.Point(24, 209);
             this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(407, 44);
             this.panel7.TabIndex = 4;
-            // 
-            // ptage
-            // 
-            this.ptage.BackColor = System.Drawing.Color.White;
-            this.ptage.Image = global::tech_titans.Properties.Resources.ava13c3ac53812cde1b88;
-            this.ptage.Location = new System.Drawing.Point(2, 1);
-            this.ptage.Margin = new System.Windows.Forms.Padding(2);
-            this.ptage.Name = "ptage";
-            this.ptage.Size = new System.Drawing.Size(45, 39);
-            this.ptage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptage.TabIndex = 7;
-            this.ptage.TabStop = false;
             // 
             // dtpDOB
             // 
@@ -331,10 +299,10 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.iconButton12);
             this.panel8.Controls.Add(this.btneye);
-            this.panel8.Controls.Add(this.ptpass);
             this.panel8.Controls.Add(this.txtpass);
-            this.panel8.Location = new System.Drawing.Point(24, 288);
+            this.panel8.Location = new System.Drawing.Point(24, 270);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(407, 44);
@@ -354,18 +322,6 @@
             this.btneye.TabIndex = 4;
             this.btneye.UseVisualStyleBackColor = true;
             this.btneye.Click += new System.EventHandler(this.btneye_Click_1);
-            // 
-            // ptpass
-            // 
-            this.ptpass.BackColor = System.Drawing.Color.White;
-            this.ptpass.Image = global::tech_titans.Properties.Resources._09876;
-            this.ptpass.Location = new System.Drawing.Point(-1, -1);
-            this.ptpass.Margin = new System.Windows.Forms.Padding(2);
-            this.ptpass.Name = "ptpass";
-            this.ptpass.Size = new System.Drawing.Size(56, 44);
-            this.ptpass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptpass.TabIndex = 6;
-            this.ptpass.TabStop = false;
             // 
             // txtpass
             // 
@@ -392,10 +348,10 @@
             this.panel3.Controls.Add(this.iconButton4);
             this.panel3.Controls.Add(this.iconButton2);
             this.panel3.Controls.Add(this.iconButton3);
-            this.panel3.Location = new System.Drawing.Point(-1, 568);
+            this.panel3.Location = new System.Drawing.Point(-1, 578);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1011, 51);
+            this.panel3.Size = new System.Drawing.Size(1011, 41);
             this.panel3.TabIndex = 2;
             // 
             // iconButton11
@@ -407,7 +363,7 @@
             this.iconButton11.IconColor = System.Drawing.Color.DarkOrange;
             this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton11.IconSize = 30;
-            this.iconButton11.Location = new System.Drawing.Point(111, 12);
+            this.iconButton11.Location = new System.Drawing.Point(111, 10);
             this.iconButton11.Name = "iconButton11";
             this.iconButton11.Size = new System.Drawing.Size(30, 27);
             this.iconButton11.TabIndex = 16;
@@ -518,6 +474,130 @@
             this.iconButton3.TabIndex = 8;
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.iconButton13);
+            this.panel4.Controls.Add(this.btneye2);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.txtpassconfirm);
+            this.panel4.Location = new System.Drawing.Point(24, 328);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(407, 44);
+            this.panel4.TabIndex = 12;
+            // 
+            // btneye2
+            // 
+            this.btneye2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btneye2.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btneye2.IconColor = System.Drawing.Color.Black;
+            this.btneye2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btneye2.IconSize = 25;
+            this.btneye2.Location = new System.Drawing.Point(368, 5);
+            this.btneye2.Margin = new System.Windows.Forms.Padding(2);
+            this.btneye2.Name = "btneye2";
+            this.btneye2.Size = new System.Drawing.Size(24, 27);
+            this.btneye2.TabIndex = 4;
+            this.btneye2.UseVisualStyleBackColor = true;
+            this.btneye2.Click += new System.EventHandler(this.btneye2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // txtpassconfirm
+            // 
+            this.txtpassconfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtpassconfirm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassconfirm.ForeColor = System.Drawing.Color.DimGray;
+            this.txtpassconfirm.Location = new System.Drawing.Point(63, 11);
+            this.txtpassconfirm.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpassconfirm.Name = "txtpassconfirm";
+            this.txtpassconfirm.Size = new System.Drawing.Size(231, 29);
+            this.txtpassconfirm.TabIndex = 11;
+            this.txtpassconfirm.Text = " Confirm Password";
+            this.txtpassconfirm.Enter += new System.EventHandler(this.txtpassconfirm_Enter);
+            this.txtpassconfirm.Leave += new System.EventHandler(this.txtpassconfirm_Leave);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 26;
+            this.iconButton1.Location = new System.Drawing.Point(3, 4);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(39, 39);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.ForeColor = System.Drawing.Color.White;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
+            this.iconButton9.IconColor = System.Drawing.Color.Black;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.IconSize = 26;
+            this.iconButton9.Location = new System.Drawing.Point(3, 2);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(39, 39);
+            this.iconButton9.TabIndex = 9;
+            this.iconButton9.UseVisualStyleBackColor = true;
+            // 
+            // iconButton10
+            // 
+            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton10.ForeColor = System.Drawing.Color.White;
+            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.Calendar;
+            this.iconButton10.IconColor = System.Drawing.Color.Black;
+            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton10.IconSize = 26;
+            this.iconButton10.Location = new System.Drawing.Point(3, 4);
+            this.iconButton10.Name = "iconButton10";
+            this.iconButton10.Size = new System.Drawing.Size(39, 39);
+            this.iconButton10.TabIndex = 10;
+            this.iconButton10.UseVisualStyleBackColor = true;
+            // 
+            // iconButton12
+            // 
+            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton12.ForeColor = System.Drawing.Color.White;
+            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.iconButton12.IconColor = System.Drawing.Color.Black;
+            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton12.IconSize = 26;
+            this.iconButton12.Location = new System.Drawing.Point(3, 3);
+            this.iconButton12.Name = "iconButton12";
+            this.iconButton12.Size = new System.Drawing.Size(39, 39);
+            this.iconButton12.TabIndex = 11;
+            this.iconButton12.UseVisualStyleBackColor = true;
+            // 
+            // iconButton13
+            // 
+            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton13.ForeColor = System.Drawing.Color.White;
+            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.CheckDouble;
+            this.iconButton13.IconColor = System.Drawing.Color.Black;
+            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton13.IconSize = 26;
+            this.iconButton13.Location = new System.Drawing.Point(3, 1);
+            this.iconButton13.Name = "iconButton13";
+            this.iconButton13.Size = new System.Drawing.Size(39, 39);
+            this.iconButton13.TabIndex = 12;
+            this.iconButton13.UseVisualStyleBackColor = true;
+            // 
             // RegisterForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -531,6 +611,7 @@
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Planova-Register";
+        
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -538,16 +619,15 @@
             this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptname)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptmail)).EndInit();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptage)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptpass)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -561,10 +641,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnregister;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox ptname;
-        private System.Windows.Forms.PictureBox ptmail;
-        private System.Windows.Forms.PictureBox ptage;
-        private System.Windows.Forms.PictureBox ptpass;
         private System.Windows.Forms.Label lblogin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtemail;
@@ -587,6 +663,15 @@
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
+        private System.Windows.Forms.Panel panel4;
+        private FontAwesome.Sharp.IconButton btneye2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txtpassconfirm;
+        private FontAwesome.Sharp.IconButton iconButton13;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private FontAwesome.Sharp.IconButton iconButton10;
+        private FontAwesome.Sharp.IconButton iconButton12;
     }
 }
 
