@@ -318,12 +318,12 @@
         private System.Windows.Forms.Label forgotPW;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label PlanovaSubtitle;
         private System.Windows.Forms.Label PlanovaName;
         private System.Windows.Forms.PictureBox PlanovaLogo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Panel EmailPanel;
         private System.Windows.Forms.PictureBox iconEmail;

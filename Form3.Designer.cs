@@ -33,7 +33,6 @@
             this.PlanovaSubtitle = new System.Windows.Forms.Label();
             this.PlanovaName = new System.Windows.Forms.Label();
             this.PlanovaLogo = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBoxEvent = new System.Windows.Forms.PictureBox();
             this.eventName = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -104,15 +103,6 @@
             this.PlanovaLogo.TabIndex = 1;
             this.PlanovaLogo.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Indigo;
-            this.panel2.Location = new System.Drawing.Point(0, 568);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1011, 51);
-            this.panel2.TabIndex = 7;
-            // 
             // pictureBoxEvent
             // 
             this.pictureBoxEvent.BackColor = System.Drawing.Color.White;
@@ -137,6 +127,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(489, 130);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(495, 198);
@@ -144,6 +135,7 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(26, 381);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(655, 170);
@@ -188,7 +180,6 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.eventName);
             this.Controls.Add(this.pictureBoxEvent);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "EventDetails";
             this.Text = "Event Details";
@@ -208,7 +199,6 @@
         private System.Windows.Forms.Label PlanovaSubtitle;
         private System.Windows.Forms.Label PlanovaName;
         private System.Windows.Forms.PictureBox PlanovaLogo;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBoxEvent;
         private System.Windows.Forms.Label eventName;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
