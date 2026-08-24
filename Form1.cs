@@ -212,6 +212,7 @@ namespace tech_titans
             LoginForm loginform = new LoginForm();
             this.Hide();
             loginform.ShowDialog();
+        }
         private void btneye2_Click(object sender, EventArgs e)
         {
             // Do nothing if placeholder is showing
@@ -229,7 +230,6 @@ namespace tech_titans
             {
                 txtpassconfirm.PasswordChar = '*';
             }
-        }
         }
     }
 }
