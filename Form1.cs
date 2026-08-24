@@ -207,6 +207,11 @@ namespace tech_titans
             }
         }
 
+        private void lblogin_Click(object sender, EventArgs e)
+        {
+            LoginForm loginform = new LoginForm();
+            this.Hide();
+            loginform.ShowDialog();
         private void btneye2_Click(object sender, EventArgs e)
         {
             // Do nothing if placeholder is showing
@@ -225,12 +230,6 @@ namespace tech_titans
                 txtpassconfirm.PasswordChar = '*';
             }
         }
-
-        private void lblogin_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            form2.Show();
-            this.Hide();
         }
     }
 }

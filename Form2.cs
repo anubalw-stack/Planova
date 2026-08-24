@@ -1,20 +1,143 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace tech_titans
 {
-    public partial class Login : Form
+    public partial class LoginForm : Form
     {
-        public Login()
+        public LoginForm()
         {
             InitializeComponent();
+
+            // Connect buttons/links to their events
+            buttonLogin.Click += buttonLogin_Click;
+            forgotPW.Click += forgotPW_Click;
+            signupLink.Click += signupLink_Click;
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            string email = textBoxEmail.Text.Trim();
+            string password = txtpass.Text.Trim();
+
+            // Check that both fields have been filled in
+            if (email == "" || email == "E-mail" ||
+                password == "" || password == "Password")
+            {
+                MessageBox.Show(
+                    "Please enter your email and password.",
+                    "Login",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            // Location of the CSV file
+            string filePath = Path.Combine(
+                Directory.GetParent(Application.StartupPath).Parent.FullName,
+                "users.csv"
+            );
+
+            // Check if the CSV file exists
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show(
+                    "User database file could not be found in " + filePath,
+                    "Login Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+                return;
+            }
+
+            bool loginSuccessful = false;
+
+            // Read each line of the CSV file
+            string[] lines = File.ReadAllLines(filePath);
+
+            foreach (string line in lines)
+            {
+                // Skip the header row
+                if (line.StartsWith("Email,"))
+                {
+                    continue;
+                }
+
+                string[] data = line.Split(',');
+
+                // Make sure the row contains email and password
+                if (data.Length >= 2)
+                {
+                    string csvEmail = data[0].Trim();
+                    string csvPassword = data[1].Trim();
+
+                    // Compare entered credentials with CSV credentials
+                    if (email.Equals(csvEmail, StringComparison.OrdinalIgnoreCase)
+                        && password == csvPassword)
+                    {
+                        loginSuccessful = true;
+                        break;
+                    }
+                }
+            }
+
+            if (loginSuccessful)
+            {
+                // Store the logged-in user's email
+                Session.LoggedInEmail = email;
+
+                MessageBox.Show(
+                    "Login successful!",
+                    "Welcome",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                // Open the home page
+                // Change Form****
+                RegisterForm homeForm = new RegisterForm();
+
+                // Hide login form while the user is logged in
+                this.Hide();
+
+                // Show home page
+                homeForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Invalid email or password.",
+                    "Login Failed",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void forgotPW_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Password recovery is not available yet.",
+                "Forgot Password",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+
+        private void signupLink_Click(object sender, EventArgs e)
+        {
+            // Open RegisterForm
+            RegisterForm registerForm = new RegisterForm();
+
+            this.Hide();
+
+            registerForm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Session.Logout();
+
+            this.Close();
         }
     }
 }
