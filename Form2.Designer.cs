@@ -78,6 +78,7 @@
             this.forgotPW.Size = new System.Drawing.Size(138, 20);
             this.forgotPW.TabIndex = 2;
             this.forgotPW.Text = "Forgot Password?";
+            this.forgotPW.Click += new System.EventHandler(this.forgotPW_Click);
             // 
             // label2
             // 
@@ -348,6 +349,7 @@
             this.signupLink.Size = new System.Drawing.Size(70, 20);
             this.signupLink.TabIndex = 11;
             this.signupLink.Text = "Sign up";
+            this.signupLink.Click += new System.EventHandler(this.signupLink_Click);
             // 
             // label1
             // 
@@ -375,6 +377,7 @@
             this.buttonLogin.TabIndex = 8;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // PWPanel
             // 
