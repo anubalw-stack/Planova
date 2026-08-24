@@ -226,6 +226,11 @@ namespace tech_titans
             }
         }
 
-       
+        private void lblogin_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+        }
     }
 }

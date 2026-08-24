@@ -34,18 +34,27 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.iconButton13 = new FontAwesome.Sharp.IconButton();
+            this.btneye2 = new FontAwesome.Sharp.IconButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtpassconfirm = new System.Windows.Forms.TextBox();
             this.lblogin = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnregister = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.txtname = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
             this.dtpDOB = new System.Windows.Forms.DateTimePicker();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.iconButton12 = new FontAwesome.Sharp.IconButton();
             this.btneye = new FontAwesome.Sharp.IconButton();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -57,25 +66,16 @@
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btneye2 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtpassconfirm = new System.Windows.Forms.TextBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.iconButton12 = new FontAwesome.Sharp.IconButton();
-            this.iconButton13 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -156,6 +156,74 @@
             this.panel2.Size = new System.Drawing.Size(461, 485);
             this.panel2.TabIndex = 1;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.iconButton13);
+            this.panel4.Controls.Add(this.btneye2);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.txtpassconfirm);
+            this.panel4.Location = new System.Drawing.Point(24, 328);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(407, 44);
+            this.panel4.TabIndex = 12;
+            // 
+            // iconButton13
+            // 
+            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton13.ForeColor = System.Drawing.Color.White;
+            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.CheckDouble;
+            this.iconButton13.IconColor = System.Drawing.Color.Black;
+            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton13.IconSize = 26;
+            this.iconButton13.Location = new System.Drawing.Point(3, 1);
+            this.iconButton13.Name = "iconButton13";
+            this.iconButton13.Size = new System.Drawing.Size(39, 39);
+            this.iconButton13.TabIndex = 12;
+            this.iconButton13.UseVisualStyleBackColor = true;
+            // 
+            // btneye2
+            // 
+            this.btneye2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btneye2.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btneye2.IconColor = System.Drawing.Color.Black;
+            this.btneye2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btneye2.IconSize = 25;
+            this.btneye2.Location = new System.Drawing.Point(368, 5);
+            this.btneye2.Margin = new System.Windows.Forms.Padding(2);
+            this.btneye2.Name = "btneye2";
+            this.btneye2.Size = new System.Drawing.Size(24, 27);
+            this.btneye2.TabIndex = 4;
+            this.btneye2.UseVisualStyleBackColor = true;
+            this.btneye2.Click += new System.EventHandler(this.btneye2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // txtpassconfirm
+            // 
+            this.txtpassconfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtpassconfirm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassconfirm.ForeColor = System.Drawing.Color.DimGray;
+            this.txtpassconfirm.Location = new System.Drawing.Point(63, 11);
+            this.txtpassconfirm.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpassconfirm.Name = "txtpassconfirm";
+            this.txtpassconfirm.Size = new System.Drawing.Size(231, 29);
+            this.txtpassconfirm.TabIndex = 11;
+            this.txtpassconfirm.Text = " Confirm Password";
+            this.txtpassconfirm.Enter += new System.EventHandler(this.txtpassconfirm_Enter);
+            this.txtpassconfirm.Leave += new System.EventHandler(this.txtpassconfirm_Leave);
+            // 
             // lblogin
             // 
             this.lblogin.AutoSize = true;
@@ -167,6 +235,7 @@
             this.lblogin.Size = new System.Drawing.Size(56, 22);
             this.lblogin.TabIndex = 5;
             this.lblogin.Text = "Login";
+            this.lblogin.Click += new System.EventHandler(this.lblogin_Click);
             // 
             // label2
             // 
@@ -232,6 +301,20 @@
             this.panel5.Size = new System.Drawing.Size(407, 47);
             this.panel5.TabIndex = 3;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 26;
+            this.iconButton1.Location = new System.Drawing.Point(3, 4);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(39, 39);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
             // txtname
             // 
             this.txtname.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -257,6 +340,20 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(407, 45);
             this.panel6.TabIndex = 6;
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.ForeColor = System.Drawing.Color.White;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
+            this.iconButton9.IconColor = System.Drawing.Color.Black;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.IconSize = 26;
+            this.iconButton9.Location = new System.Drawing.Point(3, 2);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(39, 39);
+            this.iconButton9.TabIndex = 9;
+            this.iconButton9.UseVisualStyleBackColor = true;
             // 
             // txtemail
             // 
@@ -284,6 +381,20 @@
             this.panel7.Size = new System.Drawing.Size(407, 44);
             this.panel7.TabIndex = 4;
             // 
+            // iconButton10
+            // 
+            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton10.ForeColor = System.Drawing.Color.White;
+            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.Calendar;
+            this.iconButton10.IconColor = System.Drawing.Color.Black;
+            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton10.IconSize = 26;
+            this.iconButton10.Location = new System.Drawing.Point(3, 4);
+            this.iconButton10.Name = "iconButton10";
+            this.iconButton10.Size = new System.Drawing.Size(39, 39);
+            this.iconButton10.TabIndex = 10;
+            this.iconButton10.UseVisualStyleBackColor = true;
+            // 
             // dtpDOB
             // 
             this.dtpDOB.CustomFormat = "dd/MM/yyyy";
@@ -307,6 +418,20 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(407, 44);
             this.panel8.TabIndex = 4;
+            // 
+            // iconButton12
+            // 
+            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton12.ForeColor = System.Drawing.Color.White;
+            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.iconButton12.IconColor = System.Drawing.Color.Black;
+            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton12.IconSize = 26;
+            this.iconButton12.Location = new System.Drawing.Point(3, 3);
+            this.iconButton12.Name = "iconButton12";
+            this.iconButton12.Size = new System.Drawing.Size(39, 39);
+            this.iconButton12.TabIndex = 11;
+            this.iconButton12.UseVisualStyleBackColor = true;
             // 
             // btneye
             // 
@@ -474,130 +599,6 @@
             this.iconButton3.TabIndex = 8;
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.iconButton13);
-            this.panel4.Controls.Add(this.btneye2);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.txtpassconfirm);
-            this.panel4.Location = new System.Drawing.Point(24, 328);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(407, 44);
-            this.panel4.TabIndex = 12;
-            // 
-            // btneye2
-            // 
-            this.btneye2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btneye2.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.btneye2.IconColor = System.Drawing.Color.Black;
-            this.btneye2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btneye2.IconSize = 25;
-            this.btneye2.Location = new System.Drawing.Point(368, 5);
-            this.btneye2.Margin = new System.Windows.Forms.Padding(2);
-            this.btneye2.Name = "btneye2";
-            this.btneye2.Size = new System.Drawing.Size(24, 27);
-            this.btneye2.TabIndex = 4;
-            this.btneye2.UseVisualStyleBackColor = true;
-            this.btneye2.Click += new System.EventHandler(this.btneye2_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 44);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // txtpassconfirm
-            // 
-            this.txtpassconfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtpassconfirm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassconfirm.ForeColor = System.Drawing.Color.DimGray;
-            this.txtpassconfirm.Location = new System.Drawing.Point(63, 11);
-            this.txtpassconfirm.Margin = new System.Windows.Forms.Padding(2);
-            this.txtpassconfirm.Name = "txtpassconfirm";
-            this.txtpassconfirm.Size = new System.Drawing.Size(231, 29);
-            this.txtpassconfirm.TabIndex = 11;
-            this.txtpassconfirm.Text = " Confirm Password";
-            this.txtpassconfirm.Enter += new System.EventHandler(this.txtpassconfirm_Enter);
-            this.txtpassconfirm.Leave += new System.EventHandler(this.txtpassconfirm_Leave);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 26;
-            this.iconButton1.Location = new System.Drawing.Point(3, 4);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(39, 39);
-            this.iconButton1.TabIndex = 8;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // iconButton9
-            // 
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.ForeColor = System.Drawing.Color.White;
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
-            this.iconButton9.IconColor = System.Drawing.Color.Black;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 26;
-            this.iconButton9.Location = new System.Drawing.Point(3, 2);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(39, 39);
-            this.iconButton9.TabIndex = 9;
-            this.iconButton9.UseVisualStyleBackColor = true;
-            // 
-            // iconButton10
-            // 
-            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton10.ForeColor = System.Drawing.Color.White;
-            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.Calendar;
-            this.iconButton10.IconColor = System.Drawing.Color.Black;
-            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton10.IconSize = 26;
-            this.iconButton10.Location = new System.Drawing.Point(3, 4);
-            this.iconButton10.Name = "iconButton10";
-            this.iconButton10.Size = new System.Drawing.Size(39, 39);
-            this.iconButton10.TabIndex = 10;
-            this.iconButton10.UseVisualStyleBackColor = true;
-            // 
-            // iconButton12
-            // 
-            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton12.ForeColor = System.Drawing.Color.White;
-            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.iconButton12.IconColor = System.Drawing.Color.Black;
-            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton12.IconSize = 26;
-            this.iconButton12.Location = new System.Drawing.Point(3, 3);
-            this.iconButton12.Name = "iconButton12";
-            this.iconButton12.Size = new System.Drawing.Size(39, 39);
-            this.iconButton12.TabIndex = 11;
-            this.iconButton12.UseVisualStyleBackColor = true;
-            // 
-            // iconButton13
-            // 
-            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton13.ForeColor = System.Drawing.Color.White;
-            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.CheckDouble;
-            this.iconButton13.IconColor = System.Drawing.Color.Black;
-            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton13.IconSize = 26;
-            this.iconButton13.Location = new System.Drawing.Point(3, 1);
-            this.iconButton13.Name = "iconButton13";
-            this.iconButton13.Size = new System.Drawing.Size(39, 39);
-            this.iconButton13.TabIndex = 12;
-            this.iconButton13.UseVisualStyleBackColor = true;
-            // 
             // RegisterForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -611,12 +612,14 @@
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Planova-Register";
-        
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -625,9 +628,6 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
