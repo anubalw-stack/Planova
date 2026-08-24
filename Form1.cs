@@ -190,6 +190,11 @@ namespace tech_titans
             }
         }
 
-
+        private void lblogin_Click(object sender, EventArgs e)
+        {
+            LoginForm loginform = new LoginForm();
+            this.Hide();
+            loginform.ShowDialog();
+        }
     }
 }

@@ -163,6 +163,7 @@
             this.lblogin.Size = new System.Drawing.Size(56, 22);
             this.lblogin.TabIndex = 5;
             this.lblogin.Text = "Login";
+            this.lblogin.Click += new System.EventHandler(this.lblogin_Click);
             // 
             // label2
             // 

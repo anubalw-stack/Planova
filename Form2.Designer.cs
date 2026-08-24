@@ -1,6 +1,6 @@
 ﻿namespace tech_titans
 {
-    partial class Login
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,31 +37,33 @@
             this.PlanovaLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.EmailPanel = new System.Windows.Forms.Panel();
-            this.iconEmail = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.signupLink = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.ptpass = new System.Windows.Forms.PictureBox();
             this.txtpass = new System.Windows.Forms.TextBox();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.signupLink = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.EmailPanel = new System.Windows.Forms.Panel();
+            this.iconEmail = new System.Windows.Forms.PictureBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlanovaLogo)).BeginInit();
             this.panel4.SuspendLayout();
-            this.EmailPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconEmail)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptpass)).BeginInit();
+            this.EmailPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // forgotPW
             // 
             this.forgotPW.AutoSize = true;
-            this.forgotPW.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.forgotPW.Location = new System.Drawing.Point(300, 265);
+            this.forgotPW.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.forgotPW.Location = new System.Drawing.Point(300, 253);
             this.forgotPW.Name = "forgotPW";
             this.forgotPW.Size = new System.Drawing.Size(138, 20);
             this.forgotPW.TabIndex = 2;
@@ -70,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(149, 362);
+            this.label2.Location = new System.Drawing.Point(149, 350);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(177, 20);
             this.label2.TabIndex = 4;
@@ -147,6 +149,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.signupLink);
@@ -158,44 +161,63 @@
             this.panel4.Controls.Add(this.forgotPW);
             this.panel4.Location = new System.Drawing.Point(282, 92);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(461, 463);
+            this.panel4.Size = new System.Drawing.Size(461, 445);
             this.panel4.TabIndex = 7;
             // 
-            // textBoxEmail
+            // label4
             // 
-            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Yi Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxEmail.Location = new System.Drawing.Point(59, 7);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(333, 29);
-            this.textBoxEmail.TabIndex = 2;
-            this.textBoxEmail.Text = " E-mail";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(330, 344);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 20);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "___________";
             // 
-            // EmailPanel
+            // label3
             // 
-            this.EmailPanel.BackColor = System.Drawing.Color.White;
-            this.EmailPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailPanel.Controls.Add(this.iconEmail);
-            this.EmailPanel.Controls.Add(this.textBoxEmail);
-            this.EmailPanel.Location = new System.Drawing.Point(31, 148);
-            this.EmailPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.EmailPanel.Name = "EmailPanel";
-            this.EmailPanel.Size = new System.Drawing.Size(407, 47);
-            this.EmailPanel.TabIndex = 8;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 344);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 20);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "___________";
             // 
-            // iconEmail
+            // signupLink
             // 
-            this.iconEmail.BackColor = System.Drawing.Color.White;
-            this.iconEmail.Image = global::tech_titans.Properties.Resources.R;
-            this.iconEmail.Location = new System.Drawing.Point(-1, 0);
-            this.iconEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.iconEmail.Name = "iconEmail";
-            this.iconEmail.Size = new System.Drawing.Size(48, 46);
-            this.iconEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.iconEmail.TabIndex = 8;
-            this.iconEmail.TabStop = false;
+            this.signupLink.AutoSize = true;
+            this.signupLink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.signupLink.Location = new System.Drawing.Point(204, 386);
+            this.signupLink.Name = "signupLink";
+            this.signupLink.Size = new System.Drawing.Size(63, 20);
+            this.signupLink.TabIndex = 11;
+            this.signupLink.Text = "Sign up";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(74, 88);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(334, 21);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Access your account and View your events";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.White;
+            this.buttonLogin.Location = new System.Drawing.Point(31, 293);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(407, 40);
+            this.buttonLogin.TabIndex = 8;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -203,7 +225,7 @@
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.ptpass);
             this.panel8.Controls.Add(this.txtpass);
-            this.panel8.Location = new System.Drawing.Point(31, 206);
+            this.panel8.Location = new System.Drawing.Point(31, 194);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(407, 44);
@@ -233,83 +255,93 @@
             this.txtpass.TabIndex = 11;
             this.txtpass.Text = " Password";
             // 
-            // buttonLogin
+            // EmailPanel
             // 
-            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(31, 305);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(407, 40);
-            this.buttonLogin.TabIndex = 8;
-            this.buttonLogin.Text = "Login";
-            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.EmailPanel.BackColor = System.Drawing.Color.White;
+            this.EmailPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmailPanel.Controls.Add(this.iconEmail);
+            this.EmailPanel.Controls.Add(this.textBoxEmail);
+            this.EmailPanel.Location = new System.Drawing.Point(31, 136);
+            this.EmailPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.EmailPanel.Name = "EmailPanel";
+            this.EmailPanel.Size = new System.Drawing.Size(407, 47);
+            this.EmailPanel.TabIndex = 8;
             // 
-            // label1
+            // iconEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8F);
-            this.label1.ForeColor = System.Drawing.Color.Indigo;
-            this.label1.Location = new System.Drawing.Point(122, 101);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 21);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Login and View your Events";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.iconEmail.BackColor = System.Drawing.Color.White;
+            this.iconEmail.Image = global::tech_titans.Properties.Resources.R;
+            this.iconEmail.Location = new System.Drawing.Point(-1, 0);
+            this.iconEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.iconEmail.Name = "iconEmail";
+            this.iconEmail.Size = new System.Drawing.Size(48, 46);
+            this.iconEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconEmail.TabIndex = 8;
+            this.iconEmail.TabStop = false;
             // 
-            // signupLink
+            // textBoxEmail
             // 
-            this.signupLink.AutoSize = true;
-            this.signupLink.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.signupLink.Location = new System.Drawing.Point(204, 398);
-            this.signupLink.Name = "signupLink";
-            this.signupLink.Size = new System.Drawing.Size(63, 20);
-            this.signupLink.TabIndex = 11;
-            this.signupLink.Text = "Sign up";
+            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Yi Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmail.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxEmail.Location = new System.Drawing.Point(59, 7);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(333, 29);
+            this.textBoxEmail.TabIndex = 2;
+            this.textBoxEmail.Text = " E-mail";
             // 
-            // label3
+            // label5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 356);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 20);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "___________";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(17)))), ((int)(((byte)(153)))));
+            this.label5.Location = new System.Drawing.Point(192, 48);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 31);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Login";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // button1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(330, 356);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 20);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "___________";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(779, 495);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(214, 40);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "logout";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Login
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(1010, 617);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
-            this.Name = "Login";
+            this.Name = "LoginForm";
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlanovaLogo)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.EmailPanel.ResumeLayout(false);
-            this.EmailPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconEmail)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptpass)).EndInit();
+            this.EmailPanel.ResumeLayout(false);
+            this.EmailPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconEmail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,5 +367,7 @@
         private System.Windows.Forms.Label signupLink;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }
