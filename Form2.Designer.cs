@@ -31,7 +31,7 @@
             this.forgotPW = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-       
+            this.panel3 = new System.Windows.Forms.Panel();
             this.PlanovaSubtitle = new System.Windows.Forms.Label();
             this.PlanovaName = new System.Windows.Forms.Label();
             this.PlanovaLogo = new System.Windows.Forms.PictureBox();
