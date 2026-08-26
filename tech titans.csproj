@@ -122,5 +122,17 @@
   <ItemGroup>
     <None Include="Resources\Untitled12_20260810202229.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christian-harb-IeHRsw6kAJE-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jared-pizarro-nUtCKZeC_s8-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danny-howe-bn-D2bCvpik-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christian-harb-IeHRsw6kAJE-unsplash1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

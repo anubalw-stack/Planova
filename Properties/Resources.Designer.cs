@@ -73,9 +73,49 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap christian_harb_IeHRsw6kAJE_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("christian-harb-IeHRsw6kAJE-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap christian_harb_IeHRsw6kAJE_unsplash1 {
+            get {
+                object obj = ResourceManager.GetObject("christian-harb-IeHRsw6kAJE-unsplash1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap danny_howe_bn_D2bCvpik_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("danny-howe-bn-D2bCvpik-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_1161017019_1024x1024 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1161017019-1024x1024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jared_pizarro_nUtCKZeC_s8_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("jared-pizarro-nUtCKZeC_s8-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
