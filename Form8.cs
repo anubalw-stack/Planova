@@ -15,42 +15,56 @@ namespace tech_titans
         public HomePage()
         {
             InitializeComponent();
+
+            labelWelcome.Text = "Welcome, " + Session.LoggedInEmail;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             RegisterForm register = new RegisterForm();
             register.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             LoginForm login = new LoginForm();
             login.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             EventDetails eventdetais = new EventDetails();
             eventdetais.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Form4 form4 = new Form4();
             form4.Show();
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Form5 form5 = new Form5();
             form5.Show();
+            this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
             form6.Show();
+            this.Hide();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Session.Logout();
+            labelWelcome.Text = " ";
         }
     }
 }

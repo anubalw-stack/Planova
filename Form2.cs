@@ -127,13 +127,6 @@ namespace tech_titans
             registerForm.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Session.Logout();
-
-            this.Close();
-        }
-
         private void textBoxEmail_Enter(object sender, EventArgs e)
         {
             if (textBoxEmail.Text == " E-mail")
