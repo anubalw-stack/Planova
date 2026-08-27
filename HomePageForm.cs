@@ -15,8 +15,11 @@ namespace tech_titans
         public HomePage()
         {
             InitializeComponent();
-
-            labelWelcome.Text = "Welcome, " + Session.LoggedInEmail;
+            if (Session.IsLoggedIn)
+            {
+                labelWelcome.Text = "Welcome, " + Session.LoggedInEmail;
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,21 +45,21 @@ namespace tech_titans
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            EventSearchForm form4 = new EventSearchForm();
             form4.Show();
             this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
+            CategoriesForm form5 = new CategoriesForm();
             form5.Show();
             this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
+            CartForm form6 = new CartForm();
             form6.Show();
             this.Hide();
         }

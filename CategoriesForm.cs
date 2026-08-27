@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tech_titans
 {
-    public partial class Form6 : Form
+    public partial class CategoriesForm : Form
     {
-        public Form6()
+        public CategoriesForm()
         {
             InitializeComponent();
         }

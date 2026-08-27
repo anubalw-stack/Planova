@@ -89,6 +89,7 @@ namespace tech_titans
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
 
+
                 // Open the home page
                 HomePage homeForm = new HomePage();
 
@@ -96,7 +97,7 @@ namespace tech_titans
                 this.Hide();
 
                 // Show home page
-                homeForm.ShowDialog();
+                homeForm.Show();
             }
             else
             {
@@ -156,6 +157,13 @@ namespace tech_titans
             {
                 textBoxPW.Text = " Password";
             }
+        }
+
+        private void PlanovaLogo_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Hide();
         }
     }
 }

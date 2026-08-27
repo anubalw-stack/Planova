@@ -63,9 +63,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _09876 {
+        internal static System.Drawing.Bitmap EmailLogo {
             get {
-                object obj = ResourceManager.GetObject("09876", resourceCulture);
+                object obj = ResourceManager.GetObject("EmailLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1234 {
+        internal static System.Drawing.Bitmap PasswordLogo {
             get {
-                object obj = ResourceManager.GetObject("1234", resourceCulture);
+                object obj = ResourceManager.GetObject("PasswordLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,179 +83,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _13220979 {
+        internal static System.Drawing.Bitmap PlanovaLogo {
             get {
-                object obj = ResourceManager.GetObject("13220979", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _53c2df674569ab7ef72bc6023307f264 {
-            get {
-                object obj = ResourceManager.GetObject("53c2df674569ab7ef72bc6023307f264", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ava13c3ac53812cde1b88 {
-            get {
-                object obj = ResourceManager.GetObject("ava13c3ac53812cde1b88", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fgtr4e3wasdftr543ed {
-            get {
-                object obj = ResourceManager.GetObject("fgtr4e3wasdftr543ed", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iidu {
-            get {
-                object obj = ResourceManager.GetObject("iidu", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iuy12td {
-            get {
-                object obj = ResourceManager.GetObject("iuy12td", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iuyoiuytretd {
-            get {
-                object obj = ResourceManager.GetObject("iuyoiuytretd", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iuytd {
-            get {
-                object obj = ResourceManager.GetObject("iuytd", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap jkiokj {
-            get {
-                object obj = ResourceManager.GetObject("jkiokj", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap jkisdfgokj {
-            get {
-                object obj = ResourceManager.GetObject("jkisdfgokj", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngtree_circle_password_icon_vectors_png_image_5053796 {
-            get {
-                object obj = ResourceManager.GetObject("pngtree-circle-password-icon-vectors-png-image_5053796", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngtree_circle_password_icon_vectors_png_image_50537961 {
-            get {
-                object obj = ResourceManager.GetObject("pngtree-circle-password-icon-vectors-png-image_50537961", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap R {
-            get {
-                object obj = ResourceManager.GetObject("R", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap R1 {
-            get {
-                object obj = ResourceManager.GetObject("R1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2026_08_10_at_8_18_48_PM {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2026-08-10 at 8.18.48 PM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2026_08_10_at_8_181 {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2026-08-10 at 8.181", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2026_08_10_at_8_23_21_PM {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2026-08-10 at 8.23.21 PM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2026_08_10_at_8_231 {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2026-08-10 at 8.231", resourceCulture);
+                object obj = ResourceManager.GetObject("PlanovaLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

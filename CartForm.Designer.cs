@@ -1,6 +1,6 @@
 ﻿namespace tech_titans
 {
-    partial class Form6
+    partial class CartForm
     {
         /// <summary>
         /// Required designer variable.

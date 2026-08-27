@@ -231,5 +231,12 @@ namespace tech_titans
                 txtpassconfirm.PasswordChar = '*';
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Hide();
+        }
     }
 }

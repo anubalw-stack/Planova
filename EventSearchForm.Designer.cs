@@ -1,6 +1,6 @@
 ﻿namespace tech_titans
 {
-    partial class Form4
+    partial class EventSearchForm
     {
         /// <summary>
         /// Required designer variable.
