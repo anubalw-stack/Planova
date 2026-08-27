@@ -155,6 +155,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\istockphoto-1161017019-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set-sj-v7Tujfxt9Zs-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bailey-mahon-6bLO79dm5WU-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled12_20260810202229.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christian-harb-IeHRsw6kAJE-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jared-pizarro-nUtCKZeC_s8-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danny-howe-bn-D2bCvpik-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christian-harb-IeHRsw6kAJE-unsplash1.jpg" />
     <None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpeg" />
   </ItemGroup>
   <ItemGroup>

@@ -19,6 +19,7 @@ namespace tech_titans.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -63,6 +64,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bailey_mahon_6bLO79dm5WU_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("bailey-mahon-6bLO79dm5WU-unsplash", resourceCulture);
         internal static System.Drawing.Bitmap _09876 {
             get {
                 object obj = ResourceManager.GetObject("09876", resourceCulture);
@@ -73,6 +77,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap christian_harb_IeHRsw6kAJE_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("christian-harb-IeHRsw6kAJE-unsplash", resourceCulture);
         internal static System.Drawing.Bitmap _1234 {
             get {
                 object obj = ResourceManager.GetObject("1234", resourceCulture);
@@ -83,6 +90,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap christian_harb_IeHRsw6kAJE_unsplash1 {
+            get {
+                object obj = ResourceManager.GetObject("christian-harb-IeHRsw6kAJE-unsplash1", resourceCulture);
         internal static System.Drawing.Bitmap _13220979 {
             get {
                 object obj = ResourceManager.GetObject("13220979", resourceCulture);
@@ -93,6 +103,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap danny_howe_bn_D2bCvpik_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("danny-howe-bn-D2bCvpik-unsplash", resourceCulture);
         internal static System.Drawing.Bitmap _53c2df674569ab7ef72bc6023307f264 {
             get {
                 object obj = ResourceManager.GetObject("53c2df674569ab7ef72bc6023307f264", resourceCulture);
@@ -103,6 +116,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1161017019_1024x1024 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1161017019-1024x1024", resourceCulture);
         internal static System.Drawing.Bitmap ava13c3ac53812cde1b88 {
             get {
                 object obj = ResourceManager.GetObject("ava13c3ac53812cde1b88", resourceCulture);
@@ -113,6 +129,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap jared_pizarro_nUtCKZeC_s8_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("jared-pizarro-nUtCKZeC_s8-unsplash", resourceCulture);
         internal static System.Drawing.Bitmap fgtr4e3wasdftr543ed {
             get {
                 object obj = ResourceManager.GetObject("fgtr4e3wasdftr543ed", resourceCulture);
@@ -123,6 +142,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap set_sj_v7Tujfxt9Zs_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("set-sj-v7Tujfxt9Zs-unsplash", resourceCulture);
         internal static System.Drawing.Bitmap iidu {
             get {
                 object obj = ResourceManager.GetObject("iidu", resourceCulture);
@@ -133,6 +155,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Untitled12_20260810202229 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled12_20260810202229", resourceCulture);
         internal static System.Drawing.Bitmap iuy12td {
             get {
                 object obj = ResourceManager.GetObject("iuy12td", resourceCulture);
