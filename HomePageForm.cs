@@ -69,5 +69,10 @@ namespace tech_titans
             Session.Logout();
             labelWelcome.Text = " ";
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
