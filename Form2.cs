@@ -9,17 +9,12 @@ namespace tech_titans
         public LoginForm()
         {
             InitializeComponent();
-
-            // Connect buttons/links to their events
-            buttonLogin.Click += buttonLogin_Click;
-            forgotPW.Click += forgotPW_Click;
-            signupLink.Click += signupLink_Click;
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             string email = textBoxEmail.Text.Trim();
-            string password = txtpass.Text.Trim();
+            string password = textBoxPW.Text.Trim();
 
             // Check that both fields have been filled in
             if (email == "" || email == "E-mail" ||
@@ -95,8 +90,7 @@ namespace tech_titans
                     MessageBoxIcon.Information);
 
                 // Open the home page
-                // Change Form****
-                RegisterForm homeForm = new RegisterForm();
+                HomePage homeForm = new HomePage();
 
                 // Hide login form while the user is logged in
                 this.Hide();
@@ -133,11 +127,35 @@ namespace tech_titans
             registerForm.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void textBoxEmail_Enter(object sender, EventArgs e)
         {
-            Session.Logout();
+            if (textBoxEmail.Text == " E-mail")
+            {
+                textBoxEmail.Text = "";
+            }
+        }
 
-            this.Close();
+        private void textBoxEmail_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBoxEmail.Text))
+            {
+                textBoxEmail.Text = " E-mail";
+            }
+        }
+        private void textBoxPW_Enter(object sender, EventArgs e)
+        {
+            if (textBoxPW.Text == " Password")
+            {
+                textBoxPW.Text = "";
+            }
+        }
+
+        private void textBoxPW_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBoxPW.Text))
+            {
+                textBoxPW.Text = " Password";
+            }
         }
     }
 }
