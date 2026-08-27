@@ -30,50 +30,60 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.lblDJNightName = new System.Windows.Forms.Label();
+            this.lblBattleBandsName = new System.Windows.Forms.Label();
+            this.lblStreetFestivalName = new System.Windows.Forms.Label();
+            this.btnDJNight = new System.Windows.Forms.Button();
+            this.btnBattleBands = new System.Windows.Forms.Button();
+            this.btnStreetFestival = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblDJNightDate = new System.Windows.Forms.Label();
+            this.lblDJNightLocation = new System.Windows.Forms.Label();
+            this.lblDJNightPrice = new System.Windows.Forms.Label();
+            this.lblBattleBandsDate = new System.Windows.Forms.Label();
+            this.lblBattleBandsLocation = new System.Windows.Forms.Label();
+            this.lblBattleBandsPrice = new System.Windows.Forms.Label();
+            this.lblStreetFestivalDate = new System.Windows.Forms.Label();
+            this.lblStreetFestivalLocation = new System.Windows.Forms.Label();
+            this.lblStreetFestivalPrice = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pnlEvents = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pnlEvents = new System.Windows.Forms.Panel();
+            this.picRhythmNights = new System.Windows.Forms.PictureBox();
+            this.picSummerBeats = new System.Windows.Forms.PictureBox();
+            this.picComedyNight = new System.Windows.Forms.PictureBox();
+            this.lblRhythmNightsName = new System.Windows.Forms.Label();
+            this.lblRhythmNightsDate = new System.Windows.Forms.Label();
+            this.lblRhythmNightsLocation = new System.Windows.Forms.Label();
+            this.btnRhythmNights = new System.Windows.Forms.Button();
+            this.lblRhythmNightsPrice = new System.Windows.Forms.Label();
+            this.picDJNight = new System.Windows.Forms.PictureBox();
+            this.picBattleBands = new System.Windows.Forms.PictureBox();
+            this.picStreetFestival = new System.Windows.Forms.PictureBox();
+            this.lblSummerBeatsName = new System.Windows.Forms.Label();
+            this.lblComedyNightName = new System.Windows.Forms.Label();
+            this.lblSummerBeatsDate = new System.Windows.Forms.Label();
+            this.lblComedyNightDate = new System.Windows.Forms.Label();
+            this.lblSummerBeatsLocation = new System.Windows.Forms.Label();
+            this.lblComedyNightLocation = new System.Windows.Forms.Label();
+            this.lblSummerBeatsPrice = new System.Windows.Forms.Label();
+            this.lblComedyNightPrice = new System.Windows.Forms.Label();
+            this.btnSummerBeats = new System.Windows.Forms.Button();
+            this.btnComedyNight = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
-            this.pnlEvents.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.pnlEvents.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRhythmNights)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSummerBeats)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picComedyNight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDJNight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBattleBands)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStreetFestival)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,73 +104,76 @@
             this.label2.Size = new System.Drawing.Size(1013, 10);
             this.label2.TabIndex = 1;
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(750, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtSearch.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtSearch.Location = new System.Drawing.Point(104, 94);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(785, 22);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.Text = "Search events...";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // label4
+            // lblDJNightName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(201, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 22);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "DJ Night";
+            this.lblDJNightName.AutoSize = true;
+            this.lblDJNightName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDJNightName.Location = new System.Drawing.Point(201, 97);
+            this.lblDJNightName.Name = "lblDJNightName";
+            this.lblDJNightName.Size = new System.Drawing.Size(87, 22);
+            this.lblDJNightName.TabIndex = 10;
+            this.lblDJNightName.Text = "DJ Night";
             // 
-            // label5
+            // lblBattleBandsName
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(204, 246);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 22);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Battle of the Bands";
+            this.lblBattleBandsName.AutoSize = true;
+            this.lblBattleBandsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBattleBandsName.Location = new System.Drawing.Point(204, 246);
+            this.lblBattleBandsName.Name = "lblBattleBandsName";
+            this.lblBattleBandsName.Size = new System.Drawing.Size(181, 22);
+            this.lblBattleBandsName.TabIndex = 11;
+            this.lblBattleBandsName.Text = "Battle of the Bands";
             // 
-            // label6
+            // lblStreetFestivalName
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(201, 409);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 22);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Street Musical Festival";
+            this.lblStreetFestivalName.AutoSize = true;
+            this.lblStreetFestivalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStreetFestivalName.Location = new System.Drawing.Point(201, 409);
+            this.lblStreetFestivalName.Name = "lblStreetFestivalName";
+            this.lblStreetFestivalName.Size = new System.Drawing.Size(213, 22);
+            this.lblStreetFestivalName.TabIndex = 12;
+            this.lblStreetFestivalName.Text = "Street Musical Festival";
             // 
-            // button4
+            // btnDJNight
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(735, 97);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 33);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "View Event";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnDJNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDJNight.Location = new System.Drawing.Point(735, 97);
+            this.btnDJNight.Name = "btnDJNight";
+            this.btnDJNight.Size = new System.Drawing.Size(96, 33);
+            this.btnDJNight.TabIndex = 13;
+            this.btnDJNight.Text = "View Event";
+            this.btnDJNight.UseVisualStyleBackColor = true;
+            this.btnDJNight.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnBattleBands
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(735, 235);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 33);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "View Event";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnBattleBands.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBattleBands.Location = new System.Drawing.Point(735, 235);
+            this.btnBattleBands.Name = "btnBattleBands";
+            this.btnBattleBands.Size = new System.Drawing.Size(96, 33);
+            this.btnBattleBands.TabIndex = 14;
+            this.btnBattleBands.Text = "View Event";
+            this.btnBattleBands.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnStreetFestival
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(735, 398);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(96, 33);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "View Event";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnStreetFestival.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStreetFestival.Location = new System.Drawing.Point(735, 398);
+            this.btnStreetFestival.Name = "btnStreetFestival";
+            this.btnStreetFestival.Size = new System.Drawing.Size(96, 33);
+            this.btnStreetFestival.TabIndex = 15;
+            this.btnStreetFestival.Text = "View Event";
+            this.btnStreetFestival.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -172,86 +185,87 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Find your event";
             // 
-            // label9
+            // lblDJNightDate
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(202, 135);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 16);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "18th Sept 2026";
+            this.lblDJNightDate.AutoSize = true;
+            this.lblDJNightDate.Location = new System.Drawing.Point(202, 135);
+            this.lblDJNightDate.Name = "lblDJNightDate";
+            this.lblDJNightDate.Size = new System.Drawing.Size(93, 16);
+            this.lblDJNightDate.TabIndex = 18;
+            this.lblDJNightDate.Text = "18th Sept 2026";
+            this.lblDJNightDate.Click += new System.EventHandler(this.label9_Click);
             // 
-            // label10
+            // lblDJNightLocation
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(202, 151);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 16);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Auckland";
+            this.lblDJNightLocation.AutoSize = true;
+            this.lblDJNightLocation.Location = new System.Drawing.Point(202, 151);
+            this.lblDJNightLocation.Name = "lblDJNightLocation";
+            this.lblDJNightLocation.Size = new System.Drawing.Size(63, 16);
+            this.lblDJNightLocation.TabIndex = 19;
+            this.lblDJNightLocation.Text = "Auckland";
             // 
-            // label11
+            // lblDJNightPrice
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(202, 167);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 16);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "45 NZD";
+            this.lblDJNightPrice.AutoSize = true;
+            this.lblDJNightPrice.Location = new System.Drawing.Point(202, 167);
+            this.lblDJNightPrice.Name = "lblDJNightPrice";
+            this.lblDJNightPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblDJNightPrice.TabIndex = 20;
+            this.lblDJNightPrice.Text = "45 NZD";
             // 
-            // label12
+            // lblBattleBandsDate
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(202, 278);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 16);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "12th Oct 2026";
+            this.lblBattleBandsDate.AutoSize = true;
+            this.lblBattleBandsDate.Location = new System.Drawing.Point(202, 278);
+            this.lblBattleBandsDate.Name = "lblBattleBandsDate";
+            this.lblBattleBandsDate.Size = new System.Drawing.Size(85, 16);
+            this.lblBattleBandsDate.TabIndex = 21;
+            this.lblBattleBandsDate.Text = "12th Oct 2026";
             // 
-            // label13
+            // lblBattleBandsLocation
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(202, 294);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(63, 16);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Auckland";
+            this.lblBattleBandsLocation.AutoSize = true;
+            this.lblBattleBandsLocation.Location = new System.Drawing.Point(202, 294);
+            this.lblBattleBandsLocation.Name = "lblBattleBandsLocation";
+            this.lblBattleBandsLocation.Size = new System.Drawing.Size(63, 16);
+            this.lblBattleBandsLocation.TabIndex = 22;
+            this.lblBattleBandsLocation.Text = "Auckland";
             // 
-            // label14
+            // lblBattleBandsPrice
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(205, 310);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 16);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "50 NZD";
+            this.lblBattleBandsPrice.AutoSize = true;
+            this.lblBattleBandsPrice.Location = new System.Drawing.Point(205, 310);
+            this.lblBattleBandsPrice.Name = "lblBattleBandsPrice";
+            this.lblBattleBandsPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblBattleBandsPrice.TabIndex = 23;
+            this.lblBattleBandsPrice.Text = "50 NZD";
             // 
-            // label15
+            // lblStreetFestivalDate
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(205, 441);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(90, 16);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "22nd Oct 2026";
+            this.lblStreetFestivalDate.AutoSize = true;
+            this.lblStreetFestivalDate.Location = new System.Drawing.Point(205, 441);
+            this.lblStreetFestivalDate.Name = "lblStreetFestivalDate";
+            this.lblStreetFestivalDate.Size = new System.Drawing.Size(90, 16);
+            this.lblStreetFestivalDate.TabIndex = 24;
+            this.lblStreetFestivalDate.Text = "22nd Oct 2026";
             // 
-            // label16
+            // lblStreetFestivalLocation
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(205, 457);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 16);
-            this.label16.TabIndex = 25;
-            this.label16.Text = "Auckland";
+            this.lblStreetFestivalLocation.AutoSize = true;
+            this.lblStreetFestivalLocation.Location = new System.Drawing.Point(205, 457);
+            this.lblStreetFestivalLocation.Name = "lblStreetFestivalLocation";
+            this.lblStreetFestivalLocation.Size = new System.Drawing.Size(63, 16);
+            this.lblStreetFestivalLocation.TabIndex = 25;
+            this.lblStreetFestivalLocation.Text = "Auckland";
             // 
-            // label17
+            // lblStreetFestivalPrice
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(205, 473);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(52, 16);
-            this.label17.TabIndex = 26;
-            this.label17.Text = "25 NZD";
+            this.lblStreetFestivalPrice.AutoSize = true;
+            this.lblStreetFestivalPrice.Location = new System.Drawing.Point(205, 473);
+            this.lblStreetFestivalPrice.Name = "lblStreetFestivalPrice";
+            this.lblStreetFestivalPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblStreetFestivalPrice.TabIndex = 26;
+            this.lblStreetFestivalPrice.Text = "25 NZD";
             // 
             // label21
             // 
@@ -308,129 +322,6 @@
             this.panel5.Size = new System.Drawing.Size(817, 8);
             this.panel5.TabIndex = 4;
             // 
-            // pnlEvents
-            // 
-            this.pnlEvents.AutoScroll = true;
-            this.pnlEvents.AutoScrollMinSize = new System.Drawing.Size(0, 900);
-            this.pnlEvents.Controls.Add(this.pictureBox7);
-            this.pnlEvents.Controls.Add(this.pictureBox5);
-            this.pnlEvents.Controls.Add(this.pictureBox4);
-            this.pnlEvents.Controls.Add(this.label3);
-            this.pnlEvents.Controls.Add(this.label7);
-            this.pnlEvents.Controls.Add(this.label18);
-            this.pnlEvents.Controls.Add(this.button1);
-            this.pnlEvents.Controls.Add(this.label19);
-            this.pnlEvents.Controls.Add(this.pictureBox1);
-            this.pnlEvents.Controls.Add(this.label4);
-            this.pnlEvents.Controls.Add(this.label9);
-            this.pnlEvents.Controls.Add(this.label17);
-            this.pnlEvents.Controls.Add(this.button6);
-            this.pnlEvents.Controls.Add(this.label10);
-            this.pnlEvents.Controls.Add(this.button5);
-            this.pnlEvents.Controls.Add(this.label16);
-            this.pnlEvents.Controls.Add(this.button4);
-            this.pnlEvents.Controls.Add(this.label11);
-            this.pnlEvents.Controls.Add(this.label15);
-            this.pnlEvents.Controls.Add(this.pictureBox2);
-            this.pnlEvents.Controls.Add(this.label14);
-            this.pnlEvents.Controls.Add(this.label5);
-            this.pnlEvents.Controls.Add(this.label13);
-            this.pnlEvents.Controls.Add(this.label12);
-            this.pnlEvents.Controls.Add(this.label6);
-            this.pnlEvents.Controls.Add(this.pictureBox3);
-            this.pnlEvents.Location = new System.Drawing.Point(16, 122);
-            this.pnlEvents.Name = "pnlEvents";
-            this.pnlEvents.Size = new System.Drawing.Size(982, 439);
-            this.pnlEvents.TabIndex = 33;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(204, 556);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 22);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "DJ Night";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(198, 601);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 16);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "18th Sept 2026";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(202, 617);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(63, 16);
-            this.label18.TabIndex = 31;
-            this.label18.Text = "Auckland";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(735, 563);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 33);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "View Event";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(205, 633);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(52, 16);
-            this.label19.TabIndex = 32;
-            this.label19.Text = "45 NZD";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::tech_titans.Properties.Resources.jared_pizarro_nUtCKZeC_s8_unsplash;
-            this.pictureBox4.Location = new System.Drawing.Point(15, 895);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(124, 86);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 27;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::tech_titans.Properties.Resources.istockphoto_1161017019_1024x1024;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 97);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::tech_titans.Properties.Resources.set_sj_v7Tujfxt9Zs_unsplash;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 246);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(124, 86);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::tech_titans.Properties.Resources.bailey_mahon_6bLO79dm5WU_unsplash;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 409);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(124, 86);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Lavender;
@@ -443,25 +334,253 @@
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBox5
+            // pnlEvents
             // 
-            this.pictureBox5.Image = global::tech_titans.Properties.Resources.danny_howe_bn_D2bCvpik_unsplash;
-            this.pictureBox5.Location = new System.Drawing.Point(15, 724);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(124, 86);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 33;
-            this.pictureBox5.TabStop = false;
+            this.pnlEvents.AutoScroll = true;
+            this.pnlEvents.AutoScrollMinSize = new System.Drawing.Size(0, 900);
+            this.pnlEvents.Controls.Add(this.btnComedyNight);
+            this.pnlEvents.Controls.Add(this.btnSummerBeats);
+            this.pnlEvents.Controls.Add(this.lblComedyNightPrice);
+            this.pnlEvents.Controls.Add(this.lblSummerBeatsPrice);
+            this.pnlEvents.Controls.Add(this.lblComedyNightLocation);
+            this.pnlEvents.Controls.Add(this.lblSummerBeatsLocation);
+            this.pnlEvents.Controls.Add(this.lblComedyNightDate);
+            this.pnlEvents.Controls.Add(this.lblSummerBeatsDate);
+            this.pnlEvents.Controls.Add(this.lblComedyNightName);
+            this.pnlEvents.Controls.Add(this.lblSummerBeatsName);
+            this.pnlEvents.Controls.Add(this.picRhythmNights);
+            this.pnlEvents.Controls.Add(this.picSummerBeats);
+            this.pnlEvents.Controls.Add(this.picComedyNight);
+            this.pnlEvents.Controls.Add(this.lblRhythmNightsName);
+            this.pnlEvents.Controls.Add(this.lblRhythmNightsDate);
+            this.pnlEvents.Controls.Add(this.lblRhythmNightsLocation);
+            this.pnlEvents.Controls.Add(this.btnRhythmNights);
+            this.pnlEvents.Controls.Add(this.lblRhythmNightsPrice);
+            this.pnlEvents.Controls.Add(this.picDJNight);
+            this.pnlEvents.Controls.Add(this.lblDJNightName);
+            this.pnlEvents.Controls.Add(this.lblDJNightDate);
+            this.pnlEvents.Controls.Add(this.lblStreetFestivalPrice);
+            this.pnlEvents.Controls.Add(this.btnStreetFestival);
+            this.pnlEvents.Controls.Add(this.lblDJNightLocation);
+            this.pnlEvents.Controls.Add(this.btnBattleBands);
+            this.pnlEvents.Controls.Add(this.lblStreetFestivalLocation);
+            this.pnlEvents.Controls.Add(this.btnDJNight);
+            this.pnlEvents.Controls.Add(this.lblDJNightPrice);
+            this.pnlEvents.Controls.Add(this.lblStreetFestivalDate);
+            this.pnlEvents.Controls.Add(this.picBattleBands);
+            this.pnlEvents.Controls.Add(this.lblBattleBandsPrice);
+            this.pnlEvents.Controls.Add(this.lblBattleBandsName);
+            this.pnlEvents.Controls.Add(this.lblBattleBandsLocation);
+            this.pnlEvents.Controls.Add(this.lblBattleBandsDate);
+            this.pnlEvents.Controls.Add(this.lblStreetFestivalName);
+            this.pnlEvents.Controls.Add(this.picStreetFestival);
+            this.pnlEvents.Location = new System.Drawing.Point(16, 122);
+            this.pnlEvents.Name = "pnlEvents";
+            this.pnlEvents.Size = new System.Drawing.Size(982, 439);
+            this.pnlEvents.TabIndex = 33;
             // 
-            // pictureBox7
+            // picRhythmNights
             // 
-            this.pictureBox7.Image = global::tech_titans.Properties.Resources.christian_harb_IeHRsw6kAJE_unsplash;
-            this.pictureBox7.Location = new System.Drawing.Point(15, 563);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(124, 86);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 34;
-            this.pictureBox7.TabStop = false;
+            this.picRhythmNights.Image = global::tech_titans.Properties.Resources.christian_harb_IeHRsw6kAJE_unsplash;
+            this.picRhythmNights.Location = new System.Drawing.Point(15, 563);
+            this.picRhythmNights.Name = "picRhythmNights";
+            this.picRhythmNights.Size = new System.Drawing.Size(124, 86);
+            this.picRhythmNights.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picRhythmNights.TabIndex = 34;
+            this.picRhythmNights.TabStop = false;
+            // 
+            // picSummerBeats
+            // 
+            this.picSummerBeats.Image = global::tech_titans.Properties.Resources.danny_howe_bn_D2bCvpik_unsplash;
+            this.picSummerBeats.Location = new System.Drawing.Point(15, 724);
+            this.picSummerBeats.Name = "picSummerBeats";
+            this.picSummerBeats.Size = new System.Drawing.Size(124, 86);
+            this.picSummerBeats.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSummerBeats.TabIndex = 33;
+            this.picSummerBeats.TabStop = false;
+            // 
+            // picComedyNight
+            // 
+            this.picComedyNight.Image = global::tech_titans.Properties.Resources.jared_pizarro_nUtCKZeC_s8_unsplash;
+            this.picComedyNight.Location = new System.Drawing.Point(15, 895);
+            this.picComedyNight.Name = "picComedyNight";
+            this.picComedyNight.Size = new System.Drawing.Size(124, 86);
+            this.picComedyNight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picComedyNight.TabIndex = 27;
+            this.picComedyNight.TabStop = false;
+            // 
+            // lblRhythmNightsName
+            // 
+            this.lblRhythmNightsName.AutoSize = true;
+            this.lblRhythmNightsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRhythmNightsName.Location = new System.Drawing.Point(204, 556);
+            this.lblRhythmNightsName.Name = "lblRhythmNightsName";
+            this.lblRhythmNightsName.Size = new System.Drawing.Size(140, 22);
+            this.lblRhythmNightsName.TabIndex = 28;
+            this.lblRhythmNightsName.Text = "Rhythm Nights";
+            this.lblRhythmNightsName.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lblRhythmNightsDate
+            // 
+            this.lblRhythmNightsDate.AutoSize = true;
+            this.lblRhythmNightsDate.Location = new System.Drawing.Point(205, 601);
+            this.lblRhythmNightsDate.Name = "lblRhythmNightsDate";
+            this.lblRhythmNightsDate.Size = new System.Drawing.Size(90, 16);
+            this.lblRhythmNightsDate.TabIndex = 30;
+            this.lblRhythmNightsDate.Text = "07th Nov 2026";
+            // 
+            // lblRhythmNightsLocation
+            // 
+            this.lblRhythmNightsLocation.AutoSize = true;
+            this.lblRhythmNightsLocation.Location = new System.Drawing.Point(202, 617);
+            this.lblRhythmNightsLocation.Name = "lblRhythmNightsLocation";
+            this.lblRhythmNightsLocation.Size = new System.Drawing.Size(63, 16);
+            this.lblRhythmNightsLocation.TabIndex = 31;
+            this.lblRhythmNightsLocation.Text = "Auckland";
+            // 
+            // btnRhythmNights
+            // 
+            this.btnRhythmNights.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRhythmNights.Location = new System.Drawing.Point(735, 563);
+            this.btnRhythmNights.Name = "btnRhythmNights";
+            this.btnRhythmNights.Size = new System.Drawing.Size(96, 33);
+            this.btnRhythmNights.TabIndex = 29;
+            this.btnRhythmNights.Text = "View Event";
+            this.btnRhythmNights.UseVisualStyleBackColor = true;
+            // 
+            // lblRhythmNightsPrice
+            // 
+            this.lblRhythmNightsPrice.AutoSize = true;
+            this.lblRhythmNightsPrice.Location = new System.Drawing.Point(205, 633);
+            this.lblRhythmNightsPrice.Name = "lblRhythmNightsPrice";
+            this.lblRhythmNightsPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblRhythmNightsPrice.TabIndex = 32;
+            this.lblRhythmNightsPrice.Text = "60 NZD";
+            // 
+            // picDJNight
+            // 
+            this.picDJNight.Image = global::tech_titans.Properties.Resources.istockphoto_1161017019_1024x1024;
+            this.picDJNight.Location = new System.Drawing.Point(12, 97);
+            this.picDJNight.Name = "picDJNight";
+            this.picDJNight.Size = new System.Drawing.Size(124, 86);
+            this.picDJNight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDJNight.TabIndex = 7;
+            this.picDJNight.TabStop = false;
+            // 
+            // picBattleBands
+            // 
+            this.picBattleBands.Image = global::tech_titans.Properties.Resources.set_sj_v7Tujfxt9Zs_unsplash;
+            this.picBattleBands.Location = new System.Drawing.Point(12, 246);
+            this.picBattleBands.Name = "picBattleBands";
+            this.picBattleBands.Size = new System.Drawing.Size(124, 86);
+            this.picBattleBands.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBattleBands.TabIndex = 8;
+            this.picBattleBands.TabStop = false;
+            // 
+            // picStreetFestival
+            // 
+            this.picStreetFestival.Image = global::tech_titans.Properties.Resources.bailey_mahon_6bLO79dm5WU_unsplash;
+            this.picStreetFestival.Location = new System.Drawing.Point(12, 409);
+            this.picStreetFestival.Name = "picStreetFestival";
+            this.picStreetFestival.Size = new System.Drawing.Size(124, 86);
+            this.picStreetFestival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picStreetFestival.TabIndex = 9;
+            this.picStreetFestival.TabStop = false;
+            // 
+            // lblSummerBeatsName
+            // 
+            this.lblSummerBeatsName.AutoSize = true;
+            this.lblSummerBeatsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSummerBeatsName.Location = new System.Drawing.Point(201, 724);
+            this.lblSummerBeatsName.Name = "lblSummerBeatsName";
+            this.lblSummerBeatsName.Size = new System.Drawing.Size(139, 22);
+            this.lblSummerBeatsName.TabIndex = 35;
+            this.lblSummerBeatsName.Text = "Summer Beats";
+            this.lblSummerBeatsName.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // lblComedyNightName
+            // 
+            this.lblComedyNightName.AutoSize = true;
+            this.lblComedyNightName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComedyNightName.Location = new System.Drawing.Point(201, 895);
+            this.lblComedyNightName.Name = "lblComedyNightName";
+            this.lblComedyNightName.Size = new System.Drawing.Size(178, 22);
+            this.lblComedyNightName.TabIndex = 36;
+            this.lblComedyNightName.Text = "Comedy Night Live";
+            // 
+            // lblSummerBeatsDate
+            // 
+            this.lblSummerBeatsDate.AutoSize = true;
+            this.lblSummerBeatsDate.Location = new System.Drawing.Point(205, 756);
+            this.lblSummerBeatsDate.Name = "lblSummerBeatsDate";
+            this.lblSummerBeatsDate.Size = new System.Drawing.Size(90, 16);
+            this.lblSummerBeatsDate.TabIndex = 37;
+            this.lblSummerBeatsDate.Text = "28th Nov 2026";
+            // 
+            // lblComedyNightDate
+            // 
+            this.lblComedyNightDate.AutoSize = true;
+            this.lblComedyNightDate.Location = new System.Drawing.Point(205, 928);
+            this.lblComedyNightDate.Name = "lblComedyNightDate";
+            this.lblComedyNightDate.Size = new System.Drawing.Size(90, 16);
+            this.lblComedyNightDate.TabIndex = 38;
+            this.lblComedyNightDate.Text = "12th Dec 2026";
+            // 
+            // lblSummerBeatsLocation
+            // 
+            this.lblSummerBeatsLocation.AutoSize = true;
+            this.lblSummerBeatsLocation.Location = new System.Drawing.Point(205, 772);
+            this.lblSummerBeatsLocation.Name = "lblSummerBeatsLocation";
+            this.lblSummerBeatsLocation.Size = new System.Drawing.Size(63, 16);
+            this.lblSummerBeatsLocation.TabIndex = 39;
+            this.lblSummerBeatsLocation.Text = "Auckland";
+            // 
+            // lblComedyNightLocation
+            // 
+            this.lblComedyNightLocation.AutoSize = true;
+            this.lblComedyNightLocation.Location = new System.Drawing.Point(205, 944);
+            this.lblComedyNightLocation.Name = "lblComedyNightLocation";
+            this.lblComedyNightLocation.Size = new System.Drawing.Size(63, 16);
+            this.lblComedyNightLocation.TabIndex = 40;
+            this.lblComedyNightLocation.Text = "Auckland";
+            // 
+            // lblSummerBeatsPrice
+            // 
+            this.lblSummerBeatsPrice.AutoSize = true;
+            this.lblSummerBeatsPrice.Location = new System.Drawing.Point(205, 788);
+            this.lblSummerBeatsPrice.Name = "lblSummerBeatsPrice";
+            this.lblSummerBeatsPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblSummerBeatsPrice.TabIndex = 41;
+            this.lblSummerBeatsPrice.Text = "60 NZD";
+            // 
+            // lblComedyNightPrice
+            // 
+            this.lblComedyNightPrice.AutoSize = true;
+            this.lblComedyNightPrice.Location = new System.Drawing.Point(205, 960);
+            this.lblComedyNightPrice.Name = "lblComedyNightPrice";
+            this.lblComedyNightPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblComedyNightPrice.TabIndex = 42;
+            this.lblComedyNightPrice.Text = "60 NZD";
+            // 
+            // btnSummerBeats
+            // 
+            this.btnSummerBeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSummerBeats.Location = new System.Drawing.Point(735, 724);
+            this.btnSummerBeats.Name = "btnSummerBeats";
+            this.btnSummerBeats.Size = new System.Drawing.Size(96, 33);
+            this.btnSummerBeats.TabIndex = 43;
+            this.btnSummerBeats.Text = "View Event";
+            this.btnSummerBeats.UseVisualStyleBackColor = true;
+            // 
+            // btnComedyNight
+            // 
+            this.btnComedyNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComedyNight.Location = new System.Drawing.Point(735, 895);
+            this.btnComedyNight.Name = "btnComedyNight";
+            this.btnComedyNight.Size = new System.Drawing.Size(96, 33);
+            this.btnComedyNight.TabIndex = 44;
+            this.btnComedyNight.Text = "View Event";
+            this.btnComedyNight.UseVisualStyleBackColor = true;
             // 
             // Form4
             // 
@@ -472,22 +591,22 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form4";
             this.Text = "Form4";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnlEvents.ResumeLayout(false);
             this.pnlEvents.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRhythmNights)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSummerBeats)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picComedyNight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDJNight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBattleBands)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStreetFestival)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -497,26 +616,26 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.PictureBox picDJNight;
+        private System.Windows.Forms.PictureBox picBattleBands;
+        private System.Windows.Forms.PictureBox picStreetFestival;
+        private System.Windows.Forms.Label lblDJNightName;
+        private System.Windows.Forms.Label lblBattleBandsName;
+        private System.Windows.Forms.Label lblStreetFestivalName;
+        private System.Windows.Forms.Button btnDJNight;
+        private System.Windows.Forms.Button btnBattleBands;
+        private System.Windows.Forms.Button btnStreetFestival;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblDJNightDate;
+        private System.Windows.Forms.Label lblDJNightLocation;
+        private System.Windows.Forms.Label lblDJNightPrice;
+        private System.Windows.Forms.Label lblBattleBandsDate;
+        private System.Windows.Forms.Label lblBattleBandsLocation;
+        private System.Windows.Forms.Label lblBattleBandsPrice;
+        private System.Windows.Forms.Label lblStreetFestivalDate;
+        private System.Windows.Forms.Label lblStreetFestivalLocation;
+        private System.Windows.Forms.Label lblStreetFestivalPrice;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -524,13 +643,23 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel pnlEvents;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox picComedyNight;
+        private System.Windows.Forms.Label lblRhythmNightsName;
+        private System.Windows.Forms.Label lblRhythmNightsDate;
+        private System.Windows.Forms.Label lblRhythmNightsLocation;
+        private System.Windows.Forms.Button btnRhythmNights;
+        private System.Windows.Forms.Label lblRhythmNightsPrice;
+        private System.Windows.Forms.PictureBox picRhythmNights;
+        private System.Windows.Forms.PictureBox picSummerBeats;
+        private System.Windows.Forms.Label lblSummerBeatsPrice;
+        private System.Windows.Forms.Label lblComedyNightLocation;
+        private System.Windows.Forms.Label lblSummerBeatsLocation;
+        private System.Windows.Forms.Label lblComedyNightDate;
+        private System.Windows.Forms.Label lblSummerBeatsDate;
+        private System.Windows.Forms.Label lblComedyNightName;
+        private System.Windows.Forms.Label lblSummerBeatsName;
+        private System.Windows.Forms.Label lblComedyNightPrice;
+        private System.Windows.Forms.Button btnComedyNight;
+        private System.Windows.Forms.Button btnSummerBeats;
     }
 }
