@@ -45,7 +45,7 @@ namespace tech_titans
 
         private void button4_Click(object sender, EventArgs e)
         {
-            EventSearchForm form4 = new EventSearchForm();
+            Form4 form4 = new Form4();
             form4.Show();
             this.Hide();
         }
