@@ -190,13 +190,11 @@ namespace tech_titans
 
         private void btneye_Click_1(object sender, EventArgs e)
         {
-            // Do nothing if placeholder is showing
             if (txtpass.Text == " Password")
             {
                 return;
             }
 
-            // Show / hide password
             if (txtpass.PasswordChar == '*')
             {
                 txtpass.PasswordChar = '\0';
@@ -209,13 +207,11 @@ namespace tech_titans
 
         private void btneye2_Click(object sender, EventArgs e)
         {
-            // Do nothing if placeholder is showing
             if (txtpassconfirm.Text == " Confirm Password")
             {
                 return;
             }
 
-            // Show / hide password
             if (txtpassconfirm.PasswordChar == '*')
             {
                 txtpassconfirm.PasswordChar = '\0';
@@ -228,8 +224,8 @@ namespace tech_titans
 
         private void lblogin_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
+            Login loginForm = new Login();
+            loginForm.Show();
             this.Hide();
         }
     }
