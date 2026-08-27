@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tech_titans
 {
-    public partial class Form5 : Form
+    public partial class CartForm : Form
     {
-        public Form5()
+        public CartForm()
         {
             InitializeComponent();
         }

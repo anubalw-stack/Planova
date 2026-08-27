@@ -52,7 +52,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.PWPanel = new System.Windows.Forms.Panel();
-            this.ptpass = new System.Windows.Forms.PictureBox();
+            this.iconPW = new System.Windows.Forms.PictureBox();
             this.textBoxPW = new System.Windows.Forms.TextBox();
             this.EmailPanel = new System.Windows.Forms.Panel();
             this.iconEmail = new System.Windows.Forms.PictureBox();
@@ -62,7 +62,7 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.PWPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptpass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPW)).BeginInit();
             this.EmailPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconEmail)).BeginInit();
             this.SuspendLayout();
@@ -139,7 +139,7 @@
             // 
             this.PlanovaLogo.BackColor = System.Drawing.Color.Lavender;
             this.PlanovaLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PlanovaLogo.Image = global::tech_titans.Properties.Resources.fgtr4e3wasdftr543ed;
+            this.PlanovaLogo.Image = global::tech_titans.Properties.Resources.PlanovaLogo;
             this.PlanovaLogo.Location = new System.Drawing.Point(6, 6);
             this.PlanovaLogo.Margin = new System.Windows.Forms.Padding(1);
             this.PlanovaLogo.Name = "PlanovaLogo";
@@ -147,6 +147,7 @@
             this.PlanovaLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PlanovaLogo.TabIndex = 1;
             this.PlanovaLogo.TabStop = false;
+            this.PlanovaLogo.Click += new System.EventHandler(this.PlanovaLogo_Click);
             // 
             // panel2
             // 
@@ -342,7 +343,7 @@
             this.signupLink.AutoSize = true;
             this.signupLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupLink.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.signupLink.Location = new System.Drawing.Point(206, 362);
+            this.signupLink.Location = new System.Drawing.Point(212, 362);
             this.signupLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.signupLink.Name = "signupLink";
             this.signupLink.Size = new System.Drawing.Size(70, 20);
@@ -382,7 +383,7 @@
             // 
             this.PWPanel.BackColor = System.Drawing.Color.White;
             this.PWPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PWPanel.Controls.Add(this.ptpass);
+            this.PWPanel.Controls.Add(this.iconPW);
             this.PWPanel.Controls.Add(this.textBoxPW);
             this.PWPanel.Location = new System.Drawing.Point(46, 173);
             this.PWPanel.Margin = new System.Windows.Forms.Padding(1);
@@ -390,17 +391,17 @@
             this.PWPanel.Size = new System.Drawing.Size(397, 44);
             this.PWPanel.TabIndex = 9;
             // 
-            // ptpass
+            // iconPW
             // 
-            this.ptpass.BackColor = System.Drawing.Color.White;
-            this.ptpass.Image = global::tech_titans.Properties.Resources._09876;
-            this.ptpass.Location = new System.Drawing.Point(-1, -1);
-            this.ptpass.Margin = new System.Windows.Forms.Padding(1);
-            this.ptpass.Name = "ptpass";
-            this.ptpass.Size = new System.Drawing.Size(46, 44);
-            this.ptpass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptpass.TabIndex = 6;
-            this.ptpass.TabStop = false;
+            this.iconPW.BackColor = System.Drawing.Color.White;
+            this.iconPW.Image = global::tech_titans.Properties.Resources.PasswordLogo;
+            this.iconPW.Location = new System.Drawing.Point(-1, -1);
+            this.iconPW.Margin = new System.Windows.Forms.Padding(1);
+            this.iconPW.Name = "iconPW";
+            this.iconPW.Size = new System.Drawing.Size(46, 44);
+            this.iconPW.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconPW.TabIndex = 6;
+            this.iconPW.TabStop = false;
             // 
             // textBoxPW
             // 
@@ -431,7 +432,7 @@
             // iconEmail
             // 
             this.iconEmail.BackColor = System.Drawing.Color.White;
-            this.iconEmail.Image = global::tech_titans.Properties.Resources.R;
+            this.iconEmail.Image = global::tech_titans.Properties.Resources.EmailLogo;
             this.iconEmail.Location = new System.Drawing.Point(-1, -1);
             this.iconEmail.Margin = new System.Windows.Forms.Padding(1);
             this.iconEmail.Name = "iconEmail";
@@ -476,7 +477,7 @@
             this.panel4.PerformLayout();
             this.PWPanel.ResumeLayout(false);
             this.PWPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptpass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPW)).EndInit();
             this.EmailPanel.ResumeLayout(false);
             this.EmailPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconEmail)).EndInit();
@@ -498,7 +499,7 @@
         private System.Windows.Forms.Panel EmailPanel;
         private System.Windows.Forms.PictureBox iconEmail;
         private System.Windows.Forms.Panel PWPanel;
-        private System.Windows.Forms.PictureBox ptpass;
+        private System.Windows.Forms.PictureBox iconPW;
         private System.Windows.Forms.TextBox textBoxPW;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Label label1;

@@ -128,7 +128,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Lavender;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::tech_titans.Properties.Resources.fgtr4e3wasdftr543ed;
+            this.pictureBox1.Image = global::tech_titans.Properties.Resources.PlanovaLogo;
             this.pictureBox1.Location = new System.Drawing.Point(9, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
@@ -136,6 +136,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
