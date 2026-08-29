@@ -10,6 +10,7 @@ namespace tech_titans
         {
             InitializeComponent();
 
+            iconButton2.Click += iconButton2_Click;
             registerToolStripMenuItem.Click += registerToolStripMenuItem_Click;
             loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
         }
@@ -45,5 +46,7 @@ namespace tech_titans
             loginForm.Show();
             this.Hide();
         }
+
+      
     }
 }
