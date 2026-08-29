@@ -104,6 +104,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
+    <None Include="Resources\104101b7b38b229c023e1cf35ee89eec2.jpg" />
+    <None Include="Resources\104101b7b38b229c023e1cf35ee89eec1.jpg" />
+    <None Include="Resources\104101b7b38b229c023e1cf35ee89eec.jpg" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\Final home2.png" />
+    <None Include="Resources\Final home1.png" />
+    <None Include="Resources\Final home.png" />
+    <None Include="Resources\hoem image.png" />
+    <None Include="Resources\ChatGPT Image Aug 29, 2026, 02_21_27 PM.png" />
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,7 +133,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
-</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
