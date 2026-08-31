@@ -38,6 +38,7 @@
             this.eventsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bookingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -74,7 +75,6 @@
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.label9 = new System.Windows.Forms.Label();
             this.labelWelcome = new System.Windows.Forms.Label();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -161,6 +161,12 @@
             this.bookingsToolStripMenuItem1.Name = "bookingsToolStripMenuItem1";
             this.bookingsToolStripMenuItem1.Size = new System.Drawing.Size(158, 32);
             this.bookingsToolStripMenuItem1.Text = "Bookings";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.logoutToolStripMenuItem.Text = "Logout";
             // 
             // iconButton1
             // 
@@ -549,12 +555,6 @@
             this.labelWelcome.Size = new System.Drawing.Size(0, 24);
             this.labelWelcome.TabIndex = 30;
             this.labelWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
-            this.logoutToolStripMenuItem.Text = "Logout";
             // 
             // HomePage
             // 
