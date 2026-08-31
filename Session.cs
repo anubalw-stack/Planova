@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace tech_titans
 {
-    internal class Session
+    public static class Session
     {
-        // Stores the email of the currently logged-in user
-        public static string LoggedInEmail { get; set; }
+        // The UserAccount object for the currently logged-in user (set by UserAccount.Login()).
+        public static UserAccount CurrentUser { get; set; }
 
-        // Checks whether a user is currently logged in
+        // Checks whether a user is currently logged in.
         public static bool IsLoggedIn
         {
             get
             {
-                return !string.IsNullOrEmpty(LoggedInEmail);
+                return CurrentUser != null;
             }
         }
 
-        // Logs the current user out
+        // Logs the current user out.
         public static void Logout()
         {
-            LoggedInEmail = null;
+            CurrentUser = null;
         }
     }
 }
