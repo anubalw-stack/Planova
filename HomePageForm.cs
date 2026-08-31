@@ -40,13 +40,13 @@ namespace tech_titans
             this.Hide();
         }
 
-        private void buttonLogout_Click(object sender, EventArgs e)
+     
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
+            Form4 form4 = new Form4();
+            form4.Show();
             this.Hide();
         }
-
-      
     }
 }
