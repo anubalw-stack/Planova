@@ -1,6 +1,6 @@
 ﻿namespace tech_titans
 {
-    partial class Form7
+    partial class BookingPayment
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookingPayment));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,13 +40,35 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblCartEvent = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.lblCartQuantity = new System.Windows.Forms.Label();
+            this.lblCartPrice = new System.Windows.Forms.Label();
+            this.lblCartTotal = new System.Windows.Forms.Label();
             this.btnPay = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnAddToCart = new System.Windows.Forms.Button();
+            this.lblLocation = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.btnMinus = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
+            this.lblQuantity = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.lblEventName = new System.Windows.Forms.Label();
+            this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.iconButton11 = new FontAwesome.Sharp.IconButton();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
@@ -54,34 +77,15 @@
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label23 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -117,6 +121,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox1.Controls.Add(this.txtCVV);
             this.groupBox1.Controls.Add(this.txtExpiry);
@@ -188,13 +193,14 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Controls.Add(this.lblCartEvent);
+            this.groupBox2.Controls.Add(this.btnCancel);
             this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.lblCartQuantity);
+            this.groupBox2.Controls.Add(this.lblCartPrice);
+            this.groupBox2.Controls.Add(this.lblCartTotal);
             this.groupBox2.Controls.Add(this.btnPay);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label16);
@@ -207,38 +213,70 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Order Summary";
             // 
-            // label20
+            // lblCartEvent
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(210, 99);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(23, 25);
-            this.label20.TabIndex = 27;
-            this.label20.Text = "0";
+            this.lblCartEvent.AutoSize = true;
+            this.lblCartEvent.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartEvent.ForeColor = System.Drawing.Color.Black;
+            this.lblCartEvent.Location = new System.Drawing.Point(6, 99);
+            this.lblCartEvent.Name = "lblCartEvent";
+            this.lblCartEvent.Size = new System.Drawing.Size(187, 25);
+            this.lblCartEvent.TabIndex = 42;
+            this.lblCartEvent.Text = "EVENT NAMES";
             // 
-            // label19
+            // btnCancel
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(324, 99);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 25);
-            this.label19.TabIndex = 26;
-            this.label19.Text = "$0.00";
+            this.btnCancel.Location = new System.Drawing.Point(565, 67);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(51, 36);
+            this.btnCancel.TabIndex = 41;
+            this.btnCancel.Text = "C";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.button6_Click);
             // 
-            // label18
+            // label22
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(447, 99);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 25);
-            this.label18.TabIndex = 25;
-            this.label18.Text = "$0.00";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(446, 42);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(66, 25);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "Total";
+            // 
+            // lblCartQuantity
+            // 
+            this.lblCartQuantity.AutoSize = true;
+            this.lblCartQuantity.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartQuantity.ForeColor = System.Drawing.Color.Black;
+            this.lblCartQuantity.Location = new System.Drawing.Point(210, 99);
+            this.lblCartQuantity.Name = "lblCartQuantity";
+            this.lblCartQuantity.Size = new System.Drawing.Size(23, 25);
+            this.lblCartQuantity.TabIndex = 27;
+            this.lblCartQuantity.Text = "0";
+            // 
+            // lblCartPrice
+            // 
+            this.lblCartPrice.AutoSize = true;
+            this.lblCartPrice.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartPrice.ForeColor = System.Drawing.Color.Black;
+            this.lblCartPrice.Location = new System.Drawing.Point(324, 99);
+            this.lblCartPrice.Name = "lblCartPrice";
+            this.lblCartPrice.Size = new System.Drawing.Size(65, 25);
+            this.lblCartPrice.TabIndex = 26;
+            this.lblCartPrice.Text = "$0.00";
+            // 
+            // lblCartTotal
+            // 
+            this.lblCartTotal.AutoSize = true;
+            this.lblCartTotal.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartTotal.ForeColor = System.Drawing.Color.Black;
+            this.lblCartTotal.Location = new System.Drawing.Point(447, 99);
+            this.lblCartTotal.Name = "lblCartTotal";
+            this.lblCartTotal.Size = new System.Drawing.Size(65, 25);
+            this.lblCartTotal.TabIndex = 25;
+            this.lblCartTotal.Text = "$0.00";
             // 
             // btnPay
             // 
@@ -263,6 +301,17 @@
             this.label15.TabIndex = 20;
             this.label15.Text = "Price";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(180, 42);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(101, 25);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "Quantity";
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -277,6 +326,8 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Indigo;
             this.panel3.Controls.Add(this.iconButton11);
             this.panel3.Controls.Add(this.iconButton8);
@@ -291,6 +342,204 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1409, 41);
             this.panel3.TabIndex = 27;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Indigo;
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(1, -3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1409, 76);
+            this.panel1.TabIndex = 26;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel9.Location = new System.Drawing.Point(97, 68);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(817, 8);
+            this.panel9.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(61, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Event Booking System";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label5.Location = new System.Drawing.Point(61, 10);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(115, 25);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "PLANOVA";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(430, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 34);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Next =>";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(34, 28);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(118, 30);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "<=Previous";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // btnAddToCart
+            // 
+            this.btnAddToCart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddToCart.Location = new System.Drawing.Point(168, 464);
+            this.btnAddToCart.Name = "btnAddToCart";
+            this.btnAddToCart.Size = new System.Drawing.Size(227, 54);
+            this.btnAddToCart.TabIndex = 31;
+            this.btnAddToCart.Text = "ADD TO CART";
+            this.btnAddToCart.UseVisualStyleBackColor = true;
+            this.btnAddToCart.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // lblLocation
+            // 
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocation.Location = new System.Drawing.Point(27, 331);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(108, 22);
+            this.lblLocation.TabIndex = 33;
+            this.lblLocation.Text = "Location??";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(27, 362);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(141, 22);
+            this.lblDate.TabIndex = 34;
+            this.lblDate.Text = "date and times";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(214, 410);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(140, 22);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "TOTAL PRICE";
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Location = new System.Drawing.Point(359, 360);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(161, 22);
+            this.lblPrice.TabIndex = 36;
+            this.lblPrice.Text = "total price number";
+            // 
+            // btnMinus
+            // 
+            this.btnMinus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinus.Location = new System.Drawing.Point(31, 441);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(38, 37);
+            this.btnMinus.TabIndex = 37;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            // 
+            // btnPlus
+            // 
+            this.btnPlus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPlus.Location = new System.Drawing.Point(128, 441);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(38, 36);
+            this.btnPlus.TabIndex = 38;
+            this.btnPlus.Text = "+";
+            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
+            // 
+            // lblQuantity
+            // 
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.Location = new System.Drawing.Point(84, 443);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(26, 29);
+            this.lblQuantity.TabIndex = 39;
+            this.lblQuantity.Text = "0";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(60, 410);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(80, 22);
+            this.label21.TabIndex = 40;
+            this.label21.Text = "Quantity";
+            // 
+            // lblEventName
+            // 
+            this.lblEventName.AutoSize = true;
+            this.lblEventName.BackColor = System.Drawing.Color.GhostWhite;
+            this.lblEventName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventName.Location = new System.Drawing.Point(226, 252);
+            this.lblEventName.Name = "lblEventName";
+            this.lblEventName.Size = new System.Drawing.Size(95, 25);
+            this.lblEventName.TabIndex = 44;
+            this.lblEventName.Text = "DJ Night";
+            this.lblEventName.Click += new System.EventHandler(this.lblDJNightName_Click);
+            // 
+            // lblTotalPrice
+            // 
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Location = new System.Drawing.Point(242, 441);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(161, 22);
+            this.lblTotalPrice.TabIndex = 53;
+            this.lblTotalPrice.Text = "total price number";
+            this.lblTotalPrice.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(45, 74);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(482, 235);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
             // 
             // iconButton11
             // 
@@ -412,52 +661,6 @@
             this.iconButton3.TabIndex = 8;
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Indigo;
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(1, -3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1409, 76);
-            this.panel1.TabIndex = 26;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel9.Location = new System.Drawing.Point(97, 68);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(817, 8);
-            this.panel9.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(61, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Event Booking System";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(61, 10);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 25);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "PLANOVA";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Lavender;
@@ -471,183 +674,37 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // groupBox3
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(169, 146);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(482, 235);
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
+            this.groupBox3.BackColor = System.Drawing.Color.Purple;
+            this.groupBox3.Controls.Add(this.lblTotalPrice);
+            this.groupBox3.Controls.Add(this.btnAddToCart);
+            this.groupBox3.Controls.Add(this.btnMinus);
+            this.groupBox3.Controls.Add(this.btnPlus);
+            this.groupBox3.Controls.Add(this.lblEventName);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.lblQuantity);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.lblPrice);
+            this.groupBox3.Controls.Add(this.pictureBox2);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.lblDate);
+            this.groupBox3.Controls.Add(this.lblLocation);
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(67, 118);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(579, 549);
+            this.groupBox3.TabIndex = 54;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = " PLEASE PICK YOUR EVENTS";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(528, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 26);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Next =>";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(169, 118);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 26);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "<=Previous";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(285, 629);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(240, 54);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "ADD TO CART";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(327, 384);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 16);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "EVENT NAMES";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(370, 409);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 16);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "LOcation";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(336, 436);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 16);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "date and times";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(335, 503);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 22);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "TOTAL PRICE";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(362, 544);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 16);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "total price number";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(180, 42);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(101, 25);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "Quantity";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(79, 572);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(51, 36);
-            this.button4.TabIndex = 37;
-            this.button4.Text = "-";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(183, 572);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(51, 36);
-            this.button5.TabIndex = 38;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(148, 582);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(14, 16);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "0";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(87, 553);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(55, 16);
-            this.label21.TabIndex = 40;
-            this.label21.Text = "Quantity";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(446, 42);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(66, 25);
-            this.label22.TabIndex = 28;
-            this.label22.Text = "Total";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(565, 67);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(51, 36);
-            this.button6.TabIndex = 41;
-            this.button6.Text = "DEL";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(6, 99);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(187, 25);
-            this.label23.TabIndex = 42;
-            this.label23.Text = "EVENT NAMES";
-            // 
-            // Form7
+            // BookingPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1339, 771);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(1339, 773);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
@@ -655,8 +712,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Name = "Form7";
-            this.Text = "Form7";
+            this.Name = "BookingPayment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Booking Payment";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -664,8 +723,10 @@
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -685,9 +746,9 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblCartQuantity;
+        private System.Windows.Forms.Label lblCartPrice;
+        private System.Windows.Forms.Label lblCartTotal;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton iconButton11;
@@ -706,19 +767,21 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnAddToCart;
+        private System.Windows.Forms.Label lblLocation;
+        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnMinus;
+        private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lblCartEvent;
+        private System.Windows.Forms.Label lblEventName;
+        private System.Windows.Forms.Label lblTotalPrice;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
