@@ -30,7 +30,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.buttonLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -74,6 +73,8 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.label9 = new System.Windows.Forms.Label();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,21 +88,6 @@
             this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buttonLogout
-            // 
-            this.buttonLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogout.ForeColor = System.Drawing.Color.White;
-            this.buttonLogout.Location = new System.Drawing.Point(868, 37);
-            this.buttonLogout.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonLogout.Name = "buttonLogout";
-            this.buttonLogout.Size = new System.Drawing.Size(10, 10);
-            this.buttonLogout.TabIndex = 16;
-            this.buttonLogout.Text = "Logout";
-            this.buttonLogout.UseVisualStyleBackColor = false;
-            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Indigo;
@@ -109,7 +95,6 @@
             this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.buttonLogout);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -142,9 +127,10 @@
             this.loginToolStripMenuItem1,
             this.eventsToolStripMenuItem1,
             this.cartToolStripMenuItem1,
-            this.bookingsToolStripMenuItem1});
+            this.bookingsToolStripMenuItem1,
+            this.logoutToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(159, 164);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(159, 196);
             // 
             // registerToolStripMenuItem1
             // 
@@ -396,7 +382,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 325;
-            this.iconPictureBox1.Location = new System.Drawing.Point(494, 110);
+            this.iconPictureBox1.Location = new System.Drawing.Point(494, 129);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(504, 325);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -553,11 +539,29 @@
             this.label9.Size = new System.Drawing.Size(0, 24);
             this.label9.TabIndex = 27;
             // 
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.ForeColor = System.Drawing.Color.DimGray;
+            this.labelWelcome.Location = new System.Drawing.Point(992, 92);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(0, 24);
+            this.labelWelcome.TabIndex = 30;
+            this.labelWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1010, 618);
+            this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -599,8 +603,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
@@ -644,5 +646,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }
