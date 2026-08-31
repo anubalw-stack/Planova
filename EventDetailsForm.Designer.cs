@@ -36,12 +36,12 @@
             this.pictureBoxEvent = new System.Windows.Forms.PictureBox();
             this.eventName = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonBookNow = new System.Windows.Forms.Button();
-            this.aboutEvent = new System.Windows.Forms.Label();
-            this.lblAboutEvent = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblAboutEvent = new System.Windows.Forms.Label();
+            this.buttonBookNow = new System.Windows.Forms.Button();
+            this.aboutEvent = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlanovaLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEvent)).BeginInit();
@@ -140,6 +140,24 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(495, 139);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(3, 0);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(48, 20);
+            this.lblDate.TabIndex = 14;
+            this.lblDate.Text = " Date";
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Location = new System.Drawing.Point(57, 0);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(43, 20);
+            this.lblTime.TabIndex = 15;
+            this.lblTime.Text = "Time";
+            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -148,6 +166,15 @@
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(958, 170);
             this.flowLayoutPanel2.TabIndex = 10;
+            // 
+            // lblAboutEvent
+            // 
+            this.lblAboutEvent.AutoSize = true;
+            this.lblAboutEvent.Location = new System.Drawing.Point(3, 0);
+            this.lblAboutEvent.Name = "lblAboutEvent";
+            this.lblAboutEvent.Size = new System.Drawing.Size(93, 20);
+            this.lblAboutEvent.TabIndex = 13;
+            this.lblAboutEvent.Text = " Description";
             // 
             // buttonBookNow
             // 
@@ -175,33 +202,6 @@
             this.aboutEvent.TabIndex = 12;
             this.aboutEvent.Text = "About the Event";
             this.aboutEvent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblAboutEvent
-            // 
-            this.lblAboutEvent.AutoSize = true;
-            this.lblAboutEvent.Location = new System.Drawing.Point(3, 0);
-            this.lblAboutEvent.Name = "lblAboutEvent";
-            this.lblAboutEvent.Size = new System.Drawing.Size(93, 20);
-            this.lblAboutEvent.TabIndex = 13;
-            this.lblAboutEvent.Text = " Description";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(3, 0);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(48, 20);
-            this.lblDate.TabIndex = 14;
-            this.lblDate.Text = " Date";
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(57, 0);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(43, 20);
-            this.lblTime.TabIndex = 15;
-            this.lblTime.Text = "Time";
             // 
             // EventDetails
             // 
