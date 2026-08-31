@@ -96,8 +96,8 @@ namespace tech_titans
 
         private void loginToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
+            Form4 form4 = new Form4();
+            form4.Show();
             this.Hide();
         }
 

@@ -238,5 +238,23 @@ namespace tech_titans
             homepage.Show();
             this.Hide();
         }
+
+        private void iconButton14_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(
+               iconButton14,
+               new Point(
+                   iconButton14.Width - contextMenuStrip1.Width,
+                   iconButton14.Height
+               )
+           );
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Hide();
+        }
     }
 }
