@@ -32,6 +32,13 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.registerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cartToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +78,8 @@
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.labelWelcome = new System.Windows.Forms.Label();
+            this.contextMenuStrip2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -110,6 +119,33 @@
             this.iconButton2.TabIndex = 6;
             this.iconButton2.UseVisualStyleBackColor = true;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            this.iconButton2.ContextMenuStrip = this.contextMenuStrip2;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.Color.Indigo;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Navicon;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 30;
+            this.iconButton2.Location = new System.Drawing.Point(934, 27);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(24, 30);
+            this.iconButton2.TabIndex = 6;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registerToolStripMenuItem1,
+            this.loginToolStripMenuItem1,
+            this.eventsToolStripMenuItem1,
+            this.cartToolStripMenuItem1,
+            this.bookingsToolStripMenuItem1,
+            this.logoutToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(159, 196);
             // 
             // contextMenuStrip1
             // 
@@ -160,6 +196,26 @@
             this.iconButton1.TabIndex = 5;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.Indigo;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.Location = new System.Drawing.Point(974, 27);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(24, 30);
+            this.iconButton1.TabIndex = 5;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -195,6 +251,55 @@
             this.label5.Text = "PLANOVA";
             // 
             // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Lavender;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::tech_titans.Properties.Resources.PlanovaLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registerToolStripMenuItem,
+            this.loginToolStripMenuItem,
+            this.eventsToolStripMenuItem,
+            this.cartToolStripMenuItem,
+            this.bookingsToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 164);
+            // 
+            // registerToolStripMenuItem
+            // 
+            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.registerToolStripMenuItem.Text = "Register";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.loginToolStripMenuItem.Text = "Login";
+            // 
+            // eventsToolStripMenuItem
+            // 
+            this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
+            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.eventsToolStripMenuItem.Text = "Events";
+            // 
+            // cartToolStripMenuItem
+            // 
+            this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.cartToolStripMenuItem.Text = "Cart";
+            // 
+            // bookingsToolStripMenuItem
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Lavender;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -324,7 +429,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 325;
-            this.iconPictureBox1.Location = new System.Drawing.Point(494, 110);
+            this.iconPictureBox1.Location = new System.Drawing.Point(494, 129);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(504, 325);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -510,6 +615,16 @@
             this.iconButton6.Size = new System.Drawing.Size(46, 30);
             this.iconButton6.TabIndex = 17;
             this.iconButton6.UseVisualStyleBackColor = false;
+            // labelWelcome
+            // 
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.ForeColor = System.Drawing.Color.DimGray;
+            this.labelWelcome.Location = new System.Drawing.Point(992, 92);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(0, 24);
+            this.labelWelcome.TabIndex = 30;
+            this.labelWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // HomePage
             // 
@@ -518,6 +633,7 @@
             this.ClientSize = new System.Drawing.Size(1010, 618);
             this.Controls.Add(this.iconButton6);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -540,6 +656,8 @@
             this.Text = "Home Page";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.contextMenuStrip2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -596,5 +714,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button1;
         private FontAwesome.Sharp.IconButton iconButton6;
+        private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }

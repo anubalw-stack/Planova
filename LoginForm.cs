@@ -47,48 +47,17 @@ namespace tech_titans
                 return;
             }
 
-            bool loginSuccessful = false;
+            // Look up the matching row and build a UserAccount object (e.g. u1) from it
+            UserAccount account = UserAccount.FindByEmail(email, filePath);
 
-            // Read each line of the CSV file
-            string[] lines = File.ReadAllLines(filePath);
-
-            foreach (string line in lines)
+            // account.Login() compares the password and, on success, sets Session.CurrentUser
+            if (account != null && account.Login(password))
             {
-                // Skip the header row
-                if (line.StartsWith("Email,"))
-                {
-                    continue;
-                }
-
-                string[] data = line.Split(',');
-
-                // Make sure the row contains email and password
-                if (data.Length >= 2)
-                {
-                    string csvEmail = data[0].Trim();
-                    string csvPassword = data[1].Trim();
-
-                    // Compare entered credentials with CSV credentials
-                    if (email.Equals(csvEmail, StringComparison.OrdinalIgnoreCase)
-                        && password == csvPassword)
-                    {
-                        loginSuccessful = true;
-                        break;
-                    }
-                }
-            }
-
-            if (loginSuccessful)
-            {
-                // Store the logged-in user's email
-                Session.LoggedInEmail = email;
-
                 MessageBox.Show(
                     "Login successful!",
                     "Welcome",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-
 
                 // Open the home page
                 HomePage homeForm = new HomePage();
@@ -111,11 +80,9 @@ namespace tech_titans
 
         private void forgotPW_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-                "Password recovery is not available yet.",
-                "Forgot Password",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            // Pre-fill the email field if the user already typed one in
+            ForgotPasswordForm forgotPasswordForm = new ForgotPasswordForm(textBoxEmail.Text.Trim());
+            forgotPasswordForm.ShowDialog();
         }
 
         private void signupLink_Click(object sender, EventArgs e)
