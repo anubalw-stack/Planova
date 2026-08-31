@@ -1,5 +1,5 @@
-eventID,eventName,eventDescription,eventTime,eventDate,eventLocation,eventImg,,
-cdy001,Stand-up Comedy,Open-mic comedy event.,1:00pm - 4:00pm,"Nov. 11, 2026",Location Park,cdy001.jpg,,
-msc001,Concert,Musician tour.,2:00pm - 4:00pm,"Nov. 11, 2027",Location Stadium,msc001.jpg,,
-cdy002,Comedian,Comedian funny funny.,3:00pm - 4:00pm,"Nov. 11, 2028",Location Park,cdy002.jpg,,
-edu001,Workshop,Invited workshop for students.,4:00pm - 5:00pm,"Nov. 11, 2029",Location Stadium,edu001.jpg,,
+eventID,eventName,eventDescription,eventTime,eventDate,eventLocation,eventImg
+cdy001,"""Stand-up Comedy""","""Open-mic comedy event.""",1:00pm - 4:00pm,"""Nov. 11, 2026""","""Location Park""",cdy001.jpg
+msc001,"""Concert""","""Musician tour.""",2:00pm - 4:00pm,"""Nov. 12, 2027""","""Location Stadium""",msc001.jpg
+cdy002,"""Comedian""","""Comedian funny funny.""",3:00pm - 4:00pm,"""Nov. 13, 2028""","""Location Park""",cdy002.jpg
+edu001,"""Workshop""","""Invited workshop for students.""",4:00pm - 5:00pm,"""Nov. 14, 2029""","""Location Stadium""",edu001.jpg

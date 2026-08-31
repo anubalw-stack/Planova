@@ -109,5 +109,19 @@ namespace tech_titans
             loginForm.Show();
             this.Hide();
         }
+
+        private void eventDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EventDetailsForm form = new EventDetailsForm();
+            form.Show();
+            this.Hide();
+        }
+
+        private void eventDetailsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            EventDetailsForm form = new EventDetailsForm();
+            form.Show();
+            this.Hide();
+        }
     }
 }

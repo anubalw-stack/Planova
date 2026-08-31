@@ -39,6 +39,7 @@
             this.cartToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bookingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@
             this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventDetailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lblwelcome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -128,45 +130,53 @@
             this.eventsToolStripMenuItem1,
             this.cartToolStripMenuItem1,
             this.bookingsToolStripMenuItem1,
-            this.logoutToolStripMenuItem});
+            this.logoutToolStripMenuItem,
+            this.eventDetailsToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(159, 196);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(181, 228);
             // 
             // registerToolStripMenuItem1
             // 
             this.registerToolStripMenuItem1.Name = "registerToolStripMenuItem1";
-            this.registerToolStripMenuItem1.Size = new System.Drawing.Size(158, 32);
+            this.registerToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
             this.registerToolStripMenuItem1.Text = "Register";
             // 
             // loginToolStripMenuItem1
             // 
             this.loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
-            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(158, 32);
+            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
             this.loginToolStripMenuItem1.Text = "Login";
             // 
             // eventsToolStripMenuItem1
             // 
             this.eventsToolStripMenuItem1.Name = "eventsToolStripMenuItem1";
-            this.eventsToolStripMenuItem1.Size = new System.Drawing.Size(158, 32);
+            this.eventsToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
             this.eventsToolStripMenuItem1.Text = "Events";
             // 
             // cartToolStripMenuItem1
             // 
             this.cartToolStripMenuItem1.Name = "cartToolStripMenuItem1";
-            this.cartToolStripMenuItem1.Size = new System.Drawing.Size(158, 32);
+            this.cartToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
             this.cartToolStripMenuItem1.Text = "Cart";
             // 
             // bookingsToolStripMenuItem1
             // 
             this.bookingsToolStripMenuItem1.Name = "bookingsToolStripMenuItem1";
-            this.bookingsToolStripMenuItem1.Size = new System.Drawing.Size(158, 32);
+            this.bookingsToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
             this.bookingsToolStripMenuItem1.Text = "Bookings";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
             this.logoutToolStripMenuItem.Text = "Logout";
+            // 
+            // eventDetailsToolStripMenuItem
+            // 
+            this.eventDetailsToolStripMenuItem.Name = "eventDetailsToolStripMenuItem";
+            this.eventDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
+            this.eventDetailsToolStripMenuItem.Text = "eventDetails";
+            this.eventDetailsToolStripMenuItem.Click += new System.EventHandler(this.eventDetailsToolStripMenuItem_Click);
             // 
             // iconButton1
             // 
@@ -237,39 +247,47 @@
             this.loginToolStripMenuItem,
             this.eventsToolStripMenuItem,
             this.cartToolStripMenuItem,
-            this.bookingsToolStripMenuItem});
+            this.bookingsToolStripMenuItem,
+            this.eventDetailsToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 164);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 196);
             // 
             // registerToolStripMenuItem
             // 
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
             this.registerToolStripMenuItem.Text = "Register";
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
             this.loginToolStripMenuItem.Text = "Login";
             // 
             // eventsToolStripMenuItem
             // 
             this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
-            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
             this.eventsToolStripMenuItem.Text = "Events";
             // 
             // cartToolStripMenuItem
             // 
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
-            this.cartToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
             this.cartToolStripMenuItem.Text = "Cart";
             // 
             // bookingsToolStripMenuItem
             // 
             this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
-            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
             this.bookingsToolStripMenuItem.Text = "Bookings";
+            // 
+            // eventDetailsToolStripMenuItem1
+            // 
+            this.eventDetailsToolStripMenuItem1.Name = "eventDetailsToolStripMenuItem1";
+            this.eventDetailsToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
+            this.eventDetailsToolStripMenuItem1.Text = "eventDetails";
+            this.eventDetailsToolStripMenuItem1.Click += new System.EventHandler(this.eventDetailsToolStripMenuItem1_Click);
             // 
             // lblwelcome
             // 
@@ -648,5 +666,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventDetailsToolStripMenuItem1;
     }
 }
