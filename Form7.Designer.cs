@@ -478,7 +478,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(482, 235);
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // button1
             // 
@@ -506,7 +505,6 @@
             this.button3.TabIndex = 31;
             this.button3.Text = "ADD TO CART";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // label6
             // 
@@ -564,7 +562,6 @@
             this.label16.Size = new System.Drawing.Size(101, 25);
             this.label16.TabIndex = 19;
             this.label16.Text = "Quantity";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // button4
             // 

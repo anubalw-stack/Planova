@@ -98,12 +98,7 @@ namespace tech_titans
         private void btnPay_Click(object sender, EventArgs e)
         {
          
-            // Check whether a payment method is selected
-            if (!chkCardPayment.Checked)
-            {
-                MessageBox.Show("Please select a payment method.");
-                return;
-            }
+         
 
             // Check card number
             if (string.IsNullOrWhiteSpace(txtCardNumber.Text))
@@ -136,21 +131,6 @@ namespace tech_titans
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
             );
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
     }
