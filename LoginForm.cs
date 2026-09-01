@@ -9,17 +9,12 @@ namespace tech_titans
         public LoginForm()
         {
             InitializeComponent();
-
-            // Connect buttons/links to their events
-            buttonLogin.Click += buttonLogin_Click;
-            forgotPW.Click += forgotPW_Click;
-            signupLink.Click += signupLink_Click;
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             string email = textBoxEmail.Text.Trim();
-            string password = txtpass.Text.Trim();
+            string password = textBoxPW.Text.Trim();
 
             // Check that both fields have been filled in
             if (email == "" || email == "E-mail" ||
@@ -52,42 +47,12 @@ namespace tech_titans
                 return;
             }
 
-            bool loginSuccessful = false;
+            // Look up the matching row and build a UserAccount object (e.g. u1) from it
+            UserAccount account = UserAccount.FindByEmail(email, filePath);
 
-            // Read each line of the CSV file
-            string[] lines = File.ReadAllLines(filePath);
-
-            foreach (string line in lines)
+            // account.Login() compares the password and, on success, sets Session.CurrentUser
+            if (account != null && account.Login(password))
             {
-                // Skip the header row
-                if (line.StartsWith("Email,"))
-                {
-                    continue;
-                }
-
-                string[] data = line.Split(',');
-
-                // Make sure the row contains email and password
-                if (data.Length >= 2)
-                {
-                    string csvEmail = data[0].Trim();
-                    string csvPassword = data[1].Trim();
-
-                    // Compare entered credentials with CSV credentials
-                    if (email.Equals(csvEmail, StringComparison.OrdinalIgnoreCase)
-                        && password == csvPassword)
-                    {
-                        loginSuccessful = true;
-                        break;
-                    }
-                }
-            }
-
-            if (loginSuccessful)
-            {
-                // Store the logged-in user's email
-                Session.LoggedInEmail = email;
-
                 MessageBox.Show(
                     "Login successful!",
                     "Welcome",
@@ -95,14 +60,13 @@ namespace tech_titans
                     MessageBoxIcon.Information);
 
                 // Open the home page
-                // Change Form****
-                RegisterForm homeForm = new RegisterForm();
+                HomePage homeForm = new HomePage();
 
                 // Hide login form while the user is logged in
                 this.Hide();
 
                 // Show home page
-                homeForm.ShowDialog();
+                homeForm.Show();
             }
             else
             {
@@ -116,11 +80,9 @@ namespace tech_titans
 
         private void forgotPW_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-                "Password recovery is not available yet.",
-                "Forgot Password",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            // Pre-fill the email field if the user already typed one in
+            ForgotPasswordForm forgotPasswordForm = new ForgotPasswordForm(textBoxEmail.Text.Trim());
+            forgotPasswordForm.ShowDialog();
         }
 
         private void signupLink_Click(object sender, EventArgs e)
@@ -133,11 +95,42 @@ namespace tech_titans
             registerForm.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void textBoxEmail_Enter(object sender, EventArgs e)
         {
-            Session.Logout();
+            if (textBoxEmail.Text == " E-mail")
+            {
+                textBoxEmail.Text = "";
+            }
+        }
 
-            this.Close();
+        private void textBoxEmail_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBoxEmail.Text))
+            {
+                textBoxEmail.Text = " E-mail";
+            }
+        }
+        private void textBoxPW_Enter(object sender, EventArgs e)
+        {
+            if (textBoxPW.Text == " Password")
+            {
+                textBoxPW.Text = "";
+            }
+        }
+
+        private void textBoxPW_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBoxPW.Text))
+            {
+                textBoxPW.Text = " Password";
+            }
+        }
+
+        private void PlanovaLogo_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Hide();
         }
     }
 }

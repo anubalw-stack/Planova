@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace tech_titans
@@ -159,7 +160,9 @@ namespace tech_titans
             // Password length
             if (txtpass.Text.Length < 6)
             {
-                MessageBox.Show("Password must be at least 6 characters long.");
+                MessageBox.Show(
+                    "Password must be at least 6 characters long."
+                );
                 return;
             }
 
@@ -178,6 +181,49 @@ namespace tech_titans
                 return;
             }
 
+            // users.csv path
+            string path = Path.GetFullPath(
+                Path.Combine(
+                    Application.StartupPath,
+                    @"..\..\users.csv"
+                )
+            );
+
+            // Check if same email already exists
+            if (File.Exists(path))
+            {
+                string[] users = File.ReadAllLines(path);
+
+                foreach (string user in users)
+                {
+                    string[] details = user.Split(',');
+
+                    if (details.Length > 0 &&
+                        details[0].Trim().ToLower() ==
+                        txtemail.Text.Trim().ToLower())
+                    {
+                        MessageBox.Show(
+                            "This email is already registered"
+                        );
+                        return;
+                    }
+                }
+            }
+
+            // CSV order:
+            // email,name,birthDate,password
+            string data =
+                txtemail.Text.Trim() + "," +
+                txtname.Text.Trim() + "," +
+                dtpDOB.Value.ToString("d/M/yyyy") + "," +
+                txtpass.Text;
+
+            // Save user
+            File.AppendAllText(
+                path,
+                data + Environment.NewLine
+            );
+
             // Registration successful
             MessageBox.Show(
                 "Registration successful!\n\nWelcome, " +
@@ -186,17 +232,20 @@ namespace tech_titans
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
             );
+
+            // Open Login page
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
 
         private void btneye_Click_1(object sender, EventArgs e)
         {
-            // Do nothing if placeholder is showing
             if (txtpass.Text == " Password")
             {
                 return;
             }
 
-            // Show / hide password
             if (txtpass.PasswordChar == '*')
             {
                 txtpass.PasswordChar = '\0';
@@ -207,21 +256,13 @@ namespace tech_titans
             }
         }
 
-        private void lblogin_Click(object sender, EventArgs e)
-        {
-            LoginForm loginform = new LoginForm();
-            this.Hide();
-            loginform.ShowDialog();
-        }
         private void btneye2_Click(object sender, EventArgs e)
         {
-            // Do nothing if placeholder is showing
             if (txtpassconfirm.Text == " Confirm Password")
             {
                 return;
             }
 
-            // Show / hide password
             if (txtpassconfirm.PasswordChar == '*')
             {
                 txtpassconfirm.PasswordChar = '\0';
@@ -230,6 +271,38 @@ namespace tech_titans
             {
                 txtpassconfirm.PasswordChar = '*';
             }
+        }
+
+        private void lblogin_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void iconButton14_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(
+                iconButton14,
+                new Point(
+                    iconButton14.Width - contextMenuStrip1.Width,
+                    iconButton14.Height
+                )
+            );
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Hide();
         }
     }
 }
