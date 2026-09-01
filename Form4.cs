@@ -15,6 +15,9 @@ namespace tech_titans
         public Form4()
         {
             InitializeComponent();
+
+            txtSearch.Text = "Search events...";
+            txtSearch.ForeColor = Color.Gray;
         }
 
         private void label18_Click(object sender, EventArgs e)
@@ -39,6 +42,10 @@ namespace tech_titans
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
+
+            if (txtSearch.Text == "Search events...")
+                return;
+
             string search = txtSearch.Text.Trim();
 
             // Check which event names match the search
@@ -192,6 +199,24 @@ namespace tech_titans
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSearch_Enter(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "Search events...")
+            {
+                txtSearch.Text = "";
+                txtSearch.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtSearch_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                txtSearch.Text = "Search events...";
+                txtSearch.ForeColor = Color.Gray;
+            }
         }
     }
 }
