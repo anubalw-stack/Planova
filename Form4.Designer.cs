@@ -54,6 +54,16 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnlEvents = new System.Windows.Forms.Panel();
+            this.btnComedyNight = new System.Windows.Forms.Button();
+            this.btnSummerBeats = new System.Windows.Forms.Button();
+            this.lblComedyNightPrice = new System.Windows.Forms.Label();
+            this.lblSummerBeatsPrice = new System.Windows.Forms.Label();
+            this.lblComedyNightLocation = new System.Windows.Forms.Label();
+            this.lblSummerBeatsLocation = new System.Windows.Forms.Label();
+            this.lblComedyNightDate = new System.Windows.Forms.Label();
+            this.lblSummerBeatsDate = new System.Windows.Forms.Label();
+            this.lblComedyNightName = new System.Windows.Forms.Label();
+            this.lblSummerBeatsName = new System.Windows.Forms.Label();
             this.picRhythmNights = new System.Windows.Forms.PictureBox();
             this.picSummerBeats = new System.Windows.Forms.PictureBox();
             this.picComedyNight = new System.Windows.Forms.PictureBox();
@@ -65,16 +75,6 @@
             this.picDJNight = new System.Windows.Forms.PictureBox();
             this.picBattleBands = new System.Windows.Forms.PictureBox();
             this.picStreetFestival = new System.Windows.Forms.PictureBox();
-            this.lblSummerBeatsName = new System.Windows.Forms.Label();
-            this.lblComedyNightName = new System.Windows.Forms.Label();
-            this.lblSummerBeatsDate = new System.Windows.Forms.Label();
-            this.lblComedyNightDate = new System.Windows.Forms.Label();
-            this.lblSummerBeatsLocation = new System.Windows.Forms.Label();
-            this.lblComedyNightLocation = new System.Windows.Forms.Label();
-            this.lblSummerBeatsPrice = new System.Windows.Forms.Label();
-            this.lblComedyNightPrice = new System.Windows.Forms.Label();
-            this.btnSummerBeats = new System.Windows.Forms.Button();
-            this.btnComedyNight = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnlEvents.SuspendLayout();
@@ -107,7 +107,7 @@
             // txtSearch
             // 
             this.txtSearch.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtSearch.Location = new System.Drawing.Point(104, 94);
+            this.txtSearch.Location = new System.Drawing.Point(103, 127);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(785, 22);
             this.txtSearch.TabIndex = 2;
@@ -179,7 +179,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label8.Location = new System.Drawing.Point(362, 64);
+            this.label8.Location = new System.Drawing.Point(386, 97);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 16);
             this.label8.TabIndex = 17;
@@ -307,7 +307,7 @@
             this.panel4.Controls.Add(this.label21);
             this.panel4.Controls.Add(this.label22);
             this.panel4.Controls.Add(this.pictureBox6);
-            this.panel4.Location = new System.Drawing.Point(7, 2);
+            this.panel4.Location = new System.Drawing.Point(-3, 1);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1011, 76);
@@ -326,6 +326,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Lavender;
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox6.Image = global::tech_titans.Properties.Resources.PlanovaLogo;
             this.pictureBox6.Location = new System.Drawing.Point(9, 10);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
@@ -374,10 +375,105 @@
             this.pnlEvents.Controls.Add(this.lblBattleBandsDate);
             this.pnlEvents.Controls.Add(this.lblStreetFestivalName);
             this.pnlEvents.Controls.Add(this.picStreetFestival);
-            this.pnlEvents.Location = new System.Drawing.Point(16, 122);
+            this.pnlEvents.Location = new System.Drawing.Point(16, 187);
             this.pnlEvents.Name = "pnlEvents";
-            this.pnlEvents.Size = new System.Drawing.Size(982, 439);
+            this.pnlEvents.Size = new System.Drawing.Size(982, 374);
             this.pnlEvents.TabIndex = 33;
+            // 
+            // btnComedyNight
+            // 
+            this.btnComedyNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComedyNight.Location = new System.Drawing.Point(735, 895);
+            this.btnComedyNight.Name = "btnComedyNight";
+            this.btnComedyNight.Size = new System.Drawing.Size(96, 33);
+            this.btnComedyNight.TabIndex = 44;
+            this.btnComedyNight.Text = "View Event";
+            this.btnComedyNight.UseVisualStyleBackColor = true;
+            // 
+            // btnSummerBeats
+            // 
+            this.btnSummerBeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSummerBeats.Location = new System.Drawing.Point(735, 724);
+            this.btnSummerBeats.Name = "btnSummerBeats";
+            this.btnSummerBeats.Size = new System.Drawing.Size(96, 33);
+            this.btnSummerBeats.TabIndex = 43;
+            this.btnSummerBeats.Text = "View Event";
+            this.btnSummerBeats.UseVisualStyleBackColor = true;
+            // 
+            // lblComedyNightPrice
+            // 
+            this.lblComedyNightPrice.AutoSize = true;
+            this.lblComedyNightPrice.Location = new System.Drawing.Point(205, 960);
+            this.lblComedyNightPrice.Name = "lblComedyNightPrice";
+            this.lblComedyNightPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblComedyNightPrice.TabIndex = 42;
+            this.lblComedyNightPrice.Text = "60 NZD";
+            // 
+            // lblSummerBeatsPrice
+            // 
+            this.lblSummerBeatsPrice.AutoSize = true;
+            this.lblSummerBeatsPrice.Location = new System.Drawing.Point(205, 788);
+            this.lblSummerBeatsPrice.Name = "lblSummerBeatsPrice";
+            this.lblSummerBeatsPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblSummerBeatsPrice.TabIndex = 41;
+            this.lblSummerBeatsPrice.Text = "60 NZD";
+            // 
+            // lblComedyNightLocation
+            // 
+            this.lblComedyNightLocation.AutoSize = true;
+            this.lblComedyNightLocation.Location = new System.Drawing.Point(205, 944);
+            this.lblComedyNightLocation.Name = "lblComedyNightLocation";
+            this.lblComedyNightLocation.Size = new System.Drawing.Size(63, 16);
+            this.lblComedyNightLocation.TabIndex = 40;
+            this.lblComedyNightLocation.Text = "Auckland";
+            // 
+            // lblSummerBeatsLocation
+            // 
+            this.lblSummerBeatsLocation.AutoSize = true;
+            this.lblSummerBeatsLocation.Location = new System.Drawing.Point(205, 772);
+            this.lblSummerBeatsLocation.Name = "lblSummerBeatsLocation";
+            this.lblSummerBeatsLocation.Size = new System.Drawing.Size(63, 16);
+            this.lblSummerBeatsLocation.TabIndex = 39;
+            this.lblSummerBeatsLocation.Text = "Auckland";
+            // 
+            // lblComedyNightDate
+            // 
+            this.lblComedyNightDate.AutoSize = true;
+            this.lblComedyNightDate.Location = new System.Drawing.Point(205, 928);
+            this.lblComedyNightDate.Name = "lblComedyNightDate";
+            this.lblComedyNightDate.Size = new System.Drawing.Size(90, 16);
+            this.lblComedyNightDate.TabIndex = 38;
+            this.lblComedyNightDate.Text = "12th Dec 2026";
+            // 
+            // lblSummerBeatsDate
+            // 
+            this.lblSummerBeatsDate.AutoSize = true;
+            this.lblSummerBeatsDate.Location = new System.Drawing.Point(205, 756);
+            this.lblSummerBeatsDate.Name = "lblSummerBeatsDate";
+            this.lblSummerBeatsDate.Size = new System.Drawing.Size(90, 16);
+            this.lblSummerBeatsDate.TabIndex = 37;
+            this.lblSummerBeatsDate.Text = "28th Nov 2026";
+            // 
+            // lblComedyNightName
+            // 
+            this.lblComedyNightName.AutoSize = true;
+            this.lblComedyNightName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComedyNightName.Location = new System.Drawing.Point(201, 895);
+            this.lblComedyNightName.Name = "lblComedyNightName";
+            this.lblComedyNightName.Size = new System.Drawing.Size(178, 22);
+            this.lblComedyNightName.TabIndex = 36;
+            this.lblComedyNightName.Text = "Comedy Night Live";
+            // 
+            // lblSummerBeatsName
+            // 
+            this.lblSummerBeatsName.AutoSize = true;
+            this.lblSummerBeatsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSummerBeatsName.Location = new System.Drawing.Point(201, 724);
+            this.lblSummerBeatsName.Name = "lblSummerBeatsName";
+            this.lblSummerBeatsName.Size = new System.Drawing.Size(139, 22);
+            this.lblSummerBeatsName.TabIndex = 35;
+            this.lblSummerBeatsName.Text = "Summer Beats";
+            this.lblSummerBeatsName.Click += new System.EventHandler(this.label20_Click);
             // 
             // picRhythmNights
             // 
@@ -486,101 +582,6 @@
             this.picStreetFestival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picStreetFestival.TabIndex = 9;
             this.picStreetFestival.TabStop = false;
-            // 
-            // lblSummerBeatsName
-            // 
-            this.lblSummerBeatsName.AutoSize = true;
-            this.lblSummerBeatsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSummerBeatsName.Location = new System.Drawing.Point(201, 724);
-            this.lblSummerBeatsName.Name = "lblSummerBeatsName";
-            this.lblSummerBeatsName.Size = new System.Drawing.Size(139, 22);
-            this.lblSummerBeatsName.TabIndex = 35;
-            this.lblSummerBeatsName.Text = "Summer Beats";
-            this.lblSummerBeatsName.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // lblComedyNightName
-            // 
-            this.lblComedyNightName.AutoSize = true;
-            this.lblComedyNightName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComedyNightName.Location = new System.Drawing.Point(201, 895);
-            this.lblComedyNightName.Name = "lblComedyNightName";
-            this.lblComedyNightName.Size = new System.Drawing.Size(178, 22);
-            this.lblComedyNightName.TabIndex = 36;
-            this.lblComedyNightName.Text = "Comedy Night Live";
-            // 
-            // lblSummerBeatsDate
-            // 
-            this.lblSummerBeatsDate.AutoSize = true;
-            this.lblSummerBeatsDate.Location = new System.Drawing.Point(205, 756);
-            this.lblSummerBeatsDate.Name = "lblSummerBeatsDate";
-            this.lblSummerBeatsDate.Size = new System.Drawing.Size(90, 16);
-            this.lblSummerBeatsDate.TabIndex = 37;
-            this.lblSummerBeatsDate.Text = "28th Nov 2026";
-            // 
-            // lblComedyNightDate
-            // 
-            this.lblComedyNightDate.AutoSize = true;
-            this.lblComedyNightDate.Location = new System.Drawing.Point(205, 928);
-            this.lblComedyNightDate.Name = "lblComedyNightDate";
-            this.lblComedyNightDate.Size = new System.Drawing.Size(90, 16);
-            this.lblComedyNightDate.TabIndex = 38;
-            this.lblComedyNightDate.Text = "12th Dec 2026";
-            // 
-            // lblSummerBeatsLocation
-            // 
-            this.lblSummerBeatsLocation.AutoSize = true;
-            this.lblSummerBeatsLocation.Location = new System.Drawing.Point(205, 772);
-            this.lblSummerBeatsLocation.Name = "lblSummerBeatsLocation";
-            this.lblSummerBeatsLocation.Size = new System.Drawing.Size(63, 16);
-            this.lblSummerBeatsLocation.TabIndex = 39;
-            this.lblSummerBeatsLocation.Text = "Auckland";
-            // 
-            // lblComedyNightLocation
-            // 
-            this.lblComedyNightLocation.AutoSize = true;
-            this.lblComedyNightLocation.Location = new System.Drawing.Point(205, 944);
-            this.lblComedyNightLocation.Name = "lblComedyNightLocation";
-            this.lblComedyNightLocation.Size = new System.Drawing.Size(63, 16);
-            this.lblComedyNightLocation.TabIndex = 40;
-            this.lblComedyNightLocation.Text = "Auckland";
-            // 
-            // lblSummerBeatsPrice
-            // 
-            this.lblSummerBeatsPrice.AutoSize = true;
-            this.lblSummerBeatsPrice.Location = new System.Drawing.Point(205, 788);
-            this.lblSummerBeatsPrice.Name = "lblSummerBeatsPrice";
-            this.lblSummerBeatsPrice.Size = new System.Drawing.Size(52, 16);
-            this.lblSummerBeatsPrice.TabIndex = 41;
-            this.lblSummerBeatsPrice.Text = "60 NZD";
-            // 
-            // lblComedyNightPrice
-            // 
-            this.lblComedyNightPrice.AutoSize = true;
-            this.lblComedyNightPrice.Location = new System.Drawing.Point(205, 960);
-            this.lblComedyNightPrice.Name = "lblComedyNightPrice";
-            this.lblComedyNightPrice.Size = new System.Drawing.Size(52, 16);
-            this.lblComedyNightPrice.TabIndex = 42;
-            this.lblComedyNightPrice.Text = "60 NZD";
-            // 
-            // btnSummerBeats
-            // 
-            this.btnSummerBeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSummerBeats.Location = new System.Drawing.Point(735, 724);
-            this.btnSummerBeats.Name = "btnSummerBeats";
-            this.btnSummerBeats.Size = new System.Drawing.Size(96, 33);
-            this.btnSummerBeats.TabIndex = 43;
-            this.btnSummerBeats.Text = "View Event";
-            this.btnSummerBeats.UseVisualStyleBackColor = true;
-            // 
-            // btnComedyNight
-            // 
-            this.btnComedyNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComedyNight.Location = new System.Drawing.Point(735, 895);
-            this.btnComedyNight.Name = "btnComedyNight";
-            this.btnComedyNight.Size = new System.Drawing.Size(96, 33);
-            this.btnComedyNight.TabIndex = 44;
-            this.btnComedyNight.Text = "View Event";
-            this.btnComedyNight.UseVisualStyleBackColor = true;
             // 
             // Form4
             // 
