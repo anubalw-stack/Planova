@@ -113,7 +113,67 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap christian_harb_IeHRsw6kAJE_unsplash {
+        internal static System.Drawing.Bitmap event1 {
+            get {
+                object obj = ResourceManager.GetObject("event1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap event2 {
+            get {
+                object obj = ResourceManager.GetObject("event2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap event3 {
+            get {
+                object obj = ResourceManager.GetObject("event3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap event4 {
+            get {
+                object obj = ResourceManager.GetObject("event4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap event5 {
+            get {
+                object obj = ResourceManager.GetObject("event5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap event6 {
+            get {
+                object obj = ResourceManager.GetObject("event6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fgtr4e3wasdftr543ed {
             get {
                 object obj = ResourceManager.GetObject("christian-harb-IeHRsw6kAJE-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
