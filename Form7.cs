@@ -72,17 +72,6 @@ namespace tech_titans
         // PAY NOW
         private void btnPay_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(lblCartEvent.Text) ||
-                lblCartQuantity.Text == "0")
-            {
-                MessageBox.Show(
-                    "Please add an event first.",
-                    "Payment Error",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
-                return;
-            }
 
             if (string.IsNullOrWhiteSpace(txtCardNumber.Text))
             {
