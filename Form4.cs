@@ -12,19 +12,96 @@ namespace tech_titans
 {
     public partial class Form4 : Form
     {
+
+        private void OpenBookingPayment(
+    string eventName,
+    string location,
+    string date,
+    string price,
+    Image image)
+        {
+            int eventPrice = int.Parse(
+                price.Replace("$", "").Replace("NZD", "").Trim()
+            );
+
+            // Temporary quantity
+            // Cart will provide the real quantity later
+            int quantity = 1;
+
+            BookingPayment payment = new BookingPayment(
+                eventName,
+                location,
+                date,
+                quantity,
+                eventPrice,
+                image
+            );
+
+            payment.Show();
+            this.Hide();
+        }
         public Form4()
         {
             InitializeComponent();
+
+            // Tag each "View Event" button with its event ID from events.csv,
+            // then route them all through the same click handler below.
+            btnDJNight.Tag = "msc001";
+            btnBattleBands.Tag = "msc002";
+            btnStreetFestival.Tag = "msc003";
+            btnRhythmNights.Tag = "msc004";
+            btnSummerBeats.Tag = "msc005";
+            btnComedyNight.Tag = "cdy001";
+
+            btnBattleBands.Click += button4_Click;
+            btnStreetFestival.Click += button4_Click;
+            btnRhythmNights.Click += button4_Click;
+            btnSummerBeats.Click += button4_Click;
+            btnComedyNight.Click += button4_Click;
         }
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            UpdateLoginUI();
+            txtSearch.Text = "Search events...";
+            txtSearch.ForeColor = Color.Gray;
+        }
+
+        private void UpdateLoginUI()
+        {
+            if (Session.IsLoggedIn)
+            {
+                labelWelcome.Text = "Welcome, " + Session.CurrentUser.Name;
+                labelWelcome.Visible = true;
+            }
+            else
+            {
+                labelWelcome.Text = "";
+                labelWelcome.Visible = false;
+            }
+        }
+
 
         private void label18_Click(object sender, EventArgs e)
         {
 
         }
 
+        // Shared handler for all six "View Event" buttons — reads the event ID
+        // off the clicked button's Tag and opens EventDetailsForm for it.
         private void button4_Click(object sender, EventArgs e)
         {
+            Button clicked = sender as Button;
 
+            if (clicked == null || clicked.Tag == null)
+            {
+                return;
+            }
+
+            string eventId = clicked.Tag.ToString();
+
+            EventDetailsForm eventDetailsForm = new EventDetailsForm(eventId);
+            eventDetailsForm.Show();
+            this.Hide();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -39,6 +116,10 @@ namespace tech_titans
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
+
+            if (txtSearch.Text == "Search events...")
+                return;
+
             string search = txtSearch.Text.Trim();
 
             // Check which event names match the search
@@ -192,6 +273,79 @@ namespace tech_titans
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSearch_Enter(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "Search events...")
+            {
+                txtSearch.Text = "";
+                txtSearch.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtSearch_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                txtSearch.Text = "Search events...";
+                txtSearch.ForeColor = Color.Gray;
+            }
+        }
+
+        private void btnBattleBands_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+        lblBattleBandsName.Text,
+        lblBattleBandsLocation.Text,
+        lblBattleBandsDate.Text,
+        lblBattleBandsPrice.Text,
+        picBattleBands.Image
+    );
+        }
+
+        private void btnStreetFestival_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+      lblStreetFestivalName.Text,
+      lblStreetFestivalLocation.Text,
+      lblStreetFestivalDate.Text,
+      lblStreetFestivalPrice.Text,
+      picStreetFestival.Image
+  );
+        }
+
+        private void btnRhythmNights_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+       lblRhythmNightsName.Text,
+       lblRhythmNightsLocation.Text,
+       lblRhythmNightsDate.Text,
+       lblRhythmNightsPrice.Text,
+       picRhythmNights.Image
+   );
+        }
+
+        private void btnSummerBeats_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+       lblSummerBeatsName.Text,
+       lblSummerBeatsLocation.Text,
+       lblSummerBeatsDate.Text,
+       lblSummerBeatsPrice.Text,
+       picSummerBeats.Image
+   );
+        }
+
+        private void btnComedyNight_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+        lblComedyNightName.Text,
+        lblComedyNightLocation.Text,
+        lblComedyNightDate.Text,
+        lblComedyNightPrice.Text,
+        picComedyNight.Image
+    );
         }
     }
 }

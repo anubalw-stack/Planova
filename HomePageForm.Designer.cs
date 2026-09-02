@@ -1,4 +1,4 @@
-﻿namespace tech_titans
+namespace tech_titans
 {
     partial class HomePage
     {

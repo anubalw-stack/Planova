@@ -1,16 +1,9 @@
 ﻿namespace tech_titans
 {
-    partial class EventDetails
+    partial class EventDetailsForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
@@ -38,10 +27,12 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
+            this.lblLocation = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblAboutEvent = new System.Windows.Forms.Label();
             this.buttonBookNow = new System.Windows.Forms.Button();
             this.aboutEvent = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlanovaLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEvent)).BeginInit();
@@ -107,13 +98,16 @@
             this.PlanovaLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PlanovaLogo.TabIndex = 1;
             this.PlanovaLogo.TabStop = false;
+            this.PlanovaLogo.Click += new System.EventHandler(this.PlanovaLogo_Click);
             // 
             // pictureBoxEvent
             // 
-            this.pictureBoxEvent.BackColor = System.Drawing.Color.White;
+            this.pictureBoxEvent.BackColor = System.Drawing.Color.Orange;
+            this.pictureBoxEvent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxEvent.Location = new System.Drawing.Point(26, 96);
             this.pictureBoxEvent.Name = "pictureBoxEvent";
             this.pictureBoxEvent.Size = new System.Drawing.Size(439, 232);
+            this.pictureBoxEvent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxEvent.TabIndex = 8;
             this.pictureBoxEvent.TabStop = false;
             // 
@@ -132,9 +126,11 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.lblDate);
             this.flowLayoutPanel1.Controls.Add(this.lblTime);
+            this.flowLayoutPanel1.Controls.Add(this.lblLocation);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(489, 130);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(495, 139);
@@ -158,8 +154,19 @@
             this.lblTime.TabIndex = 15;
             this.lblTime.Text = "Time";
             // 
+            // lblLocation
+            // 
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.Location = new System.Drawing.Point(109, 0);
+            this.lblLocation.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(74, 20);
+            this.lblLocation.TabIndex = 16;
+            this.lblLocation.Text = " Location";
+            // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel2.Controls.Add(this.lblAboutEvent);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(26, 381);
@@ -203,12 +210,25 @@
             this.aboutEvent.Text = "About the Event";
             this.aboutEvent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // EventDetails
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.MintCream;
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Location = new System.Drawing.Point(895, 86);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(89, 31);
+            this.btnBack.TabIndex = 13;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // EventDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(1010, 617);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.aboutEvent);
             this.Controls.Add(this.buttonBookNow);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -216,7 +236,8 @@
             this.Controls.Add(this.eventName);
             this.Controls.Add(this.pictureBoxEvent);
             this.Controls.Add(this.panel1);
-            this.Name = "EventDetails";
+            this.Name = "EventDetailsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event Details";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -247,5 +268,7 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblAboutEvent;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Label lblLocation;
+        private System.Windows.Forms.Button btnBack;
     }
 }
