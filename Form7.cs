@@ -255,8 +255,6 @@ namespace tech_titans
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
 
             if (currentEvent > 0)
             {
