@@ -12,6 +12,34 @@ namespace tech_titans
 {
     public partial class Form4 : Form
     {
+
+        private void OpenBookingPayment(
+    string eventName,
+    string location,
+    string date,
+    string price,
+    Image image)
+        {
+            int eventPrice = int.Parse(
+                price.Replace("$", "").Replace("NZD", "").Trim()
+            );
+
+            // Temporary quantity
+            // Cart will provide the real quantity later
+            int quantity = 1;
+
+            BookingPayment payment = new BookingPayment(
+                eventName,
+                location,
+                date,
+                quantity,
+                eventPrice,
+                image
+            );
+
+            payment.Show();
+            this.Hide();
+        }
         public Form4()
         {
             InitializeComponent();
@@ -27,7 +55,13 @@ namespace tech_titans
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            OpenBookingPayment(
+        lblDJNightName.Text,
+        lblDJNightLocation.Text,
+        lblDJNightDate.Text,
+        lblDJNightPrice.Text,
+        picDJNight.Image
+    );
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -217,6 +251,61 @@ namespace tech_titans
                 txtSearch.Text = "Search events...";
                 txtSearch.ForeColor = Color.Gray;
             }
+        }
+
+        private void btnBattleBands_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+        lblBattleBandsName.Text,
+        lblBattleBandsLocation.Text,
+        lblBattleBandsDate.Text,
+        lblBattleBandsPrice.Text,
+        picBattleBands.Image
+    );
+        }
+
+        private void btnStreetFestival_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+      lblStreetFestivalName.Text,
+      lblStreetFestivalLocation.Text,
+      lblStreetFestivalDate.Text,
+      lblStreetFestivalPrice.Text,
+      picStreetFestival.Image
+  );
+        }
+
+        private void btnRhythmNights_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+       lblRhythmNightsName.Text,
+       lblRhythmNightsLocation.Text,
+       lblRhythmNightsDate.Text,
+       lblRhythmNightsPrice.Text,
+       picRhythmNights.Image
+   );
+        }
+
+        private void btnSummerBeats_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+       lblSummerBeatsName.Text,
+       lblSummerBeatsLocation.Text,
+       lblSummerBeatsDate.Text,
+       lblSummerBeatsPrice.Text,
+       picSummerBeats.Image
+   );
+        }
+
+        private void btnComedyNight_Click(object sender, EventArgs e)
+        {
+            OpenBookingPayment(
+        lblComedyNightName.Text,
+        lblComedyNightLocation.Text,
+        lblComedyNightDate.Text,
+        lblComedyNightPrice.Text,
+        picComedyNight.Image
+    );
         }
     }
 }
