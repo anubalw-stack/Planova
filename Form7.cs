@@ -79,6 +79,11 @@ namespace tech_titans
                 return;
             }
 
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+         
+            // Check whether a payment method is selected
+           
             if (!long.TryParse(txtCardNumber.Text, out _))
             {
                 MessageBox.Show("Card Number must contain numbers only.");
