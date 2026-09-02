@@ -100,7 +100,7 @@
             // 
             // pictureBoxEvent
             // 
-            this.pictureBoxEvent.BackColor = System.Drawing.Color.White;
+            this.pictureBoxEvent.BackColor = System.Drawing.Color.Orange;
             this.pictureBoxEvent.Location = new System.Drawing.Point(26, 96);
             this.pictureBoxEvent.Name = "pictureBoxEvent";
             this.pictureBoxEvent.Size = new System.Drawing.Size(439, 232);
@@ -122,6 +122,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.lblDate);
             this.flowLayoutPanel1.Controls.Add(this.lblTime);
@@ -161,6 +162,7 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel2.Controls.Add(this.lblAboutEvent);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(26, 381);
