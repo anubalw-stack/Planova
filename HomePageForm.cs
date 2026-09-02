@@ -96,5 +96,8 @@ namespace tech_titans
             form4.Show();
             this.Hide();
         }
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
