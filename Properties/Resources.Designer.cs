@@ -93,9 +93,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bailey_mahon_6bLO79dm5WU_unsplash {
+        internal static System.Drawing.Bitmap cdy001_jpg {
             get {
-                object obj = ResourceManager.GetObject("bailey-mahon-6bLO79dm5WU-unsplash", resourceCulture);
+                object obj = ResourceManager.GetObject("cdy001.jpg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,26 +106,6 @@ namespace tech_titans.Properties {
         internal static System.Drawing.Bitmap ChatGPT_Image_Aug_29__2026__02_21_27_PM {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image Aug 29, 2026, 02_21_27 PM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap christian_harb_IeHRsw6kAJE_unsplash {
-            get {
-                object obj = ResourceManager.GetObject("christian-harb-IeHRsw6kAJE-unsplash", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap danny_howe_bn_D2bCvpik_unsplash {
-            get {
-                object obj = ResourceManager.GetObject("danny-howe-bn-D2bCvpik-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +173,9 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap istockphoto_1161017019_1024x1024 {
+        internal static System.Drawing.Bitmap msc001_jpg {
             get {
-                object obj = ResourceManager.GetObject("istockphoto-1161017019-1024x1024", resourceCulture);
+                object obj = ResourceManager.GetObject("msc001.jpg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +183,39 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap jared_pizarro_nUtCKZeC_s8_unsplash {
+        internal static System.Drawing.Bitmap msc002_jpg {
             get {
-                object obj = ResourceManager.GetObject("jared-pizarro-nUtCKZeC_s8-unsplash", resourceCulture);
+                object obj = ResourceManager.GetObject("msc002.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap msc003_jpg {
+            get {
+                object obj = ResourceManager.GetObject("msc003.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap msc004_jpg {
+            get {
+                object obj = ResourceManager.GetObject("msc004.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap msc005_jpg {
+            get {
+                object obj = ResourceManager.GetObject("msc005.jpg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,16 +236,6 @@ namespace tech_titans.Properties {
         internal static System.Drawing.Bitmap PlanovaLogo {
             get {
                 object obj = ResourceManager.GetObject("PlanovaLogo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap set_sj_v7Tujfxt9Zs_unsplash {
-            get {
-                object obj = ResourceManager.GetObject("set-sj-v7Tujfxt9Zs-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

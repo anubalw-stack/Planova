@@ -32,26 +32,18 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.registerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cartToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventDetailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblwelcome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -76,11 +68,12 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.label9 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.contextMenuStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -107,7 +100,7 @@
             // 
             // iconButton2
             // 
-            this.iconButton2.ContextMenuStrip = this.contextMenuStrip2;
+            this.iconButton2.ContextMenuStrip = this.contextMenuStrip1;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.ForeColor = System.Drawing.Color.Indigo;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Navicon;
@@ -121,62 +114,54 @@
             this.iconButton2.UseVisualStyleBackColor = true;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // contextMenuStrip2
+            // contextMenuStrip1
             // 
-            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registerToolStripMenuItem1,
-            this.loginToolStripMenuItem1,
-            this.eventsToolStripMenuItem1,
-            this.cartToolStripMenuItem1,
-            this.bookingsToolStripMenuItem1,
-            this.logoutToolStripMenuItem,
-            this.eventDetailsToolStripMenuItem});
-            this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(181, 228);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registerToolStripMenuItem,
+            this.loginToolStripMenuItem,
+            this.eventsToolStripMenuItem,
+            this.cartToolStripMenuItem,
+            this.bookingsToolStripMenuItem,
+            this.logoutToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 229);
             // 
-            // registerToolStripMenuItem1
+            // registerToolStripMenuItem
             // 
-            this.registerToolStripMenuItem1.Name = "registerToolStripMenuItem1";
-            this.registerToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
-            this.registerToolStripMenuItem1.Text = "Register";
+            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.registerToolStripMenuItem.Text = "Register";
             // 
-            // loginToolStripMenuItem1
+            // loginToolStripMenuItem
             // 
-            this.loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
-            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
-            this.loginToolStripMenuItem1.Text = "Login";
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.loginToolStripMenuItem.Text = "Login";
             // 
-            // eventsToolStripMenuItem1
+            // eventsToolStripMenuItem
             // 
-            this.eventsToolStripMenuItem1.Name = "eventsToolStripMenuItem1";
-            this.eventsToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
-            this.eventsToolStripMenuItem1.Text = "Events";
+            this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
+            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.eventsToolStripMenuItem.Text = "Events";
             // 
-            // cartToolStripMenuItem1
+            // cartToolStripMenuItem
             // 
-            this.cartToolStripMenuItem1.Name = "cartToolStripMenuItem1";
-            this.cartToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
-            this.cartToolStripMenuItem1.Text = "Cart";
+            this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.cartToolStripMenuItem.Text = "Cart";
             // 
-            // bookingsToolStripMenuItem1
+            // bookingsToolStripMenuItem
             // 
-            this.bookingsToolStripMenuItem1.Name = "bookingsToolStripMenuItem1";
-            this.bookingsToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
-            this.bookingsToolStripMenuItem1.Text = "Bookings";
+            this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
+            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.bookingsToolStripMenuItem.Text = "Bookings";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.logoutToolStripMenuItem.Text = "Logout";
-            // 
-            // eventDetailsToolStripMenuItem
-            // 
-            this.eventDetailsToolStripMenuItem.Name = "eventDetailsToolStripMenuItem";
-            this.eventDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
-            this.eventDetailsToolStripMenuItem.Text = "eventDetails";
-            this.eventDetailsToolStripMenuItem.Click += new System.EventHandler(this.eventDetailsToolStripMenuItem_Click);
             // 
             // iconButton1
             // 
@@ -239,56 +224,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registerToolStripMenuItem,
-            this.loginToolStripMenuItem,
-            this.eventsToolStripMenuItem,
-            this.cartToolStripMenuItem,
-            this.bookingsToolStripMenuItem,
-            this.eventDetailsToolStripMenuItem1});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 196);
-            // 
-            // registerToolStripMenuItem
-            // 
-            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
-            this.registerToolStripMenuItem.Text = "Register";
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
-            this.loginToolStripMenuItem.Text = "Login";
-            // 
-            // eventsToolStripMenuItem
-            // 
-            this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
-            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
-            this.eventsToolStripMenuItem.Text = "Events";
-            // 
-            // cartToolStripMenuItem
-            // 
-            this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
-            this.cartToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
-            this.cartToolStripMenuItem.Text = "Cart";
-            // 
-            // bookingsToolStripMenuItem
-            // 
-            this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
-            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(180, 32);
-            this.bookingsToolStripMenuItem.Text = "Bookings";
-            // 
-            // eventDetailsToolStripMenuItem1
-            // 
-            this.eventDetailsToolStripMenuItem1.Name = "eventDetailsToolStripMenuItem1";
-            this.eventDetailsToolStripMenuItem1.Size = new System.Drawing.Size(180, 32);
-            this.eventDetailsToolStripMenuItem1.Text = "eventDetails";
-            this.eventDetailsToolStripMenuItem1.Click += new System.EventHandler(this.eventDetailsToolStripMenuItem1_Click);
-            // 
             // lblwelcome
             // 
             this.lblwelcome.AutoSize = true;
@@ -327,7 +262,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Indigo;
-            this.label3.Location = new System.Drawing.Point(107, 296);
+            this.label3.Location = new System.Drawing.Point(107, 277);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(300, 27);
             this.label3.TabIndex = 24;
@@ -337,7 +272,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(0)))));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(12, 429);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(158, 30);
@@ -415,7 +350,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(190)))), ((int)(((byte)(110)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.panel5.Controls.Add(this.iconButton3);
             this.panel5.Location = new System.Drawing.Point(33, 480);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
@@ -425,9 +360,9 @@
             // 
             // iconButton3
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(190)))), ((int)(((byte)(110)))));
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(110)))));
+            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.iconButton3.IconColor = System.Drawing.Color.Indigo;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -507,7 +442,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(110)))));
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.panel9.Controls.Add(this.iconButton5);
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Margin = new System.Windows.Forms.Padding(2);
@@ -518,12 +453,12 @@
             // iconButton5
             // 
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(110)))));
+            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.ShieldAlt;
             this.iconButton5.IconColor = System.Drawing.Color.Indigo;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 60;
-            this.iconButton5.Location = new System.Drawing.Point(0, 15);
+            this.iconButton5.Location = new System.Drawing.Point(3, 15);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(68, 88);
             this.iconButton5.TabIndex = 17;
@@ -531,7 +466,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(110)))));
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.panel8.Controls.Add(this.iconButton4);
             this.panel8.Location = new System.Drawing.Point(360, 480);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
@@ -542,7 +477,7 @@
             // iconButton4
             // 
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(110)))));
+            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Ticket;
             this.iconButton4.IconColor = System.Drawing.Color.Indigo;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -563,6 +498,36 @@
             this.label9.Size = new System.Drawing.Size(0, 24);
             this.label9.TabIndex = 27;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Indigo;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(103, 351);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(304, 52);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "   Explore Events ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // iconButton6
+            // 
+            this.iconButton6.BackColor = System.Drawing.Color.Indigo;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.ForeColor = System.Drawing.Color.Indigo;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
+            this.iconButton6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.IconSize = 40;
+            this.iconButton6.Location = new System.Drawing.Point(337, 365);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(46, 30);
+            this.iconButton6.TabIndex = 17;
+            this.iconButton6.UseVisualStyleBackColor = false;
+            // 
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
@@ -579,6 +544,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1010, 618);
+            this.Controls.Add(this.iconButton6);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel8);
@@ -602,9 +569,8 @@
             this.Text = "Home Page";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.contextMenuStrip2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
@@ -629,17 +595,10 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eventsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cartToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bookingsToolStripMenuItem;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem eventsToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cartToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem bookingsToolStripMenuItem1;
         private System.Windows.Forms.Label lblwelcome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -664,9 +623,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button1;
+        private FontAwesome.Sharp.IconButton iconButton6;
         private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.ToolStripMenuItem eventsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eventDetailsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eventDetailsToolStripMenuItem1;
     }
 }

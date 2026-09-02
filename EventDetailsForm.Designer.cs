@@ -32,6 +32,7 @@
             this.lblAboutEvent = new System.Windows.Forms.Label();
             this.buttonBookNow = new System.Windows.Forms.Button();
             this.aboutEvent = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlanovaLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEvent)).BeginInit();
@@ -97,13 +98,16 @@
             this.PlanovaLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PlanovaLogo.TabIndex = 1;
             this.PlanovaLogo.TabStop = false;
+            this.PlanovaLogo.Click += new System.EventHandler(this.PlanovaLogo_Click);
             // 
             // pictureBoxEvent
             // 
             this.pictureBoxEvent.BackColor = System.Drawing.Color.Orange;
+            this.pictureBoxEvent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxEvent.Location = new System.Drawing.Point(26, 96);
             this.pictureBoxEvent.Name = "pictureBoxEvent";
             this.pictureBoxEvent.Size = new System.Drawing.Size(439, 232);
+            this.pictureBoxEvent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxEvent.TabIndex = 8;
             this.pictureBoxEvent.TabStop = false;
             // 
@@ -206,12 +210,25 @@
             this.aboutEvent.Text = "About the Event";
             this.aboutEvent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.MintCream;
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Location = new System.Drawing.Point(895, 86);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(89, 31);
+            this.btnBack.TabIndex = 13;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // EventDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(1010, 617);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.aboutEvent);
             this.Controls.Add(this.buttonBookNow);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -220,6 +237,7 @@
             this.Controls.Add(this.pictureBoxEvent);
             this.Controls.Add(this.panel1);
             this.Name = "EventDetailsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event Details";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -251,5 +269,6 @@
         private System.Windows.Forms.Label lblAboutEvent;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblLocation;
+        private System.Windows.Forms.Button btnBack;
     }
 }
