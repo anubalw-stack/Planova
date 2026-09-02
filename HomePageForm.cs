@@ -13,6 +13,8 @@ namespace tech_titans
 
             registerToolStripMenuItem.Click += registerToolStripMenuItem_Click;
             loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
+            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
+
             contextMenuStrip1.Opening += contextMenuStrip1_Opening;
 
             this.Load += HomePage_Load;
@@ -27,13 +29,13 @@ namespace tech_titans
         {
             if (Session.IsLoggedIn)
             {
-                lblwelcome.Text = "Welcome, " + Session.CurrentUser.Name;
-                lblwelcome.Visible = true;
+                labelWelcome.Text = "Welcome, " + Session.CurrentUser.Name;
+                labelWelcome.Visible = true;
             }
             else
             {
-                lblwelcome.Text = "";
-                lblwelcome.Visible = false;
+                labelWelcome.Text = "";
+                labelWelcome.Visible = false;
             }
 
             PositionWelcomeLabel();
@@ -43,14 +45,15 @@ namespace tech_titans
         {
             int rightMargin = 20;
 
-            lblwelcome.Left =
-                this.ClientSize.Width - lblwelcome.Width - rightMargin;
+            labelWelcome.Left =
+                this.ClientSize.Width - labelWelcome.Width - rightMargin;
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
             registerToolStripMenuItem.Visible = !Session.IsLoggedIn;
             loginToolStripMenuItem.Visible = !Session.IsLoggedIn;
+            logoutToolStripMenuItem.Visible = Session.IsLoggedIn;
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

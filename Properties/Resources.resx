@@ -121,16 +121,16 @@
   <data name="PlanovaLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fgtr4e3wasdftr543ed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="christian-harb-IeHRsw6kAJE-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="msc004.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\christian-harb-IeHRsw6kAJE-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="danny-howe-bn-D2bCvpik-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="msc005.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\danny-howe-bn-D2bCvpik-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="set-sj-v7Tujfxt9Zs-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="msc002.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\set-sj-v7Tujfxt9Zs-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jared-pizarro-nUtCKZeC_s8-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="cdy001.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jared-pizarro-nUtCKZeC_s8-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Final home2" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -145,7 +145,7 @@
   <data name="104101b7b38b229c023e1cf35ee89eec1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\104101b7b38b229c023e1cf35ee89eec1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bailey-mahon-6bLO79dm5WU-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="msc003.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bailey-mahon-6bLO79dm5WU-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hoem image" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -163,7 +163,7 @@
   <data name="PasswordLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\09876.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="istockphoto-1161017019-1024x1024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="msc001.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-1161017019-1024x1024.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Final home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
