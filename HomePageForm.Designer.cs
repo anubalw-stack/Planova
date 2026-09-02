@@ -143,42 +143,42 @@
             this.bookingsToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 229);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 196);
             // 
             // registerToolStripMenuItem
             // 
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.registerToolStripMenuItem.Text = "Register";
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.loginToolStripMenuItem.Text = "Login";
             // 
             // eventsToolStripMenuItem
             // 
             this.eventsToolStripMenuItem.Name = "eventsToolStripMenuItem";
-            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.eventsToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.eventsToolStripMenuItem.Text = "Events";
             // 
             // cartToolStripMenuItem
             // 
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
-            this.cartToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.cartToolStripMenuItem.Text = "Cart";
             // 
             // bookingsToolStripMenuItem
             // 
             this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
-            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.bookingsToolStripMenuItem.Text = "Bookings";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.logoutToolStripMenuItem.Text = "Logout";
             // 
             // iconButton1
