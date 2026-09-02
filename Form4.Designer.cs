@@ -113,8 +113,9 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(540, 26);
             this.txtSearch.TabIndex = 2;
-            this.txtSearch.Text = "Search events...";
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
+            this.txtSearch.Leave += new System.EventHandler(this.txtSearch_Leave);
             // 
             // lblDJNightName
             // 
@@ -168,6 +169,7 @@
             this.btnBattleBands.TabIndex = 14;
             this.btnBattleBands.Text = "View Event";
             this.btnBattleBands.UseVisualStyleBackColor = true;
+            this.btnBattleBands.Click += new System.EventHandler(this.btnBattleBands_Click);
             // 
             // btnStreetFestival
             // 
@@ -179,6 +181,7 @@
             this.btnStreetFestival.TabIndex = 15;
             this.btnStreetFestival.Text = "View Event";
             this.btnStreetFestival.UseVisualStyleBackColor = true;
+            this.btnStreetFestival.Click += new System.EventHandler(this.btnStreetFestival_Click);
             // 
             // label8
             // 
@@ -275,7 +278,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Nirmala Text", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label21.Location = new System.Drawing.Point(69, 55);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -287,7 +290,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DarkOrange;
             this.label22.Location = new System.Drawing.Point(71, 12);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -554,6 +557,7 @@
             this.btnRhythmNights.TabIndex = 29;
             this.btnRhythmNights.Text = "View Event";
             this.btnRhythmNights.UseVisualStyleBackColor = true;
+            this.btnRhythmNights.Click += new System.EventHandler(this.btnRhythmNights_Click);
             // 
             // lblRhythmNightsPrice
             // 
