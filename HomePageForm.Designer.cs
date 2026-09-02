@@ -230,7 +230,6 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Lavender;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::tech_titans.Properties.Resources.PlanovaLogo;
             this.pictureBox1.Location = new System.Drawing.Point(8, 8);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
@@ -392,7 +391,6 @@
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.BackgroundImage = global::tech_titans.Properties.Resources.home;
             this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;

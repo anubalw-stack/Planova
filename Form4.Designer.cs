@@ -327,8 +327,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Lavender;
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox6.Image = global::tech_titans.Properties.Resources.PlanovaLogo;
-            this.pictureBox6.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox6.Image = null; 
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 49);
@@ -478,9 +477,7 @@
             // 
             // picRhythmNights
             // 
-            this.picRhythmNights.Image = global::tech_titans.Properties.Resources.christian_harb_IeHRsw6kAJE_unsplash;
-            this.picRhythmNights.Location = new System.Drawing.Point(15, 563);
-            this.picRhythmNights.Name = "picRhythmNights";
+            this.picRhythmNights.Image = null;
             this.picRhythmNights.Size = new System.Drawing.Size(124, 86);
             this.picRhythmNights.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRhythmNights.TabIndex = 34;
@@ -488,7 +485,7 @@
             // 
             // picSummerBeats
             // 
-            this.picSummerBeats.Image = global::tech_titans.Properties.Resources.danny_howe_bn_D2bCvpik_unsplash;
+            this.picSummerBeats.Image = null;
             this.picSummerBeats.Location = new System.Drawing.Point(15, 724);
             this.picSummerBeats.Name = "picSummerBeats";
             this.picSummerBeats.Size = new System.Drawing.Size(124, 86);
@@ -498,7 +495,7 @@
             // 
             // picComedyNight
             // 
-            this.picComedyNight.Image = global::tech_titans.Properties.Resources.jared_pizarro_nUtCKZeC_s8_unsplash;
+            this.picComedyNight.Image = null;
             this.picComedyNight.Location = new System.Drawing.Point(15, 895);
             this.picComedyNight.Name = "picComedyNight";
             this.picComedyNight.Size = new System.Drawing.Size(124, 86);
@@ -556,7 +553,7 @@
             // 
             // picDJNight
             // 
-            this.picDJNight.Image = global::tech_titans.Properties.Resources.istockphoto_1161017019_1024x1024;
+            this.picDJNight.Image = null;
             this.picDJNight.Location = new System.Drawing.Point(12, 97);
             this.picDJNight.Name = "picDJNight";
             this.picDJNight.Size = new System.Drawing.Size(124, 86);
@@ -566,7 +563,7 @@
             // 
             // picBattleBands
             // 
-            this.picBattleBands.Image = global::tech_titans.Properties.Resources.set_sj_v7Tujfxt9Zs_unsplash;
+            this.picBattleBands.Image = null;
             this.picBattleBands.Location = new System.Drawing.Point(12, 246);
             this.picBattleBands.Name = "picBattleBands";
             this.picBattleBands.Size = new System.Drawing.Size(124, 86);
@@ -576,7 +573,7 @@
             // 
             // picStreetFestival
             // 
-            this.picStreetFestival.Image = global::tech_titans.Properties.Resources.bailey_mahon_6bLO79dm5WU_unsplash;
+            this.picStreetFestival.Image = null;
             this.picStreetFestival.Location = new System.Drawing.Point(12, 409);
             this.picStreetFestival.Name = "picStreetFestival";
             this.picStreetFestival.Size = new System.Drawing.Size(124, 86);

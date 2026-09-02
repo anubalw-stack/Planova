@@ -1,154 +1,90 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Text.RegularExpressions;
 
 namespace tech_titans
 {
     public partial class BookingPayment : Form
     {
-        int currentEvent = 0;
-        int quantity = 1;
-        string[] eventNames =
-        {
-        "DJ Night",
-        "Battle of the Bands",
-        "Street Music Festival",
-        "Rythm Nights",
-        "Summer Beats",
-        "Comedy Night Live",
-        };
+        private string selectedEventName;
+        private string selectedLocation;
+        private string selectedDate;
+        private int selectedQuantity;
+        private int selectedPrice;
+        private Image selectedImage;
 
-        string[] eventLocations =
-    {
-        "Auckland Town Hall",
-        "Spark Arena",
-        "Queen Street",
-        "Western Springs",
-        "Aotea Square",
-        "Comedy Club",
-
-    };
-        int[] eventPrices =
-        {
-         100,
-         80,
-         50,
-         70,
-         60,
-         1000,
-        };
-        string[] eventDates =
-        {
-        "20 August 2026",
-        "5 September 2026",
-        "15 September 2026",
-        "25 September 2026",
-        "10 October 2026",
-        "99 December 2026",
-        };
-        public BookingPayment   ()
+        // Constructor for Designer
+        public BookingPayment()
         {
             InitializeComponent();
-            ShowEvent();
-            UpdateQuantity();
 
+            lblEventName.Text = "";
+            lblLocation.Text = "";
+            lblDate.Text = "";
+           
+
+            lblCartEvent.Text = "";
+            lblCartQuantity.Text = "0";
+            lblCartPrice.Text = "$0.00";
+            lblCartTotal.Text = "$0.00";
         }
-        private void ShowEvent()
+
+        // Constructor used by Form4
+        public BookingPayment(
+            string eventName,
+            string location,
+            string date,
+            int quantity,
+            int price,
+            Image image)
         {
-            lblEventName.Text = eventNames[currentEvent];
-            lblLocation.Text = eventLocations[currentEvent];
-            lblDate.Text = eventDates[currentEvent];
-            lblPrice.Text = "$" + eventPrices[currentEvent];
+            InitializeComponent();
 
-            if (currentEvent == 0)
-            {
-                pictureBox2.Image = Properties.Resources.event1;
-            }
-            else if (currentEvent == 1)
-            {
-                pictureBox2.Image = Properties.Resources.event2;
-            }
-            else if (currentEvent == 2)
-            {
-                pictureBox2.Image = Properties.Resources.event3;
-            }
-            else if (currentEvent == 3)
-            {
-                pictureBox2.Image = Properties.Resources.event4;
-            }
-            else if (currentEvent == 4)
-            {
-                pictureBox2.Image = Properties.Resources.event5;
-            }
-            else if (currentEvent == 4)
-            {
-                pictureBox2.Image = Properties.Resources.event6;
-            }
+            selectedEventName = eventName;
+            selectedLocation = location;
+            selectedDate = date;
+            selectedQuantity = quantity;
+            selectedPrice = price;
+            selectedImage = image;
+
+            ShowBooking();
         }
 
-        private void UpdateQuantity()
+        private void ShowBooking()
         {
-            lblQuantity.Text = quantity.ToString();
+            lblEventName.Text = selectedEventName;
+            lblLocation.Text = selectedLocation;
+            lblDate.Text = selectedDate;
 
-            double total = eventPrices[currentEvent] * quantity;
+            pictureBox2.Image = selectedImage;
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
 
-            lblTotalPrice.Text = "$" + total.ToString("0.00");
+            int total = selectedPrice * selectedQuantity;
+
+            lblCartEvent.Text = selectedEventName;
+            lblCartQuantity.Text = selectedQuantity.ToString();
+            lblCartPrice.Text = "$" + selectedPrice.ToString("0.00");
+            lblCartTotal.Text = "$" + total.ToString("0.00");
+
+           
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // PAY NOW
         private void btnPay_Click(object sender, EventArgs e)
         {
-            // Check if cart is empty
-            if (lblCartQuantity.Text == "0" || lblCartEvent.Text == "")
+            if (string.IsNullOrWhiteSpace(lblCartEvent.Text) ||
+                lblCartQuantity.Text == "0")
             {
-                MessageBox.Show("Please add an event to the cart first.");
+                MessageBox.Show(
+                    "Please add an event first.",
+                    "Payment Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
                 return;
             }
 
-            // Card Number
-            if (txtCardNumber.Text == "")
+            if (string.IsNullOrWhiteSpace(txtCardNumber.Text))
             {
                 MessageBox.Show("Please enter your card number.");
                 return;
@@ -166,8 +102,7 @@ namespace tech_titans
                 return;
             }
 
-            // Expiry Date
-            if (txtExpiry.Text == "")
+            if (string.IsNullOrWhiteSpace(txtExpiry.Text))
             {
                 MessageBox.Show("Please enter your expiry date.");
                 return;
@@ -185,8 +120,7 @@ namespace tech_titans
                 return;
             }
 
-            // CVV
-            if (txtCVV.Text == "")
+            if (string.IsNullOrWhiteSpace(txtCVV.Text))
             {
                 MessageBox.Show("Please enter your CVV.");
                 return;
@@ -204,7 +138,6 @@ namespace tech_titans
                 return;
             }
 
-            // Payment successful
             MessageBox.Show(
                 "Payment successful! Your booking has been confirmed.",
                 "Booking Confirmed",
@@ -212,98 +145,135 @@ namespace tech_titans
                 MessageBoxIcon.Information);
         }
 
-        private void lblRhythmNightsName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblBattleBandsName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblStreetFestivalName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDJNightName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSummerBeatsName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picStreetFestival_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-
-            if (currentEvent < eventNames.Length - 1)
-            {
-                currentEvent++;
-                quantity = 1;
-                ShowEvent();
-                UpdateQuantity();
-
-            }
-        }
-
-
-            if (currentEvent > 0)
-            {
-                currentEvent--;
-                quantity = 1;
-                UpdateQuantity();
-                ShowEvent();
-            }
-        }
-
-        private void btnPlus_Click(object sender, EventArgs e)
-        {
-            quantity++;
-            UpdateQuantity();
-        }
-
-        private void btnMinus_Click(object sender, EventArgs e)
-        {
-            if (quantity > 1)
-            {
-                quantity--;
-                UpdateQuantity();
-            }
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            lblCartEvent.Text = eventNames[currentEvent];
-            lblCartQuantity.Text = quantity.ToString();
-            lblCartPrice.Text = "$" + eventPrices[currentEvent].ToString();
-
-            int total = eventPrices[currentEvent] * quantity;
-            lblCartTotal.Text = "$" + total.ToString();
-        }
-
+        // CANCEL
         private void button6_Click(object sender, EventArgs e)
         {
             lblCartEvent.Text = "";
             lblCartQuantity.Text = "0";
-            lblCartPrice.Text = "$0";
-            lblCartTotal.Text = "$0";
+            lblCartPrice.Text = "$0.00";
+            lblCartTotal.Text = "$0.00";
+
+            lblEventName.Text = "";
+            lblLocation.Text = "";
+            lblDate.Text = "";
+            
+
+            pictureBox2.Image = null;
+
+            txtCardNumber.Clear();
+            txtExpiry.Clear();
+            txtCVV.Clear();
+
+            selectedEventName = "";
+            selectedLocation = "";
+            selectedDate = "";
+            selectedQuantity = 0;
+            selectedPrice = 0;
+            selectedImage = null;
+        }
+
+        // Old Designer event handlers
+        // Kept so Form7.Designer.cs does not give errors
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblRhythmNightsName_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblBattleBandsName_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblStreetFestivalName_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblDJNightName_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblSummerBeatsName_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void picStreetFestival_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblLocation_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void groupBox2_Enter_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
-
-
-

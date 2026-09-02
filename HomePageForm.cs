@@ -13,8 +13,6 @@ namespace tech_titans
 
             registerToolStripMenuItem.Click += registerToolStripMenuItem_Click;
             loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
-            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
-
             contextMenuStrip1.Opening += contextMenuStrip1_Opening;
 
             this.Load += HomePage_Load;
@@ -29,13 +27,13 @@ namespace tech_titans
         {
             if (Session.IsLoggedIn)
             {
-                labelWelcome.Text = "Welcome, " + Session.CurrentUser.Name;
-                labelWelcome.Visible = true;
+                lblwelcome.Text = "Welcome, " + Session.CurrentUser.Name;
+                lblwelcome.Visible = true;
             }
             else
             {
-                labelWelcome.Text = "";
-                labelWelcome.Visible = false;
+                lblwelcome.Text = "";
+                lblwelcome.Visible = false;
             }
 
             PositionWelcomeLabel();
@@ -45,15 +43,14 @@ namespace tech_titans
         {
             int rightMargin = 20;
 
-            labelWelcome.Left =
-                this.ClientSize.Width - labelWelcome.Width - rightMargin;
+            lblwelcome.Left =
+                this.ClientSize.Width - lblwelcome.Width - rightMargin;
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
             registerToolStripMenuItem.Visible = !Session.IsLoggedIn;
             loginToolStripMenuItem.Visible = !Session.IsLoggedIn;
-            logoutToolStripMenuItem.Visible = Session.IsLoggedIn;
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -95,6 +92,9 @@ namespace tech_titans
             Form4 form4 = new Form4();
             form4.Show();
             this.Hide();
+        }
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
         }
     }
 }
