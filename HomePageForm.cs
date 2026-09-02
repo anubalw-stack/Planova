@@ -96,5 +96,12 @@ namespace tech_titans
             form4.Show();
             this.Hide();
         }
+
+        private void cartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CartForm cartForm = new CartForm();
+            cartForm.Show();
+            this.Hide();
+        }
     }
 }

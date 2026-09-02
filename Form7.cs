@@ -56,11 +56,7 @@ namespace tech_titans
         {
          
             // Check whether a payment method is selected
-            if (!chkCardPayment.Checked)
-            {
-                MessageBox.Show("Please select a payment method.");
-                return;
-            }
+           
 
             // Check card number
             if (string.IsNullOrWhiteSpace(txtCardNumber.Text))

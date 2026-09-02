@@ -113,6 +113,16 @@ namespace tech_titans.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_Sep_2__2026__06_53_34_PM {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image Sep 2, 2026, 06_53_34 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap christian_harb_IeHRsw6kAJE_unsplash {
             get {
                 object obj = ResourceManager.GetObject("christian-harb-IeHRsw6kAJE-unsplash", resourceCulture);

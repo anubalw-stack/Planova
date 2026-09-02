@@ -111,6 +111,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="UserAccount.cs" />
+    <None Include="Resources\ChatGPT Image Sep 2, 2026, 06_53_34 PM.png" />
     <None Include="Resources\104101b7b38b229c023e1cf35ee89eec2.jpg" />
     <None Include="Resources\104101b7b38b229c023e1cf35ee89eec1.jpg" />
     <None Include="Resources\104101b7b38b229c023e1cf35ee89eec.jpg" />
@@ -120,6 +121,9 @@
     <None Include="Resources\Final home.png" />
     <None Include="Resources\hoem image.png" />
     <None Include="Resources\ChatGPT Image Aug 29, 2026, 02_21_27 PM.png" />
+    <EmbeddedResource Include="CartForm.resx">
+      <DependentUpon>CartForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
