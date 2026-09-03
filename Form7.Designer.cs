@@ -4,6 +4,9 @@
     {
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -16,9 +19,13 @@
 
         #region Windows Form Designer generated code
 
+        /// <summary>
+        /// Required method for Designer support.
+        /// </summary>
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
+
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnPay = new System.Windows.Forms.Button();
             this.txtCVV = new System.Windows.Forms.TextBox();
@@ -131,7 +138,7 @@
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
 
             // 
-            // txtCVV
+            // txtCardNumber
             // 
             this.txtCVV.Location = new System.Drawing.Point(311, 145);
             this.txtCVV.Name = "txtCVV";
@@ -155,7 +162,7 @@
             this.txtCardNumber.TabIndex = 21;
 
             // 
-            // label14
+            // label12
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font(
@@ -191,7 +198,7 @@
             this.label13.Text = "Expiry date";
 
             // 
-            // label12
+            // label14
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font(
@@ -212,6 +219,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
+
             this.groupBox2.Controls.Add(this.lblCartEvent);
             this.groupBox2.Controls.Add(this.btnCancel);
             this.groupBox2.Controls.Add(this.label22);
@@ -237,7 +245,7 @@
             this.groupBox2.Text = "Order Summary";
 
             // 
-            // lblCartEvent
+            // label17
             // 
             this.lblCartEvent.AutoSize = true;
             this.lblCartEvent.Font = new System.Drawing.Font(
@@ -255,7 +263,7 @@
             this.lblCartEvent.Text = "EVENT NAMES";
 
             // 
-            // btnCancel
+            // label16
             // 
             this.btnCancel.BackColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(215, 170);
@@ -395,6 +403,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Indigo;
+
             this.panel3.Controls.Add(this.iconButton11);
             this.panel3.Controls.Add(this.iconButton8);
             this.panel3.Controls.Add(this.iconButton7);
@@ -421,12 +430,14 @@
             this.iconButton11.IconSize = 30;
             this.iconButton11.Location = new System.Drawing.Point(111, 8);
             this.iconButton11.Name = "iconButton11";
-            this.iconButton11.Size = new System.Drawing.Size(30, 27);
+            this.iconButton11.Size =
+                new System.Drawing.Size(30, 27);
+
             this.iconButton11.TabIndex = 16;
             this.iconButton11.UseVisualStyleBackColor = false;
 
             // 
-            // iconButton4
+            // iconButton6
             // 
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton4.ForeColor = System.Drawing.Color.Indigo;
@@ -441,7 +452,7 @@
             this.iconButton4.UseVisualStyleBackColor = false;
 
             // 
-            // iconButton2
+            // iconButton7
             // 
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.ForeColor = System.Drawing.Color.Indigo;
@@ -526,14 +537,18 @@
             this.iconButton3.IconSize = 30;
             this.iconButton3.Location = new System.Drawing.Point(889, 8);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(30, 27);
+
+            this.iconButton3.Size =
+                new System.Drawing.Size(30, 27);
+
             this.iconButton3.TabIndex = 8;
             this.iconButton3.UseVisualStyleBackColor = false;
 
             // 
-            // panel1
+            // panel1 - top header
             // 
             this.panel1.BackColor = System.Drawing.Color.Indigo;
+
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
@@ -551,7 +566,10 @@
             this.panel9.BackColor = System.Drawing.Color.DarkOrange;
             this.panel9.Location = new System.Drawing.Point(97, 68);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(817, 8);
+
+            this.panel9.Size =
+                new System.Drawing.Size(817, 8);
+
             this.panel9.TabIndex = 4;
 
             // 
@@ -568,7 +586,10 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(61, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 13);
+
+            this.label1.Size =
+                new System.Drawing.Size(133, 13);
+
             this.label1.TabIndex = 3;
             this.label1.Text = "Event Booking System";
 
@@ -586,7 +607,10 @@
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
             this.label5.Location = new System.Drawing.Point(61, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 25);
+
+            this.label5.Size =
+                new System.Drawing.Size(115, 25);
+
             this.label5.TabIndex = 2;
             this.label5.Text = "PLANOVA";
 
