@@ -78,11 +78,6 @@ namespace tech_titans
                 MessageBox.Show("Please enter your card number.");
                 return;
             }
-
-        private void btnPay_Click(object sender, EventArgs e)
-        {
-         
-            // Check whether a payment method is selected
            
             if (!long.TryParse(txtCardNumber.Text, out _))
             {

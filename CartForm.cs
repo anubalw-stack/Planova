@@ -19,7 +19,7 @@ namespace tech_titans
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
+            BookingPayment form7 = new BookingPayment();
             form7.Show();
             this.Hide();
         }
