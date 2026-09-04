@@ -7,16 +7,29 @@ namespace tech_titans
 {
     public class Event
     {
+        // Event properties
         public string EventID { get; private set; }
         public string EventName { get; private set; }
         public string EventDescription { get; private set; }
         public string EventTime { get; private set; }
         public string EventDate { get; private set; }
         public string EventLocation { get; private set; }
-        public string EventImg { get; private set; } // stored file name, e.g. "cdy001.jpg"
+        public string EventImg { get; private set; }
 
-        public Event(string eventID, string eventName, string eventDescription,
-            string eventTime, string eventDate, string eventLocation, string eventImg)
+        // Price of one ticket
+        public int EventPrice { get; private set; }
+
+
+        // Constructor
+        public Event(
+            string eventID,
+            string eventName,
+            string eventDescription,
+            string eventTime,
+            string eventDate,
+            string eventLocation,
+            string eventImg,
+            int eventPrice)
         {
             EventID = eventID;
             EventName = eventName;
@@ -25,44 +38,67 @@ namespace tech_titans
             EventDate = eventDate;
             EventLocation = eventLocation;
             EventImg = eventImg;
+            EventPrice = eventPrice;
         }
 
+
+        // Returns event details as text
         public string GetEventDetails()
         {
             return $"{EventName}{Environment.NewLine}" +
                    $"{EventDate} | {EventTime}{Environment.NewLine}" +
-                   $"{EventLocation}{Environment.NewLine}{Environment.NewLine}" +
+                   $"{EventLocation}{Environment.NewLine}" +
+                   $"Price: {EventPrice} NZD{Environment.NewLine}{Environment.NewLine}" +
                    $"{EventDescription}";
         }
 
-        /// <summary>
-        /// Reads the CSV file and returns the Event matching the given ID, or null if not found.
-        /// CSV row format: eventID,eventName,eventDescription,eventTime,eventDate,eventLocation,eventImg
-        /// Wrap any field containing a comma (e.g. the description) in double quotes.
-        /// </summary>
-        public static Event SelectEvent(string eventID, string csvFilePath)
+
+        // Finds one event from events.csv using event ID
+        public static Event SelectEvent(
+            string eventID,
+            string csvFilePath)
         {
             string[] lines = File.ReadAllLines(csvFilePath);
 
             foreach (string line in lines)
             {
+                // Skip empty lines and header
                 if (string.IsNullOrWhiteSpace(line) ||
-                    line.StartsWith("eventID,", StringComparison.OrdinalIgnoreCase))
+                    line.StartsWith(
+                        "eventID,",
+                        StringComparison.OrdinalIgnoreCase))
                 {
                     continue;
                 }
 
+
+                // Split CSV row
                 string[] data = SplitCsvLine(line);
 
-                if (data.Length < 7)
+
+                // We now expect 8 fields
+                if (data.Length < 8)
                 {
                     continue;
                 }
+
 
                 string csvEventID = data[0].Trim();
 
-                if (csvEventID.Equals(eventID, StringComparison.OrdinalIgnoreCase))
+
+                // Check if event ID matches
+                if (csvEventID.Equals(
+                    eventID,
+                    StringComparison.OrdinalIgnoreCase))
                 {
+                    int price = 0;
+
+                    int.TryParse(
+                        data[7].Trim(),
+                        out price
+                    );
+
+
                     return new Event(
                         csvEventID,
                         data[1].Trim(),
@@ -70,35 +106,52 @@ namespace tech_titans
                         data[3].Trim(),
                         data[4].Trim(),
                         data[5].Trim(),
-                        data[6].Trim());
+                        data[6].Trim(),
+                        price
+                    );
                 }
             }
 
+
+            // Event not found
             return null;
         }
 
-        // Splits a CSV line, respecting double-quoted fields that may contain commas
-        // (needed because eventDescription is free text and will likely contain them).
+
+        // Splits CSV correctly even if
+        // description contains commas
         private static string[] SplitCsvLine(string line)
         {
-            // Normalize smart/curly quotes (common when a CSV gets edited in Word, Notes, etc.)
-            line = line.Replace('\u201C', '"').Replace('\u201D', '"');
+            // Replace curly quotes with normal quotes
+            line = line
+                .Replace('\u201C', '"')
+                .Replace('\u201D', '"');
 
-            var fields = new List<string>();
-            var current = new StringBuilder();
+
+            List<string> fields =
+                new List<string>();
+
+            StringBuilder current =
+                new StringBuilder();
+
             bool inQuotes = false;
+
 
             for (int i = 0; i < line.Length; i++)
             {
                 char c = line[i];
 
+
                 if (inQuotes)
                 {
                     if (c == '"')
                     {
-                        if (i + 1 < line.Length && line[i + 1] == '"')
+                        // Double quote inside quoted text
+                        if (i + 1 < line.Length &&
+                            line[i + 1] == '"')
                         {
                             current.Append('"');
+
                             i++;
                         }
                         else
@@ -119,7 +172,10 @@ namespace tech_titans
                     }
                     else if (c == ',')
                     {
-                        fields.Add(current.ToString());
+                        fields.Add(
+                            current.ToString()
+                        );
+
                         current.Clear();
                     }
                     else
@@ -129,7 +185,13 @@ namespace tech_titans
                 }
             }
 
-            fields.Add(current.ToString());
+
+            // Add final field
+            fields.Add(
+                current.ToString()
+            );
+
+
             return fields.ToArray();
         }
     }

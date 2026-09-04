@@ -90,12 +90,9 @@ namespace tech_titans
                 return;
             }
 
-            // TODO: booking flow goes here
-            MessageBox.Show(
-                "Booking flow not implemented yet.",
-                "Book Now",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            CartForm cart = new CartForm(currentEvent);
+            cart.Show();
+            this.Hide();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -111,5 +108,7 @@ namespace tech_titans
             home.Show();
             this.Close();
         }
+
+      
     }
 }
