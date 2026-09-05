@@ -16,7 +16,7 @@ namespace tech_titans
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BookingPayment());
+            Application.Run(new HomePage());
         }
     }
 }

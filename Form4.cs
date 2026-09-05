@@ -44,24 +44,64 @@ namespace tech_titans
         {
             InitializeComponent();
 
+            // Tag each "View Event" button with its event ID from events.csv,
+            // then route them all through the same click handler below.
+            btnDJNight.Tag = "msc001";
+            btnBattleBands.Tag = "msc002";
+            btnStreetFestival.Tag = "msc003";
+            btnRhythmNights.Tag = "msc004";
+            btnSummerBeats.Tag = "msc005";
+            btnComedyNight.Tag = "cdy001";
+
+            btnBattleBands.Click += button4_Click;
+            btnStreetFestival.Click += button4_Click;
+            btnRhythmNights.Click += button4_Click;
+            btnSummerBeats.Click += button4_Click;
+            btnComedyNight.Click += button4_Click;
+        }
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            UpdateLoginUI();
             txtSearch.Text = "Search events...";
             txtSearch.ForeColor = Color.Gray;
         }
+
+        private void UpdateLoginUI()
+        {
+            if (Session.IsLoggedIn)
+            {
+                labelWelcome.Text = "Welcome, " + Session.CurrentUser.Name;
+                labelWelcome.Visible = true;
+            }
+            else
+            {
+                labelWelcome.Text = "";
+                labelWelcome.Visible = false;
+            }
+        }
+
 
         private void label18_Click(object sender, EventArgs e)
         {
 
         }
 
+        // Shared handler for all six "View Event" buttons — reads the event ID
+        // off the clicked button's Tag and opens EventDetailsForm for it.
         private void button4_Click(object sender, EventArgs e)
         {
-            OpenBookingPayment(
-        lblDJNightName.Text,
-        lblDJNightLocation.Text,
-        lblDJNightDate.Text,
-        lblDJNightPrice.Text,
-        picDJNight.Image
-    );
+            Button clicked = sender as Button;
+
+            if (clicked == null || clicked.Tag == null)
+            {
+                return;
+            }
+
+            string eventId = clicked.Tag.ToString();
+
+            EventDetailsForm eventDetailsForm = new EventDetailsForm(eventId);
+            eventDetailsForm.Show();
+            this.Hide();
         }
 
         private void label3_Click(object sender, EventArgs e)

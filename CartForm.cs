@@ -16,5 +16,12 @@ namespace tech_titans
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BookingPayment form7 = new BookingPayment();
+            form7.Show();
+            this.Hide();
+        }
     }
 }
