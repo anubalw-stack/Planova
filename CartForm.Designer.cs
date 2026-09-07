@@ -99,7 +99,7 @@ namespace tech_titans
             this.iconButton14.IconColor = System.Drawing.Color.White;
             this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton14.IconSize = 30;
-            this.iconButton14.Location = new System.Drawing.Point(964, 29);
+            this.iconButton14.Location = new System.Drawing.Point(964, 26);
             this.iconButton14.Name = "iconButton14";
             this.iconButton14.Size = new System.Drawing.Size(24, 30);
             this.iconButton14.TabIndex = 7;
@@ -182,36 +182,32 @@ namespace tech_titans
             this.lblCartLocation.AutoSize = true;
             this.lblCartLocation.Location = new System.Drawing.Point(241, 87);
             this.lblCartLocation.Name = "lblCartLocation";
-            this.lblCartLocation.Size = new System.Drawing.Size(51, 20);
+            this.lblCartLocation.Size = new System.Drawing.Size(0, 20);
             this.lblCartLocation.TabIndex = 4;
-            this.lblCartLocation.Text = "";
             // 
             // lblCartTime
             // 
             this.lblCartTime.AutoSize = true;
             this.lblCartTime.Location = new System.Drawing.Point(425, 51);
             this.lblCartTime.Name = "lblCartTime";
-            this.lblCartTime.Size = new System.Drawing.Size(51, 20);
+            this.lblCartTime.Size = new System.Drawing.Size(0, 20);
             this.lblCartTime.TabIndex = 3;
-            this.lblCartTime.Text = "";
             // 
             // lblCartDate
             // 
             this.lblCartDate.AutoSize = true;
             this.lblCartDate.Location = new System.Drawing.Point(241, 51);
             this.lblCartDate.Name = "lblCartDate";
-            this.lblCartDate.Size = new System.Drawing.Size(51, 20);
+            this.lblCartDate.Size = new System.Drawing.Size(0, 20);
             this.lblCartDate.TabIndex = 2;
-            this.lblCartDate.Text = "";
             // 
             // lblCartEventName
             // 
             this.lblCartEventName.AutoSize = true;
             this.lblCartEventName.Location = new System.Drawing.Point(241, 13);
             this.lblCartEventName.Name = "lblCartEventName";
-            this.lblCartEventName.Size = new System.Drawing.Size(51, 20);
+            this.lblCartEventName.Size = new System.Drawing.Size(0, 20);
             this.lblCartEventName.TabIndex = 1;
-            this.lblCartEventName.Text = "";
             // 
             // pictureBox2
             // 
@@ -291,27 +287,24 @@ namespace tech_titans
             this.lblStudentPrice.AutoSize = true;
             this.lblStudentPrice.Location = new System.Drawing.Point(273, 9);
             this.lblStudentPrice.Name = "lblStudentPrice";
-            this.lblStudentPrice.Size = new System.Drawing.Size(51, 20);
+            this.lblStudentPrice.Size = new System.Drawing.Size(0, 20);
             this.lblStudentPrice.TabIndex = 5;
-            this.lblStudentPrice.Text = "";
             // 
             // lblAdultTotal
             // 
             this.lblAdultTotal.AutoSize = true;
             this.lblAdultTotal.Location = new System.Drawing.Point(755, 9);
             this.lblAdultTotal.Name = "lblAdultTotal";
-            this.lblAdultTotal.Size = new System.Drawing.Size(51, 20);
+            this.lblAdultTotal.Size = new System.Drawing.Size(0, 20);
             this.lblAdultTotal.TabIndex = 7;
-            this.lblAdultTotal.Text = "";
             // 
             // lblAdultPrice
             // 
             this.lblAdultPrice.AutoSize = true;
             this.lblAdultPrice.Location = new System.Drawing.Point(273, 10);
             this.lblAdultPrice.Name = "lblAdultPrice";
-            this.lblAdultPrice.Size = new System.Drawing.Size(51, 20);
+            this.lblAdultPrice.Size = new System.Drawing.Size(0, 20);
             this.lblAdultPrice.TabIndex = 8;
-            this.lblAdultPrice.Text = "";
             // 
             // numAdult
             // 
@@ -404,18 +397,16 @@ namespace tech_titans
             this.lblFamilyTotal.AutoSize = true;
             this.lblFamilyTotal.Location = new System.Drawing.Point(755, 12);
             this.lblFamilyTotal.Name = "lblFamilyTotal";
-            this.lblFamilyTotal.Size = new System.Drawing.Size(51, 20);
+            this.lblFamilyTotal.Size = new System.Drawing.Size(0, 20);
             this.lblFamilyTotal.TabIndex = 27;
-            this.lblFamilyTotal.Text = "";
             // 
             // lblFamilyPrice
             // 
             this.lblFamilyPrice.AutoSize = true;
             this.lblFamilyPrice.Location = new System.Drawing.Point(273, 9);
             this.lblFamilyPrice.Name = "lblFamilyPrice";
-            this.lblFamilyPrice.Size = new System.Drawing.Size(51, 20);
+            this.lblFamilyPrice.Size = new System.Drawing.Size(0, 20);
             this.lblFamilyPrice.TabIndex = 27;
-            this.lblFamilyPrice.Text = "";
             // 
             // numFamily
             // 
@@ -459,9 +450,8 @@ namespace tech_titans
             this.lblStudentTotal.AutoSize = true;
             this.lblStudentTotal.Location = new System.Drawing.Point(755, 9);
             this.lblStudentTotal.Name = "lblStudentTotal";
-            this.lblStudentTotal.Size = new System.Drawing.Size(51, 20);
+            this.lblStudentTotal.Size = new System.Drawing.Size(0, 20);
             this.lblStudentTotal.TabIndex = 26;
-            this.lblStudentTotal.Text = "";
             // 
             // numStudent
             // 
@@ -521,11 +511,10 @@ namespace tech_titans
             this.btnRemoveFromCart.IconColor = System.Drawing.Color.White;
             this.btnRemoveFromCart.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRemoveFromCart.IconSize = 24;
-            this.btnRemoveFromCart.Location = new System.Drawing.Point(400, 560);
+            this.btnRemoveFromCart.Location = new System.Drawing.Point(553, 560);
             this.btnRemoveFromCart.Name = "btnRemoveFromCart";
-            this.btnRemoveFromCart.Size = new System.Drawing.Size(200, 45);
+            this.btnRemoveFromCart.Size = new System.Drawing.Size(47, 45);
             this.btnRemoveFromCart.TabIndex = 20;
-            this.btnRemoveFromCart.Text = "";
             this.btnRemoveFromCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRemoveFromCart.UseVisualStyleBackColor = false;
             // 
