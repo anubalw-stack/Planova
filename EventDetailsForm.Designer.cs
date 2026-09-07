@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PlanovaSubtitle = new System.Windows.Forms.Label();
@@ -33,16 +34,22 @@
             this.buttonBookNow = new System.Windows.Forms.Button();
             this.aboutEvent = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.EventDetailsMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlanovaLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEvent)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.EventDetailsMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Indigo;
+            this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.PlanovaSubtitle);
             this.panel1.Controls.Add(this.PlanovaName);
@@ -196,7 +203,6 @@
             this.buttonBookNow.TabIndex = 11;
             this.buttonBookNow.Text = "Book Now";
             this.buttonBookNow.UseVisualStyleBackColor = false;
-          
             // 
             // aboutEvent
             // 
@@ -223,6 +229,42 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.Indigo;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Navicon;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.Location = new System.Drawing.Point(952, 24);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(24, 30);
+            this.iconButton1.TabIndex = 14;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // EventDetailsMenuStrip
+            // 
+            this.EventDetailsMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.EventDetailsMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.homeToolStripMenuItem,
+            this.registerToolStripMenuItem});
+            this.EventDetailsMenuStrip.Name = "contextMenuStrip1";
+            this.EventDetailsMenuStrip.Size = new System.Drawing.Size(241, 101);
+            // 
+            // homeToolStripMenuItem
+            // 
+            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.homeToolStripMenuItem.Text = "Home";
+            // 
+            // registerToolStripMenuItem
+            // 
+            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.registerToolStripMenuItem.Text = "Register";
+            // 
             // EventDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -248,6 +290,7 @@
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
+            this.EventDetailsMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,5 +314,9 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.Button btnBack;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.ContextMenuStrip EventDetailsMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
     }
 }

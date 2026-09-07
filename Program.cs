@@ -16,7 +16,7 @@ namespace tech_titans
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form9());
+            Application.Run(new HomePage());
         }
     }
 }
