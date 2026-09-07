@@ -76,6 +76,8 @@
             this.picBattleBands = new System.Windows.Forms.PictureBox();
             this.picStreetFestival = new System.Windows.Forms.PictureBox();
             this.labelWelcome = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnlEvents.SuspendLayout();
@@ -109,7 +111,7 @@
             // 
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtSearch.Location = new System.Drawing.Point(148, 107);
+            this.txtSearch.Location = new System.Drawing.Point(210, 107);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
@@ -311,6 +313,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Indigo;
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.label21);
             this.panel4.Controls.Add(this.label22);
@@ -612,11 +615,36 @@
             this.labelWelcome.TabIndex = 34;
             this.labelWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label3.Location = new System.Drawing.Point(25, 110);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 29);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Search Events";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button1.Location = new System.Drawing.Point(976, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 50);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1136, 771);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.pnlEvents);
             this.Controls.Add(this.panel2);
@@ -694,5 +722,7 @@
         private System.Windows.Forms.Button btnComedyNight;
         private System.Windows.Forms.Button btnSummerBeats;
         private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

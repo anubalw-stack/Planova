@@ -47,7 +47,8 @@ namespace tech_titans
         {
         }
 
-        // Opens Event Details
+
+        // OPEN EVENT DETAILS
         private void button4_Click(object sender, EventArgs e)
         {
             Button clicked = sender as Button;
@@ -67,6 +68,7 @@ namespace tech_titans
             this.Hide();
         }
 
+
         private void label3_Click(object sender, EventArgs e)
         {
         }
@@ -75,6 +77,8 @@ namespace tech_titans
         {
         }
 
+
+        // SEARCH EVENTS
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             if (txtSearch.Text == "Search events...")
@@ -102,7 +106,9 @@ namespace tech_titans
             bool comedyMatch =
                 EventMatches(lblComedyNightName.Text, search);
 
+
             int y = 20;
+
 
             ShowEvent(
                 djMatch,
@@ -170,10 +176,13 @@ namespace tech_titans
                 ref y
             );
 
+
             pnlEvents.AutoScrollPosition =
                 new Point(0, 0);
         }
 
+
+        // CHECK EVENT NAME
         private bool EventMatches(
             string eventName,
             string search)
@@ -198,6 +207,8 @@ namespace tech_titans
             return false;
         }
 
+
+        // SHOW / HIDE EVENT
         private void ShowEvent(
             bool show,
             PictureBox picture,
@@ -239,10 +250,13 @@ namespace tech_titans
             }
         }
 
+
         private void label9_Click(object sender, EventArgs e)
         {
         }
 
+
+        // SEARCH PLACEHOLDER
         private void txtSearch_Enter(
             object sender,
             EventArgs e)
@@ -254,6 +268,7 @@ namespace tech_titans
             }
         }
 
+
         private void txtSearch_Leave(
             object sender,
             EventArgs e)
@@ -263,6 +278,17 @@ namespace tech_titans
                 txtSearch.Text = "Search events...";
                 txtSearch.ForeColor = Color.Gray;
             }
+        }
+
+
+        // HOME BUTTON
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+
+            homePage.Show();
+
+            this.Hide();
         }
     }
 }

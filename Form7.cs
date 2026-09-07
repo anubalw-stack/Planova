@@ -18,6 +18,8 @@ namespace tech_titans
         {
             InitializeComponent();
 
+            SetupExpiryDate();
+
             lblEventName.Text = "";
             lblLocation.Text = "";
             lblDate.Text = "";
@@ -39,6 +41,8 @@ namespace tech_titans
         {
             InitializeComponent();
 
+            SetupExpiryDate();
+
             selectedEventName = eventName;
             selectedLocation = location;
             selectedDate = date;
@@ -49,28 +53,48 @@ namespace tech_titans
             ShowBooking();
         }
 
+
+        // SETUP EXPIRY DATE PICKER
+        private void SetupExpiryDate()
+        {
+            dtpexpiry.Format = DateTimePickerFormat.Custom;
+            dtpexpiry.CustomFormat = "' select date '";
+
+            dtpexpiry.ValueChanged += dtpexpiry_ValueChanged;
+        }
+
+
+        // EXPIRY DATE CHANGED
+        private void dtpexpiry_ValueChanged(object sender, EventArgs e)
+        {
+            dtpexpiry.CustomFormat = "MM/yy";
+
+            // Put selected date inside expiry textbox
+            txtExpiry.Text = dtpexpiry.Value.ToString("MMyy");
+        }
+
+
+        // SHOW BOOKING DETAILS
         private void ShowBooking()
         {
-            // Event details from CartForm
             lblEventName.Text = selectedEventName;
             lblLocation.Text = selectedLocation;
             lblDate.Text = selectedDate;
 
-            // Event image
             pictureBox2.Image = selectedImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
 
-            // Cart details
             lblCartEvent.Text = selectedEventName;
             lblCartQuantity.Text = selectedQuantity.ToString();
             lblCartPrice.Text = "$" + selectedTotalPrice.ToString("0.00");
             lblCartTotal.Text = "$" + selectedTotalPrice.ToString("0.00");
         }
 
+
         // PAY NOW
         private void btnPay_Click(object sender, EventArgs e)
         {
-            // Card Number
+            // CARD NUMBER
             if (string.IsNullOrWhiteSpace(txtCardNumber.Text))
             {
                 MessageBox.Show("Please enter your card number.");
@@ -89,10 +113,11 @@ namespace tech_titans
                 return;
             }
 
-            // Expiry
+
+            // EXPIRY DATE
             if (string.IsNullOrWhiteSpace(txtExpiry.Text))
             {
-                MessageBox.Show("Please enter your expiry date.");
+                MessageBox.Show("Please select your expiry date.");
                 return;
             }
 
@@ -107,6 +132,7 @@ namespace tech_titans
                 MessageBox.Show("Expiry date must be exactly 4 digits.");
                 return;
             }
+
 
             // CVV
             if (string.IsNullOrWhiteSpace(txtCVV.Text))
@@ -127,7 +153,8 @@ namespace tech_titans
                 return;
             }
 
-            // Successful payment
+
+            // SUCCESSFUL PAYMENT
             MessageBox.Show(
                 "Payment successful! Your booking has been confirmed.",
                 "Booking Confirmed",
@@ -135,7 +162,8 @@ namespace tech_titans
                 MessageBoxIcon.Information
             );
 
-            // Send booking details to Confirmation Form
+
+            // OPEN CONFIRMATION FORM
             BookingConfirmationForm confirmationForm =
                 new BookingConfirmationForm(
                     selectedEventName,
@@ -149,7 +177,8 @@ namespace tech_titans
             this.Hide();
         }
 
-        // CANCEL
+
+        // CLEAR PAYMENT
         private void button6_Click(object sender, EventArgs e)
         {
             lblCartEvent.Text = "";
@@ -167,6 +196,8 @@ namespace tech_titans
             txtExpiry.Clear();
             txtCVV.Clear();
 
+            dtpexpiry.CustomFormat = "' select date '";
+
             selectedEventName = "";
             selectedLocation = "";
             selectedDate = "";
@@ -175,7 +206,31 @@ namespace tech_titans
             selectedImage = null;
         }
 
-        // Old Designer event handlers
+
+        // CANCEL / BACK
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            // Find already opened EventDetailsForm
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is EventDetailsForm)
+                {
+                    form.Show();
+                    this.Hide();
+                    return;
+                }
+            }
+
+            // If EventDetailsForm is not open, go to Home Page
+            HomePage homePage = new HomePage();
+            homePage.Show();
+
+            this.Hide();
+        }
+
+
+        // OLD DESIGNER EVENT HANDLERS
+
         private void label1_Click(object sender, EventArgs e)
         {
         }
