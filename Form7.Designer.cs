@@ -26,9 +26,9 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpexpiry = new System.Windows.Forms.DateTimePicker();
             this.btnPay = new System.Windows.Forms.Button();
             this.txtCVV = new System.Windows.Forms.TextBox();
-            this.txtExpiry = new System.Windows.Forms.TextBox();
             this.txtCardNumber = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -62,7 +62,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblLocation = new System.Windows.Forms.Label();
-            this.dtpexpiry = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -88,7 +87,6 @@
             this.groupBox1.Controls.Add(this.dtpexpiry);
             this.groupBox1.Controls.Add(this.btnPay);
             this.groupBox1.Controls.Add(this.txtCVV);
-            this.groupBox1.Controls.Add(this.txtExpiry);
             this.groupBox1.Controls.Add(this.txtCardNumber);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
@@ -100,6 +98,13 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Payment Details";
+            // 
+            // dtpexpiry
+            // 
+            this.dtpexpiry.Location = new System.Drawing.Point(23, 150);
+            this.dtpexpiry.Name = "dtpexpiry";
+            this.dtpexpiry.Size = new System.Drawing.Size(200, 39);
+            this.dtpexpiry.TabIndex = 25;
             // 
             // btnPay
             // 
@@ -119,13 +124,6 @@
             this.txtCVV.Name = "txtCVV";
             this.txtCVV.Size = new System.Drawing.Size(87, 39);
             this.txtCVV.TabIndex = 23;
-            // 
-            // txtExpiry
-            // 
-            this.txtExpiry.Location = new System.Drawing.Point(20, 145);
-            this.txtExpiry.Name = "txtExpiry";
-            this.txtExpiry.Size = new System.Drawing.Size(219, 39);
-            this.txtExpiry.TabIndex = 22;
             // 
             // txtCardNumber
             // 
@@ -525,13 +523,6 @@
             this.lblLocation.TabIndex = 33;
             this.lblLocation.Text = "Location";
             // 
-            // dtpexpiry
-            // 
-            this.dtpexpiry.Location = new System.Drawing.Point(23, 152);
-            this.dtpexpiry.Name = "dtpexpiry";
-            this.dtpexpiry.Size = new System.Drawing.Size(200, 39);
-            this.dtpexpiry.TabIndex = 25;
-            // 
             // BookingPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -572,7 +563,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtCardNumber;
-        private System.Windows.Forms.TextBox txtExpiry;
         private System.Windows.Forms.TextBox txtCVV;
         private System.Windows.Forms.Button btnPay;
 
