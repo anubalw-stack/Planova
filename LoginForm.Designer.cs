@@ -138,7 +138,7 @@
             this.homeToolStripMenuItem,
             this.registerToolStripMenuItem});
             this.LoginMenuStrip.Name = "contextMenuStrip1";
-            this.LoginMenuStrip.Size = new System.Drawing.Size(241, 101);
+            this.LoginMenuStrip.Size = new System.Drawing.Size(148, 68);
             // 
             // homeToolStripMenuItem
             // 
@@ -150,7 +150,7 @@
             // registerToolStripMenuItem
             // 
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(147, 32);
             this.registerToolStripMenuItem.Text = "Register";
             this.registerToolStripMenuItem.Click += new System.EventHandler(this.registerToolStripMenuItem_Click);
             // 

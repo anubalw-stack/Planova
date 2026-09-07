@@ -252,7 +252,6 @@ namespace tech_titans
             this.button1.Text = "Back";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // iconButton6
             // 
@@ -282,7 +281,6 @@ namespace tech_titans
             this.button2.TabIndex = 19;
             this.button2.Text = " Proceed To Payment ";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblStudentPrice
             // 
