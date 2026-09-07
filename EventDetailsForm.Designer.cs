@@ -196,6 +196,7 @@
             this.buttonBookNow.TabIndex = 11;
             this.buttonBookNow.Text = "Book Now";
             this.buttonBookNow.UseVisualStyleBackColor = false;
+          
             // 
             // aboutEvent
             // 

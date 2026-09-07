@@ -143,7 +143,7 @@ namespace tech_titans
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
             this.cartToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.cartToolStripMenuItem.Text = "Cart";
-            this.cartToolStripMenuItem.Click += new System.EventHandler(this.cartToolStripMenuItem_Click);
+           
             // 
             // bookingsToolStripMenuItem
             // 

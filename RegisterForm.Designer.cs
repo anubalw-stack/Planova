@@ -17,6 +17,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -34,12 +35,14 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bookingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.iconButton15 = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.iconButton13 = new FontAwesome.Sharp.IconButton();
@@ -109,6 +112,7 @@
             this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton14.IconSize = 30;
             this.iconButton14.Location = new System.Drawing.Point(964, 29);
+            this.iconButton14.Location = new System.Drawing.Point(930, 29);
             this.iconButton14.Name = "iconButton14";
             this.iconButton14.Size = new System.Drawing.Size(24, 30);
             this.iconButton14.TabIndex = 7;
@@ -121,15 +125,18 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homeToolStripMenuItem,
             this.categoriesToolStripMenuItem,
+            this.categoriesToolStripMenuItem1,
             this.bookingsToolStripMenuItem,
             this.cartToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(140, 100);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(169, 164);
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(168, 32);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
@@ -137,19 +144,30 @@
             // 
             this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
             this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
+            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(168, 32);
             this.categoriesToolStripMenuItem.Text = "Login";
+            // 
+            // categoriesToolStripMenuItem1
+            // 
+            this.categoriesToolStripMenuItem1.Name = "categoriesToolStripMenuItem1";
+            this.categoriesToolStripMenuItem1.Size = new System.Drawing.Size(168, 32);
+            this.categoriesToolStripMenuItem1.Text = "Categories";
             // 
             // bookingsToolStripMenuItem
             // 
             this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
             this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.bookingsToolStripMenuItem.Text = "Cart";
+            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(168, 32);
+            this.bookingsToolStripMenuItem.Text = "Bookings";
             // 
             // cartToolStripMenuItem
             // 
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
             this.cartToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.cartToolStripMenuItem.Text = "Bookings";
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(168, 32);
+            this.cartToolStripMenuItem.Text = "Cart";
             // 
             // panel9
             // 
@@ -157,7 +175,7 @@
             this.panel9.Location = new System.Drawing.Point(97, 69);
             this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(817, 5);
+            this.panel9.Size = new System.Drawing.Size(817, 7);
             this.panel9.TabIndex = 4;
             // 
             // label6
@@ -169,6 +187,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 13);
+            this.label6.Size = new System.Drawing.Size(148, 15);
             this.label6.TabIndex = 3;
             this.label6.Text = "Event Booking System";
             // 
@@ -181,6 +200,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 25);
+            this.label5.Size = new System.Drawing.Size(131, 29);
             this.label5.TabIndex = 2;
             this.label5.Text = "PLANOVA";
             // 
@@ -197,6 +217,20 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // iconButton15
+            // 
+            this.iconButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton15.ForeColor = System.Drawing.Color.Indigo;
+            this.iconButton15.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton15.IconColor = System.Drawing.Color.White;
+            this.iconButton15.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton15.IconSize = 30;
+            this.iconButton15.Location = new System.Drawing.Point(971, 29);
+            this.iconButton15.Name = "iconButton15";
+            this.iconButton15.Size = new System.Drawing.Size(24, 30);
+            this.iconButton15.TabIndex = 6;
+            this.iconButton15.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -362,6 +396,20 @@
             this.panel5.Size = new System.Drawing.Size(407, 47);
             this.panel5.TabIndex = 3;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 26;
+            this.iconButton1.Location = new System.Drawing.Point(3, 4);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(39, 39);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // iconButton1
             // 
@@ -634,7 +682,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
-            this.Location = new System.Drawing.Point(150, 0);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "RegisterForm";
@@ -668,6 +715,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnregister;
         private System.Windows.Forms.Label label2;
@@ -678,34 +726,41 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtpDOB;
+
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox txtpass;
-        private FontAwesome.Sharp.IconButton btneye;
         private System.Windows.Forms.Panel panel9;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private System.Windows.Forms.Panel panel4;
+
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.TextBox txtpassconfirm;
+
+        private FontAwesome.Sharp.IconButton btneye;
+        private FontAwesome.Sharp.IconButton btneye2;
+
+        private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
-        private System.Windows.Forms.Panel panel4;
-        private FontAwesome.Sharp.IconButton btneye2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox txtpassconfirm;
-        private FontAwesome.Sharp.IconButton iconButton13;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton iconButton9;
         private FontAwesome.Sharp.IconButton iconButton10;
         private FontAwesome.Sharp.IconButton iconButton12;
+        private FontAwesome.Sharp.IconButton iconButton13;
         private FontAwesome.Sharp.IconButton iconButton14;
+        private FontAwesome.Sharp.IconButton iconButton15;
+
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoriesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem categoriesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem bookingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cartToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
-
