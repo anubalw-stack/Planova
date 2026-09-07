@@ -53,6 +53,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingConfirmationForm.Designer.cs">
+      <DependentUpon>BookingConfirmationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Event.cs" />
     <Compile Include="ForgotPasswordForm.cs">
       <SubType>Form</SubType>
@@ -128,6 +134,8 @@
     <None Include="Resources\Final home.png" />
     <None Include="Resources\hoem image.png" />
     <None Include="Resources\ChatGPT Image Aug 29, 2026, 02_21_27 PM.png" />
+    <EmbeddedResource Include="BookingConfirmationForm.resx">
+      <DependentUpon>BookingConfirmationForm.cs</DependentUpon>
     <EmbeddedResource Include="CartForm.resx">
       <DependentUpon>CartForm.cs</DependentUpon>
     </EmbeddedResource>
