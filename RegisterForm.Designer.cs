@@ -111,6 +111,7 @@
             this.iconButton14.IconColor = System.Drawing.Color.White;
             this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton14.IconSize = 30;
+            this.iconButton14.Location = new System.Drawing.Point(964, 29);
             this.iconButton14.Location = new System.Drawing.Point(930, 29);
             this.iconButton14.Name = "iconButton14";
             this.iconButton14.Size = new System.Drawing.Size(24, 30);
@@ -128,11 +129,13 @@
             this.bookingsToolStripMenuItem,
             this.cartToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(140, 100);
             this.contextMenuStrip1.Size = new System.Drawing.Size(169, 164);
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(168, 32);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
@@ -140,6 +143,7 @@
             // categoriesToolStripMenuItem
             // 
             this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
+            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(168, 32);
             this.categoriesToolStripMenuItem.Text = "Login";
             // 
@@ -152,12 +156,16 @@
             // bookingsToolStripMenuItem
             // 
             this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
+            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
+            this.bookingsToolStripMenuItem.Text = "Cart";
             this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(168, 32);
             this.bookingsToolStripMenuItem.Text = "Bookings";
             // 
             // cartToolStripMenuItem
             // 
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
+            this.cartToolStripMenuItem.Text = "Bookings";
             this.cartToolStripMenuItem.Size = new System.Drawing.Size(168, 32);
             this.cartToolStripMenuItem.Text = "Cart";
             // 
@@ -178,6 +186,7 @@
             this.label6.Location = new System.Drawing.Point(61, 44);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 13);
             this.label6.Size = new System.Drawing.Size(148, 15);
             this.label6.TabIndex = 3;
             this.label6.Text = "Event Booking System";
@@ -190,6 +199,7 @@
             this.label5.Location = new System.Drawing.Point(61, 10);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(115, 25);
             this.label5.Size = new System.Drawing.Size(131, 29);
             this.label5.TabIndex = 2;
             this.label5.Text = "PLANOVA";
@@ -303,7 +313,7 @@
             this.txtpassconfirm.Location = new System.Drawing.Point(63, 11);
             this.txtpassconfirm.Margin = new System.Windows.Forms.Padding(2);
             this.txtpassconfirm.Name = "txtpassconfirm";
-            this.txtpassconfirm.Size = new System.Drawing.Size(231, 29);
+            this.txtpassconfirm.Size = new System.Drawing.Size(231, 24);
             this.txtpassconfirm.TabIndex = 11;
             this.txtpassconfirm.Text = " Confirm Password";
             this.txtpassconfirm.Enter += new System.EventHandler(this.txtpassconfirm_Enter);
@@ -317,7 +327,7 @@
             this.lblogin.Location = new System.Drawing.Point(206, 454);
             this.lblogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblogin.Name = "lblogin";
-            this.lblogin.Size = new System.Drawing.Size(56, 22);
+            this.lblogin.Size = new System.Drawing.Size(48, 19);
             this.lblogin.TabIndex = 5;
             this.lblogin.Text = "Login";
             this.lblogin.Click += new System.EventHandler(this.lblogin_Click);
@@ -329,7 +339,7 @@
             this.label2.Location = new System.Drawing.Point(153, 437);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 17);
+            this.label2.Size = new System.Drawing.Size(136, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "------ Already a user? ------";
             // 
@@ -341,7 +351,7 @@
             this.label4.Location = new System.Drawing.Point(64, 42);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(321, 20);
+            this.label4.Size = new System.Drawing.Size(276, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Join Planova now and explore amazing events";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -354,7 +364,7 @@
             this.label1.Location = new System.Drawing.Point(109, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 31);
+            this.label1.Size = new System.Drawing.Size(199, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "Create An Account";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -385,6 +395,21 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(407, 47);
             this.panel5.TabIndex = 3;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 26;
+            this.iconButton1.Location = new System.Drawing.Point(3, 4);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(39, 39);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // iconButton1
             // 
@@ -408,9 +433,10 @@
             this.txtname.Location = new System.Drawing.Point(59, 14);
             this.txtname.Margin = new System.Windows.Forms.Padding(0);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(314, 29);
+            this.txtname.Size = new System.Drawing.Size(314, 24);
             this.txtname.TabIndex = 0;
             this.txtname.Text = " Full Name";
+            this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             this.txtname.Enter += new System.EventHandler(this.txtname_Enter);
             this.txtname.Leave += new System.EventHandler(this.txtname_Leave);
             // 
@@ -448,7 +474,7 @@
             this.txtemail.Location = new System.Drawing.Point(59, 12);
             this.txtemail.Margin = new System.Windows.Forms.Padding(2);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(333, 29);
+            this.txtemail.Size = new System.Drawing.Size(333, 24);
             this.txtemail.TabIndex = 2;
             this.txtemail.Text = " E-mail";
             this.txtemail.Enter += new System.EventHandler(this.txtemail_Enter);
@@ -488,7 +514,7 @@
             this.dtpDOB.Location = new System.Drawing.Point(56, 2);
             this.dtpDOB.Margin = new System.Windows.Forms.Padding(2);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(347, 38);
+            this.dtpDOB.Size = new System.Drawing.Size(347, 33);
             this.dtpDOB.TabIndex = 3;
             // 
             // panel8
@@ -541,9 +567,10 @@
             this.txtpass.Location = new System.Drawing.Point(63, 11);
             this.txtpass.Margin = new System.Windows.Forms.Padding(2);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(231, 29);
+            this.txtpass.Size = new System.Drawing.Size(231, 24);
             this.txtpass.TabIndex = 11;
             this.txtpass.Text = " Password";
+            this.txtpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
             this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
             this.txtpass.Leave += new System.EventHandler(this.txtpass_Leave);
             // 
