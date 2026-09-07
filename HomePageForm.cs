@@ -96,7 +96,5 @@ namespace tech_titans
             form4.Show();
             this.Hide();
         }
-
-      
     }
 }

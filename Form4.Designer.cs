@@ -169,7 +169,6 @@
             this.btnBattleBands.TabIndex = 14;
             this.btnBattleBands.Text = "View Event";
             this.btnBattleBands.UseVisualStyleBackColor = true;
-            this.btnBattleBands.Click += new System.EventHandler(this.btnBattleBands_Click);
             // 
             // btnStreetFestival
             // 
@@ -181,7 +180,6 @@
             this.btnStreetFestival.TabIndex = 15;
             this.btnStreetFestival.Text = "View Event";
             this.btnStreetFestival.UseVisualStyleBackColor = true;
-            this.btnStreetFestival.Click += new System.EventHandler(this.btnStreetFestival_Click);
             // 
             // label8
             // 
@@ -557,7 +555,6 @@
             this.btnRhythmNights.TabIndex = 29;
             this.btnRhythmNights.Text = "View Event";
             this.btnRhythmNights.UseVisualStyleBackColor = true;
-            this.btnRhythmNights.Click += new System.EventHandler(this.btnRhythmNights_Click);
             // 
             // lblRhythmNightsPrice
             // 
