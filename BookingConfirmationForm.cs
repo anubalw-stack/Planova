@@ -12,9 +12,28 @@ namespace tech_titans
 {
     public partial class BookingConfirmationForm : Form
     {
-        public BookingConfirmationForm()
+        public BookingConfirmationForm(
+            string eventName,
+            string eventDate,
+            string location,
+            int quantity,
+            int price)
         {
             InitializeComponent();
+
+            lblBookingID.Text = "BK" + DateTime.Now.ToString("HHmmss");
+
+            lblEventName.Text = eventName;
+            lblEventDate.Text = eventDate;
+            lblLocation.Text = location;
+            lblQuantity.Text = quantity.ToString();
+
+            lblPrice.Text = price + " NZD";
+
+            int total = quantity * price;
+            lblTotalPaid.Text = total + " NZD";
+
+            lblPaymentStatus.Text = "PAID";
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -65,6 +84,16 @@ namespace tech_titans
         private void lblPaymentStatusTitle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBackToEvents_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Form4 eventsForm = new Form4();
+            eventsForm.ShowDialog();
+
+            this.Close();
         }
     }
 }

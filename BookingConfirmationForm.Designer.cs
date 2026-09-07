@@ -247,6 +247,7 @@
             this.btnBackToEvents.TabIndex = 44;
             this.btnBackToEvents.Text = "Back to Events";
             this.btnBackToEvents.UseVisualStyleBackColor = false;
+            this.btnBackToEvents.Click += new System.EventHandler(this.btnBackToEvents_Click);
             // 
             // lblEventName
             // 
