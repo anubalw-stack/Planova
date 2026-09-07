@@ -97,6 +97,11 @@ namespace tech_titans
             this.Hide();
         }
 
-      
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Form9 form9 = new Form9();
+            form9.Show();
+            this.Hide();
+        }
     }
 }

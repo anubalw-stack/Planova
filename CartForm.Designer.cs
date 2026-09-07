@@ -56,16 +56,16 @@ namespace tech_titans
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblFamilyTotal = new System.Windows.Forms.Label();
             this.lblFamilyPrice = new System.Windows.Forms.Label();
             this.numFamily = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lblStudentTotal = new System.Windows.Forms.Label();
             this.numStudent = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.lblStudentTotal = new System.Windows.Forms.Label();
-            this.lblFamilyTotal = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -249,7 +249,7 @@ namespace tech_titans
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button1.Location = new System.Drawing.Point(121, 560);
             this.button1.Name = "button1";
@@ -258,6 +258,7 @@ namespace tech_titans
             this.button1.Text = "Back";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // iconButton6
             // 
@@ -279,7 +280,7 @@ namespace tech_titans
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button2.Location = new System.Drawing.Point(645, 560);
             this.button2.Name = "button2";
@@ -287,6 +288,7 @@ namespace tech_titans
             this.button2.TabIndex = 19;
             this.button2.Text = " Proceed To Payment ";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblStudentPrice
             // 
@@ -401,6 +403,15 @@ namespace tech_titans
             this.panel4.Size = new System.Drawing.Size(868, 44);
             this.panel4.TabIndex = 5;
             // 
+            // lblFamilyTotal
+            // 
+            this.lblFamilyTotal.AutoSize = true;
+            this.lblFamilyTotal.Location = new System.Drawing.Point(755, 12);
+            this.lblFamilyTotal.Name = "lblFamilyTotal";
+            this.lblFamilyTotal.Size = new System.Drawing.Size(51, 20);
+            this.lblFamilyTotal.TabIndex = 27;
+            this.lblFamilyTotal.Text = "label3";
+            // 
             // lblFamilyPrice
             // 
             this.lblFamilyPrice.AutoSize = true;
@@ -446,6 +457,15 @@ namespace tech_titans
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(868, 44);
             this.panel6.TabIndex = 6;
+            // 
+            // lblStudentTotal
+            // 
+            this.lblStudentTotal.AutoSize = true;
+            this.lblStudentTotal.Location = new System.Drawing.Point(755, 9);
+            this.lblStudentTotal.Name = "lblStudentTotal";
+            this.lblStudentTotal.Size = new System.Drawing.Size(51, 20);
+            this.lblStudentTotal.TabIndex = 26;
+            this.lblStudentTotal.Text = "label3";
             // 
             // numStudent
             // 
@@ -495,24 +515,6 @@ namespace tech_titans
             this.label9.Size = new System.Drawing.Size(53, 21);
             this.label9.TabIndex = 25;
             this.label9.Text = "Adult";
-            // 
-            // lblStudentTotal
-            // 
-            this.lblStudentTotal.AutoSize = true;
-            this.lblStudentTotal.Location = new System.Drawing.Point(755, 9);
-            this.lblStudentTotal.Name = "lblStudentTotal";
-            this.lblStudentTotal.Size = new System.Drawing.Size(51, 20);
-            this.lblStudentTotal.TabIndex = 26;
-            this.lblStudentTotal.Text = "label3";
-            // 
-            // lblFamilyTotal
-            // 
-            this.lblFamilyTotal.AutoSize = true;
-            this.lblFamilyTotal.Location = new System.Drawing.Point(755, 12);
-            this.lblFamilyTotal.Name = "lblFamilyTotal";
-            this.lblFamilyTotal.Size = new System.Drawing.Size(51, 20);
-            this.lblFamilyTotal.TabIndex = 27;
-            this.lblFamilyTotal.Text = "label3";
             // 
             // CartForm
             // 

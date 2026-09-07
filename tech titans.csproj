@@ -1,253 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C6F7D07-83CA-4610-9C83-F4FC08ACC697}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>tech_titans</RootNamespace>
-    <AssemblyName>tech titans</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
-      <HintPath>packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="BookingConfirmationForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BookingConfirmationForm.Designer.cs">
-      <DependentUpon>BookingConfirmationForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Event.cs" />
-    <Compile Include="ForgotPasswordForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ForgotPasswordForm.Designer.cs">
-      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form9.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="RegisterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegisterForm.Designer.cs">
-      <DependentUpon>RegisterForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EventDetailsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EventDetailsForm.Designer.cs">
-      <DependentUpon>EventDetailsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CartForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CartForm.Designer.cs">
-      <DependentUpon>CartForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HomePageForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HomePageForm.Designer.cs">
-      <DependentUpon>HomePageForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form7.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Session.cs" />
-    <Compile Include="UserAccount.cs" />
-    <None Include="Resources\ChatGPT Image Sep 2, 2026, 06_53_34 PM1.png" />
-    <None Include="Resources\ChatGPT Image Sep 2, 2026, 06_53_34 PM.png" />
-    <None Include="Resources\104101b7b38b229c023e1cf35ee89eec2.jpg" />
-    <None Include="Resources\104101b7b38b229c023e1cf35ee89eec1.jpg" />
-    <None Include="Resources\104101b7b38b229c023e1cf35ee89eec.jpg" />
-    <None Include="Resources\home.png" />
-    <None Include="Resources\Final home2.png" />
-    <None Include="Resources\Final home1.png" />
-    <None Include="Resources\Final home.png" />
-    <None Include="Resources\hoem image.png" />
-    <None Include="Resources\ChatGPT Image Aug 29, 2026, 02_21_27 PM.png" />
-    <EmbeddedResource Include="BookingConfirmationForm.resx">
-      <DependentUpon>BookingConfirmationForm.cs</DependentUpon>
-    <EmbeddedResource Include="CartForm.resx">
-      <DependentUpon>CartForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegisterForm.resx">
-      <DependentUpon>RegisterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EventDetailsForm.resx">
-      <DependentUpon>EventDetailsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HomePageForm.resx">
-      <DependentUpon>HomePageForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="fonts\FontAwesome.otf" />
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jkiokj.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jkisdfgokj.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fgtr4e3wasdftr543ed.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\53c2df674569ab7ef72bc6023307f264.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\R.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ava13c3ac53812cde1b88.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngtree-circle-password-icon-vectors-png-image_5053796.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iidu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iuytd.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iuyoiuytretd.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iuy12td.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\13220979.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1234.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\R1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\09876.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.23.21 PM.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WhatsApp Image 2026-08-10 at 8.23.21 PM1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngtree-circle-password-icon-vectors-png-image_50537961.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\font-awesome.min.css" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+			Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{5C6F7D07-83CA-4610-9C83-F4FC08ACC697}</ProjectGuid>
+		<OutputType>WinExe</OutputType>
+		<RootNamespace>tech_titans</RootNamespace>
+		<AssemblyName>tech titans</AssemblyName>
+		<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<Deterministic>true</Deterministic>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+
+	<ItemGroup>
+
+		<Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+			<HintPath>packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+		</Reference>
+
+		<Reference Include="PresentationCore" />
+		<Reference Include="PresentationFramework" />
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Xaml" />
+		<Reference Include="System.Xml.Linq" />
+		<Reference Include="System.Data.DataSetExtensions" />
+		<Reference Include="Microsoft.CSharp" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Deployment" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Net.Http" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml" />
+		<Reference Include="WindowsBase" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+
+		<Compile Include="BookingConfirmationForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="BookingConfirmationForm.Designer.cs">
+			<DependentUpon>BookingConfirmationForm.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="Event.cs" />
+
+		<Compile Include="ForgotPasswordForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="ForgotPasswordForm.Designer.cs">
+			<DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="Form4.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="Form4.Designer.cs">
+			<DependentUpon>Form4.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="Form9.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="Form9.Designer.cs">
+			<DependentUpon>Form9.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DesignTime>True</DesignTime>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+
+		<Compile Include="RegisterForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="RegisterForm.Designer.cs">
+			<DependentUpon>RegisterForm.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="LoginForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="LoginForm.Designer.cs">
+			<DependentUpon>LoginForm.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="EventDetailsForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="EventDetailsForm.Designer.cs">
+			<DependentUpon>EventDetailsForm.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="CartForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="CartForm.Designer.cs">
+			<DependentUpon>CartForm.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="HomePageForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="HomePageForm.Designer.cs">
+			<DependentUpon>HomePageForm.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="Form7.cs">
+			<SubType>Form</SubType>
+		</Compile>
+
+		<Compile Include="Form7.Designer.cs">
+			<DependentUpon>Form7.cs</DependentUpon>
+		</Compile>
+
+		<Compile Include="Program.cs" />
+
+		<Compile Include="Properties\AssemblyInfo.cs" />
+
+		<Compile Include="Session.cs" />
+
+		<Compile Include="UserAccount.cs" />
+
+		<None Include="Resources\ChatGPT Image Sep 2, 2026, 06_53_34 PM1.png" />
+		<None Include="Resources\ChatGPT Image Sep 2, 2026, 06_53_34 PM.png" />
+		<None Include="Resources\104101b7b38b229c023e1cf35ee89eec2.jpg" />
+		<None Include="Resources\104101b7b38b229c023e1cf35ee89eec1.jpg" />
+		<None Include="Resources\104101b7b38b229c023e1cf35ee89eec.jpg" />
+		<None Include="Resources\home.png" />
+		<None Include="Resources\Final home2.png" />
+		<None Include="Resources\Final home1.png" />
+		<None Include="Resources\Final home.png" />
+		<None Include="Resources\hoem image.png" />
+		<None Include="Resources\ChatGPT Image Aug 29, 2026, 02_21_27 PM.png" />
+
+		<EmbeddedResource Include="BookingConfirmationForm.resx">
+			<DependentUpon>BookingConfirmationForm.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="CartForm.resx">
+			<DependentUpon>CartForm.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="Form4.resx">
+			<DependentUpon>Form4.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="Form9.resx">
+			<DependentUpon>Form9.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="RegisterForm.resx">
+			<DependentUpon>RegisterForm.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="EventDetailsForm.resx">
+			<DependentUpon>EventDetailsForm.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="LoginForm.resx">
+			<DependentUpon>LoginForm.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="HomePageForm.resx">
+			<DependentUpon>HomePageForm.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="Form7.resx">
+			<DependentUpon>Form7.cs</DependentUpon>
+		</EmbeddedResource>
+
+		<EmbeddedResource Include="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<SubType>Designer</SubType>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+
+		<Content Include="fonts\fontawesome-webfont.eot" />
+		<Content Include="fonts\fontawesome-webfont.ttf" />
+		<Content Include="fonts\fontawesome-webfont.woff" />
+		<Content Include="fonts\fontawesome-webfont.woff2" />
+		<Content Include="fonts\FontAwesome.otf" />
+
+		<None Include="packages.config" />
+
+		<None Include="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+
+		<Compile Include="Properties\Settings.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+		</Compile>
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="App.config" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpeg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\WhatsApp Image 2026-08-10 at 8.18.48 PM.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\jkiokj.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\jkisdfgokj.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\fgtr4e3wasdftr543ed.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\53c2df674569ab7ef72bc6023307f264.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\R.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\ava13c3ac53812cde1b88.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\pngtree-circle-password-icon-vectors-png-image_5053796.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\iidu.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\iuytd.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\iuyoiuytretd.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\iuy12td.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\13220979.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\1234.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\R1.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\09876.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\WhatsApp Image 2026-08-10 at 8.23.21 PM.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\WhatsApp Image 2026-08-10 at 8.23.21 PM1.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Resources\pngtree-circle-password-icon-vectors-png-image_50537961.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Content\font-awesome.css" />
+		<Content Include="Content\font-awesome.min.css" />
+		<Content Include="fonts\fontawesome-webfont.svg" />
+	</ItemGroup>
+
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

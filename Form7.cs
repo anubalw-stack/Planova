@@ -10,7 +10,7 @@ namespace tech_titans
         private string selectedLocation;
         private string selectedDate;
         private int selectedQuantity;
-        private int selectedPrice;
+        private int selectedTotalPrice;
         private Image selectedImage;
 
         // Constructor for Designer
@@ -21,7 +21,6 @@ namespace tech_titans
             lblEventName.Text = "";
             lblLocation.Text = "";
             lblDate.Text = "";
-           
 
             lblCartEvent.Text = "";
             lblCartQuantity.Text = "0";
@@ -29,13 +28,13 @@ namespace tech_titans
             lblCartTotal.Text = "$0.00";
         }
 
-        // Constructor used by Form4
+        // Constructor used by CartForm
         public BookingPayment(
             string eventName,
             string location,
             string date,
             int quantity,
-            int price,
+            int totalPrice,
             Image image)
         {
             InitializeComponent();
@@ -44,7 +43,7 @@ namespace tech_titans
             selectedLocation = location;
             selectedDate = date;
             selectedQuantity = quantity;
-            selectedPrice = price;
+            selectedTotalPrice = totalPrice;
             selectedImage = image;
 
             ShowBooking();
@@ -52,33 +51,32 @@ namespace tech_titans
 
         private void ShowBooking()
         {
+            // Event details from CartForm
             lblEventName.Text = selectedEventName;
             lblLocation.Text = selectedLocation;
             lblDate.Text = selectedDate;
 
+            // Event image
             pictureBox2.Image = selectedImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
 
-            int total = selectedPrice * selectedQuantity;
-
+            // Cart details
             lblCartEvent.Text = selectedEventName;
             lblCartQuantity.Text = selectedQuantity.ToString();
-            lblCartPrice.Text = "$" + selectedPrice.ToString("0.00");
-            lblCartTotal.Text = "$" + total.ToString("0.00");
-
-           
+            lblCartPrice.Text = "$" + selectedTotalPrice.ToString("0.00");
+            lblCartTotal.Text = "$" + selectedTotalPrice.ToString("0.00");
         }
 
         // PAY NOW
         private void btnPay_Click(object sender, EventArgs e)
         {
-
+            // Card Number
             if (string.IsNullOrWhiteSpace(txtCardNumber.Text))
             {
                 MessageBox.Show("Please enter your card number.");
                 return;
             }
-           
+
             if (!long.TryParse(txtCardNumber.Text, out _))
             {
                 MessageBox.Show("Card Number must contain numbers only.");
@@ -91,6 +89,7 @@ namespace tech_titans
                 return;
             }
 
+            // Expiry
             if (string.IsNullOrWhiteSpace(txtExpiry.Text))
             {
                 MessageBox.Show("Please enter your expiry date.");
@@ -109,6 +108,7 @@ namespace tech_titans
                 return;
             }
 
+            // CVV
             if (string.IsNullOrWhiteSpace(txtCVV.Text))
             {
                 MessageBox.Show("Please enter your CVV.");
@@ -127,11 +127,26 @@ namespace tech_titans
                 return;
             }
 
+            // Successful payment
             MessageBox.Show(
                 "Payment successful! Your booking has been confirmed.",
                 "Booking Confirmed",
                 MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+                MessageBoxIcon.Information
+            );
+
+            // Send booking details to Confirmation Form
+            BookingConfirmationForm confirmationForm =
+                new BookingConfirmationForm(
+                    selectedEventName,
+                    selectedLocation,
+                    selectedDate,
+                    selectedQuantity,
+                    selectedTotalPrice
+                );
+
+            confirmationForm.Show();
+            this.Hide();
         }
 
         // CANCEL
@@ -145,7 +160,6 @@ namespace tech_titans
             lblEventName.Text = "";
             lblLocation.Text = "";
             lblDate.Text = "";
-            
 
             pictureBox2.Image = null;
 
@@ -157,13 +171,11 @@ namespace tech_titans
             selectedLocation = "";
             selectedDate = "";
             selectedQuantity = 0;
-            selectedPrice = 0;
+            selectedTotalPrice = 0;
             selectedImage = null;
         }
 
         // Old Designer event handlers
-        // Kept so Form7.Designer.cs does not give errors
-
         private void label1_Click(object sender, EventArgs e)
         {
         }
@@ -262,7 +274,6 @@ namespace tech_titans
 
         private void groupBox2_Enter_1(object sender, EventArgs e)
         {
-
         }
     }
 }

@@ -8,11 +8,13 @@ namespace tech_titans
     {
         private Event selectedEvent;
 
+        // Constructor for Designer
         public CartForm()
         {
             InitializeComponent();
         }
 
+        // Constructor used when event is added to cart
         public CartForm(Event selectedEvent)
         {
             InitializeComponent();
@@ -37,7 +39,6 @@ namespace tech_titans
             DisplayEvent();
         }
 
-
         private void DisplayEvent()
         {
             // Event details
@@ -45,7 +46,6 @@ namespace tech_titans
             lblCartDate.Text = selectedEvent.EventDate;
             lblCartTime.Text = selectedEvent.EventTime;
             lblCartLocation.Text = selectedEvent.EventLocation;
-
 
             // Event image
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -57,67 +57,117 @@ namespace tech_titans
 
             pictureBox2.Image = image as Image;
 
-
-            // Adult price comes directly from Event
+            // Ticket prices
             int adultPrice = selectedEvent.EventPrice;
-
-            // Student = Adult - 10
             int studentPrice = adultPrice - 10;
-
-            // Family = Adult x 4 - 50
             int familyPrice = (adultPrice * 4) - 50;
 
-
-            // ONLY changing Text.
-            // Font/size stays whatever you selected in Designer.
+            // Display prices
             lblAdultPrice.Text = adultPrice + " NZD";
             lblStudentPrice.Text = studentPrice + " NZD";
             lblFamilyPrice.Text = familyPrice + " NZD";
 
-
             UpdateTotals();
         }
 
-
         private void UpdateTotals()
         {
+            // Prices
             int adultPrice = selectedEvent.EventPrice;
             int studentPrice = adultPrice - 10;
             int familyPrice = (adultPrice * 4) - 50;
 
-
+            // Quantities
             int adultQuantity = (int)numAdult.Value;
             int studentQuantity = (int)numStudent.Value;
             int familyQuantity = (int)numFamily.Value;
 
-
+            // Totals
             int adultTotal = adultPrice * adultQuantity;
             int studentTotal = studentPrice * studentQuantity;
             int familyTotal = familyPrice * familyQuantity;
 
-
-            // Again, only Text changes
+            // Display totals
             lblAdultTotal.Text = adultTotal + " NZD";
             lblStudentTotal.Text = studentTotal + " NZD";
             lblFamilyTotal.Text = familyTotal + " NZD";
         }
-
 
         private void numAdult_ValueChanged(object sender, EventArgs e)
         {
             UpdateTotals();
         }
 
-
         private void numStudent_ValueChanged(object sender, EventArgs e)
         {
             UpdateTotals();
         }
 
-
         private void numFamily_ValueChanged(object sender, EventArgs e)
         {
             UpdateTotals();
+        }
+
+        // Continue to Payment
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Prices
+            int adultPrice = selectedEvent.EventPrice;
+            int studentPrice = adultPrice - 10;
+            int familyPrice = (adultPrice * 4) - 50;
+
+            // Quantities
+            int adultQuantity = (int)numAdult.Value;
+            int studentQuantity = (int)numStudent.Value;
+            int familyQuantity = (int)numFamily.Value;
+
+            // Total quantity
+            int totalQuantity =
+                adultQuantity +
+                studentQuantity +
+                familyQuantity;
+
+            // Check if user selected tickets
+            if (totalQuantity == 0)
+            {
+                MessageBox.Show(
+                    "Please select at least one ticket.",
+                    "Cart",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
+                return;
+            }
+
+            // Calculate final cart total
+            int totalPrice =
+                (adultPrice * adultQuantity) +
+                (studentPrice * studentQuantity) +
+                (familyPrice * familyQuantity);
+
+            // Send Cart data to Form 7
+            BookingPayment form7 = new BookingPayment(
+                selectedEvent.EventName,
+                selectedEvent.EventLocation,
+                selectedEvent.EventDate,
+                totalQuantity,
+                totalPrice,
+                pictureBox2.Image
+            );
+
+            form7.Show();
+            this.Hide();
+        }
+
+        // Back to Event Details
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EventDetailsForm eventDetailsForm =
+                new EventDetailsForm(selectedEvent.EventID);
+
+            eventDetailsForm.Show();
+            this.Hide();
         }
     }
 }
