@@ -304,5 +304,20 @@ namespace tech_titans
             homepage.Show();
             this.Hide();
         }
+
+        private void txtname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtpass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

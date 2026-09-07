@@ -132,5 +132,10 @@ namespace tech_titans
             homepage.Show();
             this.Hide();
         }
+
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
