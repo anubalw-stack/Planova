@@ -30,7 +30,7 @@ namespace tech_titans
 
             lblPrice.Text = price + " NZD";
 
-            int total = quantity * price;
+            int total =  price;
             lblTotalPaid.Text = total + " NZD";
 
             lblPaymentStatus.Text = "PAID";

@@ -107,11 +107,13 @@
             // 
             // txtSearch
             // 
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtSearch.Location = new System.Drawing.Point(18, 115);
+            this.txtSearch.Location = new System.Drawing.Point(148, 107);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(540, 26);
+            this.txtSearch.Size = new System.Drawing.Size(817, 37);
             this.txtSearch.TabIndex = 2;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
@@ -283,7 +285,7 @@
             this.label21.Location = new System.Drawing.Point(69, 55);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(132, 15);
+            this.label21.Size = new System.Drawing.Size(148, 15);
             this.label21.TabIndex = 3;
             this.label21.Text = "Event Booking System";
             // 
@@ -295,7 +297,7 @@
             this.label22.Location = new System.Drawing.Point(71, 12);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(128, 32);
+            this.label22.Size = new System.Drawing.Size(131, 29);
             this.label22.TabIndex = 2;
             this.label22.Text = "PLANOVA";
             // 
@@ -334,6 +336,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Lavender;
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox6.Image = global::tech_titans.Properties.Resources.PlanovaLogo;
             this.pictureBox6.Location = new System.Drawing.Point(10, 12);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";

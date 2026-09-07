@@ -122,7 +122,7 @@ namespace tech_titans
             this.bookingsToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 132);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 165);
             // 
             // registerToolStripMenuItem
             // 
@@ -139,8 +139,9 @@ namespace tech_titans
             // bookingsToolStripMenuItem
             // 
             this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
-            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.bookingsToolStripMenuItem.Text = "Bookings";
+            this.bookingsToolStripMenuItem.Click += new System.EventHandler(this.bookingsToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
