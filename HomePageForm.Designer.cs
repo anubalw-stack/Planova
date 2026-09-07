@@ -35,6 +35,7 @@ namespace tech_titans
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
@@ -119,6 +120,7 @@ namespace tech_titans
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registerToolStripMenuItem,
             this.loginToolStripMenuItem,
+            this.cartToolStripMenuItem,
             this.bookingsToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -135,6 +137,13 @@ namespace tech_titans
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
             this.loginToolStripMenuItem.Text = "Login";
+            // 
+            // cartToolStripMenuItem
+            // 
+            this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.cartToolStripMenuItem.Text = "Cart";
+            this.cartToolStripMenuItem.Click += new System.EventHandler(this.cartToolStripMenuItem_Click);
             // 
             // bookingsToolStripMenuItem
             // 
@@ -163,7 +172,6 @@ namespace tech_titans
             this.iconButton1.Size = new System.Drawing.Size(24, 30);
             this.iconButton1.TabIndex = 5;
             this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // panel4
             // 
@@ -621,5 +629,6 @@ namespace tech_titans
         private FontAwesome.Sharp.IconButton iconButton6;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cartToolStripMenuItem;
     }
 }

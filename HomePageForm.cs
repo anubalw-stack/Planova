@@ -97,10 +97,10 @@ namespace tech_titans
             this.Hide();
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void cartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form9 form9 = new Form9();
-            form9.Show();
+            CartForm cartForm = new CartForm();
+            cartForm.Show();
             this.Hide();
         }
 

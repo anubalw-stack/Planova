@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -12,15 +13,37 @@ namespace tech_titans
         public CartForm()
         {
             InitializeComponent();
+            SetupCartForm();
+
+            // If there is already something in the cart,
+            // display the first event.
+            if (Cart.Items.Count > 0)
+            {
+                selectedEvent = Cart.Items[0].Event;
+
+                DisplayEvent();
+                LoadExistingCartItem();
+            }
+            else
+            {
+                ClearCartDisplay();
+            }
         }
 
         // Constructor used when event is added to cart
         public CartForm(Event selectedEvent)
         {
             InitializeComponent();
+            SetupCartForm();
 
             this.selectedEvent = selectedEvent;
 
+            DisplayEvent();
+            LoadExistingCartItem();
+        }
+
+        private void SetupCartForm()
+        {
             // Quantity range
             numAdult.Minimum = 0;
             numAdult.Maximum = 10;
@@ -36,12 +59,54 @@ namespace tech_titans
             numStudent.ValueChanged += numStudent_ValueChanged;
             numFamily.ValueChanged += numFamily_ValueChanged;
 
-            DisplayEvent();
+            // Buttons
+            button1.Click += Back_Click;
+            iconButton6.Click += Back_Click;
+            button2.Click += buttonProceed_Click;
+            btnRemoveFromCart.Click += btnRemoveFromCart_Click;
+
+            // Navigation menu
+            iconButton14.Click += iconButton14_Click;
+
+            homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
+            registerToolStripMenuItem.Click += registerToolStripMenuItem_Click;
+            loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
+            cartToolStripMenuItem.Click += cartToolStripMenuItem_Click;
+            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
+
+            CartMenuStrip.Opening += CartMenuStrip_Opening;
+        }
+
+        private void LoadExistingCartItem()
+        {
+            if (selectedEvent == null)
+            {
+                return;
+            }
+
+            CartItem existing = Cart.FindByEventId(selectedEvent.EventID);
+
+            if (existing != null)
+            {
+                numAdult.Value = existing.AdultQty;
+                numStudent.Value = existing.StudentQty;
+                numFamily.Value = existing.FamilyQty;
+            }
         }
 
         private void DisplayEvent()
         {
-            // Event details
+            if (selectedEvent == null)
+            {
+                ClearCartDisplay();
+                return;
+            }
+
+            // Enable cart buttons when an event exists.
+            btnRemoveFromCart.Enabled = true;
+            button2.Enabled = true;
+
+            // Event information
             lblCartEventName.Text = selectedEvent.EventName;
             lblCartDate.Text = selectedEvent.EventDate;
             lblCartTime.Text = selectedEvent.EventTime;
@@ -70,9 +135,48 @@ namespace tech_titans
             UpdateTotals();
         }
 
+        private void ClearCartDisplay()
+        {
+            // Clear event information
+            lblCartEventName.Text = "";
+            lblCartDate.Text = "";
+            lblCartTime.Text = "";
+            lblCartLocation.Text = "";
+
+            // Clear prices
+            lblAdultPrice.Text = "";
+            lblStudentPrice.Text = "";
+            lblFamilyPrice.Text = "";
+
+            // Clear totals
+            lblAdultTotal.Text = "";
+            lblStudentTotal.Text = "";
+            lblFamilyTotal.Text = "";
+
+            // Clear image
+            pictureBox2.Image = null;
+
+            // Reset quantities
+            numAdult.Value = 0;
+            numStudent.Value = 0;
+            numFamily.Value = 0;
+
+            // Disable buttons when cart is empty
+            btnRemoveFromCart.Enabled = false;
+            button2.Enabled = false;
+        }
+
         private void UpdateTotals()
         {
-            // Prices
+            if (selectedEvent == null)
+            {
+                lblAdultTotal.Text = "";
+                lblStudentTotal.Text = "";
+                lblFamilyTotal.Text = "";
+
+                return;
+            }
+
             int adultPrice = selectedEvent.EventPrice;
             int studentPrice = adultPrice - 10;
             int familyPrice = (adultPrice * 4) - 50;
@@ -108,66 +212,181 @@ namespace tech_titans
             UpdateTotals();
         }
 
-        // Continue to Payment
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonProceed_Click(object sender, EventArgs e)
         {
-            // Prices
-            int adultPrice = selectedEvent.EventPrice;
-            int studentPrice = adultPrice - 10;
-            int familyPrice = (adultPrice * 4) - 50;
-
-            // Quantities
-            int adultQuantity = (int)numAdult.Value;
-            int studentQuantity = (int)numStudent.Value;
-            int familyQuantity = (int)numFamily.Value;
-
-            // Total quantity
-            int totalQuantity =
-                adultQuantity +
-                studentQuantity +
-                familyQuantity;
-
-            // Check if user selected tickets
-            if (totalQuantity == 0)
+            if (selectedEvent == null)
             {
                 MessageBox.Show(
-                    "Please select at least one ticket.",
+                    "Your cart is empty.",
                     "Cart",
                     MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                );
+                    MessageBoxIcon.Warning);
 
                 return;
             }
 
-            // Calculate final cart total
-            int totalPrice =
-                (adultPrice * adultQuantity) +
-                (studentPrice * studentQuantity) +
-                (familyPrice * familyQuantity);
+            int adultQty = (int)numAdult.Value;
+            int studentQty = (int)numStudent.Value;
+            int familyQty = (int)numFamily.Value;
 
-            // Send Cart data to Form 7
-            BookingPayment form7 = new BookingPayment(
-                selectedEvent.EventName,
-                selectedEvent.EventLocation,
-                selectedEvent.EventDate,
-                totalQuantity,
-                totalPrice,
-                pictureBox2.Image
+            // Make sure at least one ticket has been selected.
+            if (adultQty == 0 &&
+                studentQty == 0 &&
+                familyQty == 0)
+            {
+                MessageBox.Show(
+                    "Please select at least one ticket before proceeding.",
+                    "Cart",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            // Save/update the cart.
+            Cart.AddOrUpdate(
+                selectedEvent,
+                adultQty,
+                studentQty,
+                familyQty
             );
 
-            form7.Show();
-            this.Hide();
+            // Calculate prices.
+            int adultPrice = selectedEvent.EventPrice;
+            int studentPrice = adultPrice - 10;
+            int familyPrice = (adultPrice * 4) - 50;
+
+            // Calculate the complete cart total.
+            int totalPrice =
+                (adultPrice * adultQty) +
+                (studentPrice * studentQty) +
+                (familyPrice * familyQty);
+
+            // Total number of ticket selections.
+            int totalQuantity =
+                adultQty +
+                studentQty +
+                familyQty;
+
+            // Get the event image currently displayed.
+            Image eventImage = pictureBox2.Image;
+
+            // Open teammate's payment form.
+            BookingPayment paymentForm = new BookingPayment(
+                selectedEvent.EventName,
+                selectedEvent.EventLocation,
+                selectedEvent.EventDate + " " + selectedEvent.EventTime,
+                totalQuantity,
+                totalPrice,
+                eventImage
+            );
+
+            paymentForm.Show();
+
+            // Close the cart form.
+            this.Close();
         }
 
-        // Back to Event Details
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRemoveFromCart_Click(object sender, EventArgs e)
         {
-            EventDetailsForm eventDetailsForm =
-                new EventDetailsForm(selectedEvent.EventID);
+            if (selectedEvent == null)
+            {
+                return;
+            }
 
-            eventDetailsForm.Show();
-            this.Hide();
+            // Remove event from the shared cart.
+            Cart.Remove(selectedEvent.EventID);
+
+            // Clear everything displayed on the form.
+            ClearCartDisplay();
+
+            // Forget the selected event.
+            selectedEvent = null;
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            if (selectedEvent != null)
+            {
+                EventDetailsForm eventDetailsForm =
+                    new EventDetailsForm(selectedEvent.EventID);
+
+                eventDetailsForm.Show();
+            }
+            else
+            {
+                HomePage homepage = new HomePage();
+                homepage.Show();
+            }
+
+            this.Close();
+        }
+
+        private void iconButton14_Click(object sender, EventArgs e)
+        {
+            CartMenuStrip.Show(
+                iconButton14,
+                new Point(
+                    iconButton14.Width - CartMenuStrip.Width,
+                    iconButton14.Height
+                )
+            );
+        }
+
+        private void CartMenuStrip_Opening(
+            object sender,
+            CancelEventArgs e)
+        {
+            registerToolStripMenuItem.Visible = !Session.IsLoggedIn;
+            loginToolStripMenuItem.Visible = !Session.IsLoggedIn;
+            logoutToolStripMenuItem.Visible = Session.IsLoggedIn;
+
+            cartToolStripMenuItem.Enabled = false;
+        }
+
+        private void homeToolStripMenuItem_Click(
+            object sender,
+            EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Close();
+        }
+
+        private void registerToolStripMenuItem_Click(
+            object sender,
+            EventArgs e)
+        {
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
+            this.Close();
+        }
+
+        private void loginToolStripMenuItem_Click(
+            object sender,
+            EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Close();
+        }
+
+        private void cartToolStripMenuItem_Click(
+            object sender,
+            EventArgs e)
+        {
+            // Already on the cart page.
+        }
+
+        private void logoutToolStripMenuItem_Click(
+            object sender,
+            EventArgs e)
+        {
+            Session.Logout();
+
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Close();
         }
     }
 }

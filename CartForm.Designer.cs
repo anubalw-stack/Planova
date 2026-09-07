@@ -2,15 +2,8 @@ namespace tech_titans
 {
     partial class CartForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,12 +15,9 @@ namespace tech_titans
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton14 = new FontAwesome.Sharp.IconButton();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -66,6 +56,13 @@ namespace tech_titans
             this.label10 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnRemoveFromCart = new FontAwesome.Sharp.IconButton();
+            this.CartMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -77,6 +74,7 @@ namespace tech_titans
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numStudent)).BeginInit();
             this.panel7.SuspendLayout();
+            this.CartMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,7 +99,7 @@ namespace tech_titans
             this.iconButton14.IconColor = System.Drawing.Color.White;
             this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton14.IconSize = 30;
-            this.iconButton14.Location = new System.Drawing.Point(964, 29);
+            this.iconButton14.Location = new System.Drawing.Point(964, 26);
             this.iconButton14.Name = "iconButton14";
             this.iconButton14.Size = new System.Drawing.Size(24, 30);
             this.iconButton14.TabIndex = 7;
@@ -184,36 +182,32 @@ namespace tech_titans
             this.lblCartLocation.AutoSize = true;
             this.lblCartLocation.Location = new System.Drawing.Point(241, 87);
             this.lblCartLocation.Name = "lblCartLocation";
-            this.lblCartLocation.Size = new System.Drawing.Size(51, 20);
+            this.lblCartLocation.Size = new System.Drawing.Size(0, 20);
             this.lblCartLocation.TabIndex = 4;
-            this.lblCartLocation.Text = "label3";
             // 
             // lblCartTime
             // 
             this.lblCartTime.AutoSize = true;
             this.lblCartTime.Location = new System.Drawing.Point(425, 51);
             this.lblCartTime.Name = "lblCartTime";
-            this.lblCartTime.Size = new System.Drawing.Size(51, 20);
+            this.lblCartTime.Size = new System.Drawing.Size(0, 20);
             this.lblCartTime.TabIndex = 3;
-            this.lblCartTime.Text = "label3";
             // 
             // lblCartDate
             // 
             this.lblCartDate.AutoSize = true;
             this.lblCartDate.Location = new System.Drawing.Point(241, 51);
             this.lblCartDate.Name = "lblCartDate";
-            this.lblCartDate.Size = new System.Drawing.Size(51, 20);
+            this.lblCartDate.Size = new System.Drawing.Size(0, 20);
             this.lblCartDate.TabIndex = 2;
-            this.lblCartDate.Text = "label3";
             // 
             // lblCartEventName
             // 
             this.lblCartEventName.AutoSize = true;
             this.lblCartEventName.Location = new System.Drawing.Point(241, 13);
             this.lblCartEventName.Name = "lblCartEventName";
-            this.lblCartEventName.Size = new System.Drawing.Size(51, 20);
+            this.lblCartEventName.Size = new System.Drawing.Size(0, 20);
             this.lblCartEventName.TabIndex = 1;
-            this.lblCartEventName.Text = "label3";
             // 
             // pictureBox2
             // 
@@ -258,7 +252,6 @@ namespace tech_titans
             this.button1.Text = "Back";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // iconButton6
             // 
@@ -288,34 +281,30 @@ namespace tech_titans
             this.button2.TabIndex = 19;
             this.button2.Text = " Proceed To Payment ";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblStudentPrice
             // 
             this.lblStudentPrice.AutoSize = true;
             this.lblStudentPrice.Location = new System.Drawing.Point(273, 9);
             this.lblStudentPrice.Name = "lblStudentPrice";
-            this.lblStudentPrice.Size = new System.Drawing.Size(51, 20);
+            this.lblStudentPrice.Size = new System.Drawing.Size(0, 20);
             this.lblStudentPrice.TabIndex = 5;
-            this.lblStudentPrice.Text = "label3";
             // 
             // lblAdultTotal
             // 
             this.lblAdultTotal.AutoSize = true;
             this.lblAdultTotal.Location = new System.Drawing.Point(755, 9);
             this.lblAdultTotal.Name = "lblAdultTotal";
-            this.lblAdultTotal.Size = new System.Drawing.Size(51, 20);
+            this.lblAdultTotal.Size = new System.Drawing.Size(0, 20);
             this.lblAdultTotal.TabIndex = 7;
-            this.lblAdultTotal.Text = "label3";
             // 
             // lblAdultPrice
             // 
             this.lblAdultPrice.AutoSize = true;
             this.lblAdultPrice.Location = new System.Drawing.Point(273, 10);
             this.lblAdultPrice.Name = "lblAdultPrice";
-            this.lblAdultPrice.Size = new System.Drawing.Size(51, 20);
+            this.lblAdultPrice.Size = new System.Drawing.Size(0, 20);
             this.lblAdultPrice.TabIndex = 8;
-            this.lblAdultPrice.Text = "label3";
             // 
             // numAdult
             // 
@@ -408,18 +397,16 @@ namespace tech_titans
             this.lblFamilyTotal.AutoSize = true;
             this.lblFamilyTotal.Location = new System.Drawing.Point(755, 12);
             this.lblFamilyTotal.Name = "lblFamilyTotal";
-            this.lblFamilyTotal.Size = new System.Drawing.Size(51, 20);
+            this.lblFamilyTotal.Size = new System.Drawing.Size(0, 20);
             this.lblFamilyTotal.TabIndex = 27;
-            this.lblFamilyTotal.Text = "label3";
             // 
             // lblFamilyPrice
             // 
             this.lblFamilyPrice.AutoSize = true;
             this.lblFamilyPrice.Location = new System.Drawing.Point(273, 9);
             this.lblFamilyPrice.Name = "lblFamilyPrice";
-            this.lblFamilyPrice.Size = new System.Drawing.Size(51, 20);
+            this.lblFamilyPrice.Size = new System.Drawing.Size(0, 20);
             this.lblFamilyPrice.TabIndex = 27;
-            this.lblFamilyPrice.Text = "label3";
             // 
             // numFamily
             // 
@@ -463,9 +450,8 @@ namespace tech_titans
             this.lblStudentTotal.AutoSize = true;
             this.lblStudentTotal.Location = new System.Drawing.Point(755, 9);
             this.lblStudentTotal.Name = "lblStudentTotal";
-            this.lblStudentTotal.Size = new System.Drawing.Size(51, 20);
+            this.lblStudentTotal.Size = new System.Drawing.Size(0, 20);
             this.lblStudentTotal.TabIndex = 26;
-            this.lblStudentTotal.Text = "label3";
             // 
             // numStudent
             // 
@@ -516,12 +502,71 @@ namespace tech_titans
             this.label9.TabIndex = 25;
             this.label9.Text = "Adult";
             // 
+            // btnRemoveFromCart
+            // 
+            this.btnRemoveFromCart.BackColor = System.Drawing.Color.Firebrick;
+            this.btnRemoveFromCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveFromCart.ForeColor = System.Drawing.Color.White;
+            this.btnRemoveFromCart.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.btnRemoveFromCart.IconColor = System.Drawing.Color.White;
+            this.btnRemoveFromCart.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRemoveFromCart.IconSize = 24;
+            this.btnRemoveFromCart.Location = new System.Drawing.Point(553, 560);
+            this.btnRemoveFromCart.Name = "btnRemoveFromCart";
+            this.btnRemoveFromCart.Size = new System.Drawing.Size(47, 45);
+            this.btnRemoveFromCart.TabIndex = 20;
+            this.btnRemoveFromCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRemoveFromCart.UseVisualStyleBackColor = false;
+            // 
+            // CartMenuStrip
+            // 
+            this.CartMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.CartMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.homeToolStripMenuItem,
+            this.registerToolStripMenuItem,
+            this.loginToolStripMenuItem,
+            this.cartToolStripMenuItem,
+            this.logoutToolStripMenuItem});
+            this.CartMenuStrip.Name = "CartMenuStrip";
+            this.CartMenuStrip.Size = new System.Drawing.Size(148, 164);
+            // 
+            // homeToolStripMenuItem
+            // 
+            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(147, 32);
+            this.homeToolStripMenuItem.Text = "Home";
+            // 
+            // registerToolStripMenuItem
+            // 
+            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(147, 32);
+            this.registerToolStripMenuItem.Text = "Register";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(147, 32);
+            this.loginToolStripMenuItem.Text = "Login";
+            // 
+            // cartToolStripMenuItem
+            // 
+            this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(147, 32);
+            this.cartToolStripMenuItem.Text = "Cart";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(147, 32);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            // 
             // CartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(1010, 618);
+            this.Controls.Add(this.btnRemoveFromCart);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
@@ -553,6 +598,7 @@ namespace tech_titans
             ((System.ComponentModel.ISupportInitialize)(this.numStudent)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.CartMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -598,5 +644,12 @@ namespace tech_titans
         private System.Windows.Forms.Label lblFamilyPrice;
         private System.Windows.Forms.Label lblFamilyTotal;
         private System.Windows.Forms.Label lblStudentTotal;
+        private FontAwesome.Sharp.IconButton btnRemoveFromCart;
+        private System.Windows.Forms.ContextMenuStrip CartMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }
