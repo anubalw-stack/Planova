@@ -124,7 +124,7 @@ namespace tech_titans
             this.bookingsToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 164);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 197);
             // 
             // registerToolStripMenuItem
             // 
@@ -141,8 +141,9 @@ namespace tech_titans
             // cartToolStripMenuItem
             // 
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
-            this.cartToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.cartToolStripMenuItem.Text = "Cart";
+            this.cartToolStripMenuItem.Click += new System.EventHandler(this.cartToolStripMenuItem_Click);
             // 
             // bookingsToolStripMenuItem
             // 
