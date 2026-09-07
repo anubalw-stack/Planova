@@ -215,6 +215,17 @@ namespace tech_titans
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
             );
+
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
         }
     }
     }

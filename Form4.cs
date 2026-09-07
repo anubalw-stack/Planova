@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tech_titans
@@ -16,24 +10,19 @@ namespace tech_titans
         {
             InitializeComponent();
 
-            // Tag each "View Event" button with its event ID from events.csv,
-            // then route them all through the same click handler below.
+            // Event IDs from events.csv
             btnDJNight.Tag = "msc001";
             btnBattleBands.Tag = "msc002";
             btnStreetFestival.Tag = "msc003";
             btnRhythmNights.Tag = "msc004";
             btnSummerBeats.Tag = "msc005";
             btnComedyNight.Tag = "cdy001";
-
-            btnBattleBands.Click += button4_Click;
-            btnStreetFestival.Click += button4_Click;
-            btnRhythmNights.Click += button4_Click;
-            btnSummerBeats.Click += button4_Click;
-            btnComedyNight.Click += button4_Click;
         }
+
         private void Form4_Load(object sender, EventArgs e)
         {
             UpdateLoginUI();
+
             txtSearch.Text = "Search events...";
             txtSearch.ForeColor = Color.Gray;
         }
@@ -42,7 +31,9 @@ namespace tech_titans
         {
             if (Session.IsLoggedIn)
             {
-                labelWelcome.Text = "Welcome, " + Session.CurrentUser.Name;
+                labelWelcome.Text =
+                    "Welcome, " + Session.CurrentUser.Name;
+
                 labelWelcome.Visible = true;
             }
             else
@@ -52,14 +43,11 @@ namespace tech_titans
             }
         }
 
-
         private void label18_Click(object sender, EventArgs e)
         {
-
         }
 
-        // Shared handler for all six "View Event" buttons — reads the event ID
-        // off the clicked button's Tag and opens EventDetailsForm for it.
+        // Opens Event Details
         private void button4_Click(object sender, EventArgs e)
         {
             Button clicked = sender as Button;
@@ -71,36 +59,48 @@ namespace tech_titans
 
             string eventId = clicked.Tag.ToString();
 
-            EventDetailsForm eventDetailsForm = new EventDetailsForm(eventId);
+            EventDetailsForm eventDetailsForm =
+                new EventDetailsForm(eventId);
+
             eventDetailsForm.Show();
+
             this.Hide();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label20_Click(object sender, EventArgs e)
         {
-
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-
             if (txtSearch.Text == "Search events...")
+            {
                 return;
+            }
 
             string search = txtSearch.Text.Trim();
 
-            // Check which event names match the search
-            bool djMatch = EventMatches(lblDJNightName.Text, search);
-            bool battleMatch = EventMatches(lblBattleBandsName.Text, search);
-            bool streetMatch = EventMatches(lblStreetFestivalName.Text, search);
-            bool rhythmMatch = EventMatches(lblRhythmNightsName.Text, search);
-            bool summerMatch = EventMatches(lblSummerBeatsName.Text, search);
-            bool comedyMatch = EventMatches(lblComedyNightName.Text, search);
+            bool djMatch =
+                EventMatches(lblDJNightName.Text, search);
+
+            bool battleMatch =
+                EventMatches(lblBattleBandsName.Text, search);
+
+            bool streetMatch =
+                EventMatches(lblStreetFestivalName.Text, search);
+
+            bool rhythmMatch =
+                EventMatches(lblRhythmNightsName.Text, search);
+
+            bool summerMatch =
+                EventMatches(lblSummerBeatsName.Text, search);
+
+            bool comedyMatch =
+                EventMatches(lblComedyNightName.Text, search);
 
             int y = 20;
 
@@ -112,7 +112,8 @@ namespace tech_titans
                 lblDJNightLocation,
                 lblDJNightPrice,
                 btnDJNight,
-                ref y);
+                ref y
+            );
 
             ShowEvent(
                 battleMatch,
@@ -122,7 +123,8 @@ namespace tech_titans
                 lblBattleBandsLocation,
                 lblBattleBandsPrice,
                 btnBattleBands,
-                ref y);
+                ref y
+            );
 
             ShowEvent(
                 streetMatch,
@@ -132,7 +134,8 @@ namespace tech_titans
                 lblStreetFestivalLocation,
                 lblStreetFestivalPrice,
                 btnStreetFestival,
-                ref y);
+                ref y
+            );
 
             ShowEvent(
                 rhythmMatch,
@@ -142,7 +145,8 @@ namespace tech_titans
                 lblRhythmNightsLocation,
                 lblRhythmNightsPrice,
                 btnRhythmNights,
-                ref y);
+                ref y
+            );
 
             ShowEvent(
                 summerMatch,
@@ -152,7 +156,8 @@ namespace tech_titans
                 lblSummerBeatsLocation,
                 lblSummerBeatsPrice,
                 btnSummerBeats,
-                ref y);
+                ref y
+            );
 
             ShowEvent(
                 comedyMatch,
@@ -162,20 +167,17 @@ namespace tech_titans
                 lblComedyNightLocation,
                 lblComedyNightPrice,
                 btnComedyNight,
-                ref y);
+                ref y
+            );
 
-            // Always return scrollbar to the top after searching
-            pnlEvents.AutoScrollPosition = new Point(0, 0);
-
-
+            pnlEvents.AutoScrollPosition =
+                new Point(0, 0);
         }
 
-
-
-
-        private bool EventMatches(string eventName, string search)
+        private bool EventMatches(
+            string eventName,
+            string search)
         {
-            // Empty search means show everything
             if (string.IsNullOrWhiteSpace(search))
             {
                 return true;
@@ -196,19 +198,15 @@ namespace tech_titans
             return false;
         }
 
-
-
-
-
         private void ShowEvent(
-    bool show,
-    PictureBox picture,
-    Label name,
-    Label date,
-    Label location,
-    Label price,
-    Button button,
-    ref int y)
+            bool show,
+            PictureBox picture,
+            Label name,
+            Label date,
+            Label location,
+            Label price,
+            Button button,
+            ref int y)
         {
             picture.Visible = show;
             name.Visible = show;
@@ -219,8 +217,8 @@ namespace tech_titans
 
             if (show)
             {
-                // Move the event to the next available row
-                picture.Location = new Point(20, y);
+                picture.Location =
+                    new Point(20, y);
 
                 name.Location =
                     new Point(190, y);
@@ -237,17 +235,17 @@ namespace tech_titans
                 button.Location =
                     new Point(760, y + 5);
 
-                // Space before next event
                 y += 145;
             }
         }
 
         private void label9_Click(object sender, EventArgs e)
         {
-
         }
 
-        private void txtSearch_Enter(object sender, EventArgs e)
+        private void txtSearch_Enter(
+            object sender,
+            EventArgs e)
         {
             if (txtSearch.Text == "Search events...")
             {
@@ -256,7 +254,9 @@ namespace tech_titans
             }
         }
 
-        private void txtSearch_Leave(object sender, EventArgs e)
+        private void txtSearch_Leave(
+            object sender,
+            EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtSearch.Text))
             {

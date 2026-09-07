@@ -9,6 +9,7 @@ namespace tech_titans
     {
         private Event selectedEvent;
 
+        // Constructor for Designer
         public CartForm()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace tech_titans
             }
         }
 
+        // Constructor used when event is added to cart
         public CartForm(Event selectedEvent)
         {
             InitializeComponent();
@@ -125,6 +127,7 @@ namespace tech_titans
             int studentPrice = adultPrice - 10;
             int familyPrice = (adultPrice * 4) - 50;
 
+            // Display prices
             lblAdultPrice.Text = adultPrice + " NZD";
             lblStudentPrice.Text = studentPrice + " NZD";
             lblFamilyPrice.Text = familyPrice + " NZD";
@@ -178,14 +181,17 @@ namespace tech_titans
             int studentPrice = adultPrice - 10;
             int familyPrice = (adultPrice * 4) - 50;
 
+            // Quantities
             int adultQuantity = (int)numAdult.Value;
             int studentQuantity = (int)numStudent.Value;
             int familyQuantity = (int)numFamily.Value;
 
+            // Totals
             int adultTotal = adultPrice * adultQuantity;
             int studentTotal = studentPrice * studentQuantity;
             int familyTotal = familyPrice * familyQuantity;
 
+            // Display totals
             lblAdultTotal.Text = adultTotal + " NZD";
             lblStudentTotal.Text = studentTotal + " NZD";
             lblFamilyTotal.Text = familyTotal + " NZD";
