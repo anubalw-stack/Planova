@@ -94,7 +94,7 @@ namespace tech_titans
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1011, 81);
+            this.panel1.Size = new System.Drawing.Size(899, 65);
             this.panel1.TabIndex = 18;
             // 
             // iconButton2
@@ -106,9 +106,10 @@ namespace tech_titans
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 30;
-            this.iconButton2.Location = new System.Drawing.Point(934, 27);
+            this.iconButton2.Location = new System.Drawing.Point(830, 22);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(24, 30);
+            this.iconButton2.Size = new System.Drawing.Size(21, 24);
             this.iconButton2.TabIndex = 6;
             this.iconButton2.UseVisualStyleBackColor = true;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
@@ -123,37 +124,37 @@ namespace tech_titans
             this.bookingsToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(159, 164);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(140, 124);
             // 
             // registerToolStripMenuItem
             // 
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.registerToolStripMenuItem.Text = "Register";
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.loginToolStripMenuItem.Text = "Login";
             // 
             // cartToolStripMenuItem
             // 
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
-            this.cartToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.cartToolStripMenuItem.Text = "Cart";
             this.cartToolStripMenuItem.Click += new System.EventHandler(this.cartToolStripMenuItem_Click);
             // 
             // bookingsToolStripMenuItem
             // 
             this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
-            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.bookingsToolStripMenuItem.Text = "Bookings";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(158, 32);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.logoutToolStripMenuItem.Text = "Logout";
             // 
             // iconButton1
@@ -164,9 +165,10 @@ namespace tech_titans
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(974, 27);
+            this.iconButton1.Location = new System.Drawing.Point(866, 22);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(24, 30);
+            this.iconButton1.Size = new System.Drawing.Size(21, 24);
             this.iconButton1.TabIndex = 5;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
@@ -174,33 +176,33 @@ namespace tech_titans
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(103, 70);
+            this.panel4.Location = new System.Drawing.Point(92, 56);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(800, 11);
+            this.panel4.Size = new System.Drawing.Size(711, 9);
             this.panel4.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala Text", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(61, 44);
+            this.label6.Location = new System.Drawing.Point(54, 35);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 15);
+            this.label6.Size = new System.Drawing.Size(133, 13);
             this.label6.TabIndex = 3;
             this.label6.Text = "Event Booking System";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(61, 10);
+            this.label5.Location = new System.Drawing.Point(54, 8);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 32);
+            this.label5.Size = new System.Drawing.Size(115, 25);
             this.label5.TabIndex = 2;
             this.label5.Text = "PLANOVA";
             // 
@@ -209,10 +211,10 @@ namespace tech_titans
             this.pictureBox1.BackColor = System.Drawing.Color.Lavender;
             this.pictureBox1.BackgroundImage = global::tech_titans.Properties.Resources.PlanovaLogo;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 49);
+            this.pictureBox1.Size = new System.Drawing.Size(43, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -222,9 +224,9 @@ namespace tech_titans
             this.lblwelcome.AutoSize = true;
             this.lblwelcome.Font = new System.Drawing.Font("Nirmala UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblwelcome.ForeColor = System.Drawing.Color.Indigo;
-            this.lblwelcome.Location = new System.Drawing.Point(12, 178);
+            this.lblwelcome.Location = new System.Drawing.Point(11, 142);
             this.lblwelcome.Name = "lblwelcome";
-            this.lblwelcome.Size = new System.Drawing.Size(285, 60);
+            this.lblwelcome.Size = new System.Drawing.Size(241, 50);
             this.lblwelcome.TabIndex = 21;
             this.lblwelcome.Text = "Welcome to ";
             // 
@@ -233,9 +235,9 @@ namespace tech_titans
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(273, 178);
+            this.label1.Location = new System.Drawing.Point(243, 142);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 60);
+            this.label1.Size = new System.Drawing.Size(197, 50);
             this.label1.TabIndex = 22;
             this.label1.Text = "PLANOVA";
             // 
@@ -244,9 +246,9 @@ namespace tech_titans
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(29, 238);
+            this.label2.Location = new System.Drawing.Point(26, 190);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(453, 24);
+            this.label2.Size = new System.Drawing.Size(383, 21);
             this.label2.TabIndex = 23;
             this.label2.Text = "Your gateway to amazing events and experiences";
             // 
@@ -255,9 +257,9 @@ namespace tech_titans
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Indigo;
-            this.label3.Location = new System.Drawing.Point(107, 277);
+            this.label3.Location = new System.Drawing.Point(95, 222);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(300, 27);
+            this.label3.Size = new System.Drawing.Size(256, 23);
             this.label3.TabIndex = 24;
             this.label3.Text = "Discover. Connect. Celebrate.";
             // 
@@ -266,19 +268,19 @@ namespace tech_titans
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(12, 429);
+            this.label4.Location = new System.Drawing.Point(11, 343);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 30);
+            this.label4.Size = new System.Drawing.Size(136, 25);
             this.label4.TabIndex = 26;
             this.label4.Text = "Why Planova?";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Indigo;
-            this.panel2.Location = new System.Drawing.Point(33, 461);
+            this.panel2.Location = new System.Drawing.Point(29, 369);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 2);
+            this.panel2.Size = new System.Drawing.Size(89, 2);
             this.panel2.TabIndex = 5;
             // 
             // panel3
@@ -287,10 +289,10 @@ namespace tech_titans
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(33, 480);
+            this.panel3.Location = new System.Drawing.Point(29, 384);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(302, 116);
+            this.panel3.Size = new System.Drawing.Size(268, 93);
             this.panel3.TabIndex = 5;
             // 
             // label10
@@ -298,9 +300,9 @@ namespace tech_titans
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DimGray;
-            this.label10.Location = new System.Drawing.Point(94, 48);
+            this.label10.Location = new System.Drawing.Point(84, 38);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(188, 44);
+            this.label10.Size = new System.Drawing.Size(154, 36);
             this.label10.TabIndex = 28;
             this.label10.Text = "Find Events you Love \r\nQuickly and Easily .";
             // 
@@ -309,9 +311,9 @@ namespace tech_titans
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(42, 46);
+            this.label8.Location = new System.Drawing.Point(37, 37);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 24);
+            this.label8.Size = new System.Drawing.Size(0, 21);
             this.label8.TabIndex = 27;
             // 
             // label7
@@ -319,9 +321,9 @@ namespace tech_titans
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Indigo;
-            this.label7.Location = new System.Drawing.Point(93, 16);
+            this.label7.Location = new System.Drawing.Point(83, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(154, 28);
+            this.label7.Size = new System.Drawing.Size(127, 23);
             this.label7.TabIndex = 27;
             this.label7.Text = "Easy Discovery";
             // 
@@ -329,10 +331,10 @@ namespace tech_titans
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.panel5.Controls.Add(this.iconButton3);
-            this.panel5.Location = new System.Drawing.Point(33, 480);
+            this.panel5.Location = new System.Drawing.Point(29, 384);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(71, 116);
+            this.panel5.Size = new System.Drawing.Size(63, 93);
             this.panel5.TabIndex = 6;
             // 
             // iconButton3
@@ -344,9 +346,10 @@ namespace tech_titans
             this.iconButton3.IconColor = System.Drawing.Color.Indigo;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 60;
-            this.iconButton3.Location = new System.Drawing.Point(9, 15);
+            this.iconButton3.Location = new System.Drawing.Point(8, 12);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(59, 88);
+            this.iconButton3.Size = new System.Drawing.Size(52, 70);
             this.iconButton3.TabIndex = 17;
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
@@ -355,10 +358,10 @@ namespace tech_titans
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.label12);
             this.panel6.Controls.Add(this.label11);
-            this.panel6.Location = new System.Drawing.Point(360, 480);
+            this.panel6.Location = new System.Drawing.Point(320, 384);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(302, 116);
+            this.panel6.Size = new System.Drawing.Size(268, 93);
             this.panel6.TabIndex = 6;
             // 
             // label12
@@ -366,9 +369,9 @@ namespace tech_titans
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(92, 48);
+            this.label12.Location = new System.Drawing.Point(82, 38);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(207, 44);
+            this.label12.Size = new System.Drawing.Size(169, 36);
             this.label12.TabIndex = 29;
             this.label12.Text = "Book You Tickets In\r\nSmooth and Simple Way";
             // 
@@ -377,9 +380,9 @@ namespace tech_titans
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Indigo;
-            this.label11.Location = new System.Drawing.Point(91, 16);
+            this.label11.Location = new System.Drawing.Point(81, 13);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(160, 28);
+            this.label11.Size = new System.Drawing.Size(138, 23);
             this.label11.TabIndex = 29;
             this.label11.Text = "Simple Booking";
             // 
@@ -389,10 +392,10 @@ namespace tech_titans
             this.panel7.Controls.Add(this.label14);
             this.panel7.Controls.Add(this.label13);
             this.panel7.Controls.Add(this.panel9);
-            this.panel7.Location = new System.Drawing.Point(684, 480);
+            this.panel7.Location = new System.Drawing.Point(608, 384);
             this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(302, 116);
+            this.panel7.Size = new System.Drawing.Size(268, 93);
             this.panel7.TabIndex = 6;
             // 
             // label14
@@ -400,9 +403,9 @@ namespace tech_titans
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(92, 48);
+            this.label14.Location = new System.Drawing.Point(82, 38);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(209, 44);
+            this.label14.Size = new System.Drawing.Size(168, 36);
             this.label14.TabIndex = 30;
             this.label14.Text = "Enjoy Safe and Reliable \r\nPayment Options.";
             // 
@@ -411,9 +414,9 @@ namespace tech_titans
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Indigo;
-            this.label13.Location = new System.Drawing.Point(89, 15);
+            this.label13.Location = new System.Drawing.Point(79, 12);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(163, 28);
+            this.label13.Size = new System.Drawing.Size(137, 23);
             this.label13.TabIndex = 30;
             this.label13.Text = "Secure Payment";
             // 
@@ -424,7 +427,7 @@ namespace tech_titans
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(71, 116);
+            this.panel9.Size = new System.Drawing.Size(63, 93);
             this.panel9.TabIndex = 18;
             // 
             // iconButton5
@@ -435,9 +438,10 @@ namespace tech_titans
             this.iconButton5.IconColor = System.Drawing.Color.Indigo;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 60;
-            this.iconButton5.Location = new System.Drawing.Point(3, 15);
+            this.iconButton5.Location = new System.Drawing.Point(3, 12);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(68, 88);
+            this.iconButton5.Size = new System.Drawing.Size(60, 70);
             this.iconButton5.TabIndex = 17;
             this.iconButton5.UseVisualStyleBackColor = true;
             // 
@@ -445,10 +449,10 @@ namespace tech_titans
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
             this.panel8.Controls.Add(this.iconButton4);
-            this.panel8.Location = new System.Drawing.Point(360, 480);
+            this.panel8.Location = new System.Drawing.Point(320, 384);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(71, 116);
+            this.panel8.Size = new System.Drawing.Size(63, 93);
             this.panel8.TabIndex = 18;
             // 
             // iconButton4
@@ -459,9 +463,10 @@ namespace tech_titans
             this.iconButton4.IconColor = System.Drawing.Color.Indigo;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 60;
-            this.iconButton4.Location = new System.Drawing.Point(3, 15);
+            this.iconButton4.Location = new System.Drawing.Point(3, 12);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(65, 89);
+            this.iconButton4.Size = new System.Drawing.Size(58, 71);
             this.iconButton4.TabIndex = 17;
             this.iconButton4.UseVisualStyleBackColor = true;
             // 
@@ -470,9 +475,9 @@ namespace tech_titans
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(60, 379);
+            this.label9.Location = new System.Drawing.Point(53, 303);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 24);
+            this.label9.Size = new System.Drawing.Size(0, 21);
             this.label9.TabIndex = 27;
             // 
             // button1
@@ -481,9 +486,10 @@ namespace tech_titans
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(103, 351);
+            this.button1.Location = new System.Drawing.Point(92, 281);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(304, 52);
+            this.button1.Size = new System.Drawing.Size(270, 42);
             this.button1.TabIndex = 28;
             this.button1.Text = "   Explore Events ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -495,9 +501,9 @@ namespace tech_titans
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWelcome.ForeColor = System.Drawing.Color.DimGray;
-            this.labelWelcome.Location = new System.Drawing.Point(992, 92);
+            this.labelWelcome.Location = new System.Drawing.Point(882, 74);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(0, 24);
+            this.labelWelcome.Size = new System.Drawing.Size(0, 21);
             this.labelWelcome.TabIndex = 30;
             this.labelWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -510,9 +516,10 @@ namespace tech_titans
             this.iconButton6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.IconSize = 40;
-            this.iconButton6.Location = new System.Drawing.Point(337, 365);
+            this.iconButton6.Location = new System.Drawing.Point(300, 292);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(46, 30);
+            this.iconButton6.Size = new System.Drawing.Size(41, 24);
             this.iconButton6.TabIndex = 17;
             this.iconButton6.UseVisualStyleBackColor = false;
             // 
@@ -524,20 +531,21 @@ namespace tech_titans
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 325;
-            this.iconPictureBox1.Location = new System.Drawing.Point(494, 129);
+            this.iconPictureBox1.IconSize = 260;
+            this.iconPictureBox1.Location = new System.Drawing.Point(439, 103);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(504, 325);
+            this.iconPictureBox1.Size = new System.Drawing.Size(448, 260);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox1.TabIndex = 25;
             this.iconPictureBox1.TabStop = false;
             // 
             // HomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(1010, 618);
+            this.ClientSize = new System.Drawing.Size(898, 494);
             this.Controls.Add(this.iconButton6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelWelcome);
