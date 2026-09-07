@@ -169,7 +169,6 @@
             this.btnBattleBands.TabIndex = 14;
             this.btnBattleBands.Text = "View Event";
             this.btnBattleBands.UseVisualStyleBackColor = true;
-            this.btnBattleBands.Click += new System.EventHandler(this.btnBattleBands_Click);
             // 
             // btnStreetFestival
             // 
@@ -181,7 +180,6 @@
             this.btnStreetFestival.TabIndex = 15;
             this.btnStreetFestival.Text = "View Event";
             this.btnStreetFestival.UseVisualStyleBackColor = true;
-            this.btnStreetFestival.Click += new System.EventHandler(this.btnStreetFestival_Click);
             // 
             // label8
             // 
@@ -283,7 +281,7 @@
             this.label21.Location = new System.Drawing.Point(69, 55);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(132, 15);
+            this.label21.Size = new System.Drawing.Size(148, 15);
             this.label21.TabIndex = 3;
             this.label21.Text = "Event Booking System";
             // 
@@ -295,7 +293,7 @@
             this.label22.Location = new System.Drawing.Point(71, 12);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(128, 32);
+            this.label22.Size = new System.Drawing.Size(131, 29);
             this.label22.TabIndex = 2;
             this.label22.Text = "PLANOVA";
             // 
@@ -557,7 +555,6 @@
             this.btnRhythmNights.TabIndex = 29;
             this.btnRhythmNights.Text = "View Event";
             this.btnRhythmNights.UseVisualStyleBackColor = true;
-            this.btnRhythmNights.Click += new System.EventHandler(this.btnRhythmNights_Click);
             // 
             // lblRhythmNightsPrice
             // 
@@ -606,7 +603,7 @@
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWelcome.ForeColor = System.Drawing.Color.DimGray;
-            this.labelWelcome.Location = new System.Drawing.Point(1120, 114);
+            this.labelWelcome.Location = new System.Drawing.Point(1118, 113);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(0, 24);
             this.labelWelcome.TabIndex = 34;

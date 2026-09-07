@@ -264,43 +264,5 @@ namespace tech_titans
                 txtSearch.ForeColor = Color.Gray;
             }
         }
-
-        // Existing Designer handlers
-        // All now open EventDetailsForm only
-
-        private void btnBattleBands_Click(
-            object sender,
-            EventArgs e)
-        {
-            button4_Click(sender, e);
-        }
-
-        private void btnStreetFestival_Click(
-            object sender,
-            EventArgs e)
-        {
-            button4_Click(sender, e);
-        }
-
-        private void btnRhythmNights_Click(
-            object sender,
-            EventArgs e)
-        {
-            button4_Click(sender, e);
-        }
-
-        private void btnSummerBeats_Click(
-            object sender,
-            EventArgs e)
-        {
-            button4_Click(sender, e);
-        }
-
-        private void btnComedyNight_Click(
-            object sender,
-            EventArgs e)
-        {
-            button4_Click(sender, e);
-        }
     }
 }
