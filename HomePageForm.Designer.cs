@@ -36,13 +36,14 @@ namespace tech_titans
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.profileMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblwelcome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,6 +74,7 @@ namespace tech_titans
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.profileMenuStrip.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -121,7 +123,6 @@ namespace tech_titans
             this.registerToolStripMenuItem,
             this.loginToolStripMenuItem,
             this.cartToolStripMenuItem,
-            this.bookingsToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(241, 165);
@@ -145,13 +146,6 @@ namespace tech_titans
             this.cartToolStripMenuItem.Text = "Cart";
             this.cartToolStripMenuItem.Click += new System.EventHandler(this.cartToolStripMenuItem_Click);
             // 
-            // bookingsToolStripMenuItem
-            // 
-            this.bookingsToolStripMenuItem.Name = "bookingsToolStripMenuItem";
-            this.bookingsToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.bookingsToolStripMenuItem.Text = "Bookings";
-            this.bookingsToolStripMenuItem.Click += new System.EventHandler(this.bookingsToolStripMenuItem_Click);
-            // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
@@ -172,6 +166,7 @@ namespace tech_titans
             this.iconButton1.Size = new System.Drawing.Size(24, 30);
             this.iconButton1.TabIndex = 5;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // panel4
             // 
@@ -219,6 +214,21 @@ namespace tech_titans
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // profileMenuStrip
+            // 
+            this.profileMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.profileMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profileToolStripMenuItem});
+            this.profileMenuStrip.Name = "profileMenuStrip";
+            this.profileMenuStrip.Size = new System.Drawing.Size(135, 36);
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // lblwelcome
             // 
@@ -574,6 +584,7 @@ namespace tech_titans
             this.panel1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.profileMenuStrip.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -598,9 +609,10 @@ namespace tech_titans
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bookingsToolStripMenuItem;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.ContextMenuStrip profileMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
         private System.Windows.Forms.Label lblwelcome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

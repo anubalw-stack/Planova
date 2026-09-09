@@ -51,6 +51,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnlEvents = new System.Windows.Forms.Panel();
@@ -75,9 +76,7 @@
             this.picDJNight = new System.Windows.Forms.PictureBox();
             this.picBattleBands = new System.Windows.Forms.PictureBox();
             this.picStreetFestival = new System.Windows.Forms.PictureBox();
-            this.labelWelcome = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnlEvents.SuspendLayout();
@@ -323,6 +322,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1137, 95);
             this.panel4.TabIndex = 31;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button1.Location = new System.Drawing.Point(976, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 50);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel5
             // 
@@ -604,17 +615,6 @@
             this.picStreetFestival.TabIndex = 9;
             this.picStreetFestival.TabStop = false;
             // 
-            // labelWelcome
-            // 
-            this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWelcome.ForeColor = System.Drawing.Color.DimGray;
-            this.labelWelcome.Location = new System.Drawing.Point(1118, 113);
-            this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(0, 24);
-            this.labelWelcome.TabIndex = 34;
-            this.labelWelcome.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -627,25 +627,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Search Events";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(976, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1136, 771);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.pnlEvents);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
@@ -721,7 +708,6 @@
         private System.Windows.Forms.Label lblComedyNightPrice;
         private System.Windows.Forms.Button btnComedyNight;
         private System.Windows.Forms.Button btnSummerBeats;
-        private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
     }

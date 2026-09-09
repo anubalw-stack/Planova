@@ -67,6 +67,39 @@ namespace tech_titans
             );
         }
 
+        // iconButton1 is the "User" icon — opens a small menu with just "Profile"
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            if (!Session.IsLoggedIn)
+            {
+                MessageBox.Show(
+                    "Please log in to view your profile.",
+                    "Login Required",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                LoginForm loginForm = new LoginForm();
+                loginForm.Show();
+                this.Hide();
+                return;
+            }
+
+            profileMenuStrip.Show(
+                iconButton1,
+                new Point(
+                    iconButton1.Width - profileMenuStrip.Width,
+                    iconButton1.Height
+                )
+            );
+        }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form9 profileForm = new Form9();
+            profileForm.Show();
+            this.Hide();
+        }
+
         private void registerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RegisterForm registerForm = new RegisterForm();
@@ -106,7 +139,7 @@ namespace tech_titans
 
         private void bookingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
         }
     }
 }
