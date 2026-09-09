@@ -227,5 +227,12 @@ namespace tech_titans
             homePage.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
+        }
     }
     }

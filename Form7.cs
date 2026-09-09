@@ -13,6 +13,10 @@ namespace tech_titans
         private int selectedTotalPrice;
         private Image selectedImage;
 
+        // True once the user has actually picked a value on dtpexpiry,
+        // since DateTimePicker always has *some* date selected by default.
+        private bool expirySelected = false;
+
         // Constructor for Designer
         public BookingPayment()
         {
@@ -68,9 +72,7 @@ namespace tech_titans
         private void dtpexpiry_ValueChanged(object sender, EventArgs e)
         {
             dtpexpiry.CustomFormat = "MM/yy";
-
-            // Put selected date inside expiry textbox
-            txtExpiry.Text = dtpexpiry.Value.ToString("MMyy");
+            expirySelected = true;
         }
 
 
@@ -115,21 +117,18 @@ namespace tech_titans
 
 
             // EXPIRY DATE
-            if (string.IsNullOrWhiteSpace(txtExpiry.Text))
+            if (!expirySelected)
             {
                 MessageBox.Show("Please select your expiry date.");
                 return;
             }
 
-            if (!int.TryParse(txtExpiry.Text, out _))
-            {
-                MessageBox.Show("Expiry date must contain numbers only.");
-                return;
-            }
+            DateTime firstOfExpiryMonth = new DateTime(dtpexpiry.Value.Year, dtpexpiry.Value.Month, 1);
+            DateTime firstOfThisMonth = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
 
-            if (txtExpiry.Text.Length != 4)
+            if (firstOfExpiryMonth < firstOfThisMonth)
             {
-                MessageBox.Show("Expiry date must be exactly 4 digits.");
+                MessageBox.Show("Card has expired. Please select a valid expiry date.");
                 return;
             }
 
@@ -193,10 +192,10 @@ namespace tech_titans
             pictureBox2.Image = null;
 
             txtCardNumber.Clear();
-            txtExpiry.Clear();
             txtCVV.Clear();
 
             dtpexpiry.CustomFormat = "' select date '";
+            expirySelected = false;
 
             selectedEventName = "";
             selectedLocation = "";

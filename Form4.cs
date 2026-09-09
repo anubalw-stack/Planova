@@ -17,34 +17,19 @@ namespace tech_titans
             btnRhythmNights.Tag = "msc004";
             btnSummerBeats.Tag = "msc005";
             btnComedyNight.Tag = "cdy001";
+
+            // Only btnDJNight's Click is wired in the Designer — attach the rest here
+            btnBattleBands.Click += button4_Click;
+            btnStreetFestival.Click += button4_Click;
+            btnRhythmNights.Click += button4_Click;
+            btnSummerBeats.Click += button4_Click;
+            btnComedyNight.Click += button4_Click;
         }
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            UpdateLoginUI();
-
             txtSearch.Text = "Search events...";
             txtSearch.ForeColor = Color.Gray;
-        }
-
-        private void UpdateLoginUI()
-        {
-            if (Session.IsLoggedIn)
-            {
-                labelWelcome.Text =
-                    "Welcome, " + Session.CurrentUser.Name;
-
-                labelWelcome.Visible = true;
-            }
-            else
-            {
-                labelWelcome.Text = "";
-                labelWelcome.Visible = false;
-            }
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
         }
 
 
